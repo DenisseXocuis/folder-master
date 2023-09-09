@@ -1,0 +1,148 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes} %%%font
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} %%imagen envuelta por un texto
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx} %%TABLAS OH YEAH
+
+\title {\textbf{Fundamentos de redes de computadoras}}
+\author{Lara Xocuis Martha Denisse}
+\date{31 de agosto de 2023}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar}
+\section{Red}
+Conjunto de computadoras y/o dispositivos moviles con capacidad de interconexión.
+
+\section{Comunicación de datos}
+Transmisión de información codificada de un punto a otro por medio de sistemas de transmisión
+
+\section{¿Cómo las redes nos afectan a nuestra vida diaria?}
+
+\section{Arquitectura del internet}
+Abarca con los dispositivos que están para dar el servicio
+\begin{itemize}
+    \item ISP - proveedor de servicios de internet, megacables, telmex, etc 
+    \item DSL - Línea de suscripción digital 
+    \item DSLAM - Multiplexor de Acceso a la línea de suscriptor digital, usuarios que están conectados en un servicio en una cierta área
+    \item CMTS - Sistema de terminación del módem de cable 
+    \item IXP - Punto de intercambio en internet 
+    \item FTTH - Fibra para el hogar 
+    \item Modem - dispositivo que realiza conversiones entre bits digitales y señales analógicas 
+    \item POP - Punto de presencia 
+    \item Host (anfintrión) - Computadoras u otros dispositivos (tabletas, smartphone, y portátiles ) conectados a una red que proveen y utilizan servicios de ella
+\end{itemize}
+\section{La función, los componentes y los desafíos del networking de datos}
+Elementos que conforman una red
+\vspace{0.3cm}\\ 
+\textbf{Dispositivos}: Se utilizan para efectuar la comunicación entre sus elementos 
+\vspace{0.3cm}\\ 
+\textbf{Medio}
+La manera en que los dispositivos se conectan entre si 
+\vspace{0.3cm}\\
+\textbf{Mensajes} 
+
+\section{Red Convergente}
+Tipo de red que puede transmitir voz, video y datos a través de la misma red
+
+\section{Conceptos preliminares}
+\subsection{Sistema distribuido}
+Colección interconectada de computadoras transparentes al usuario.  
+
+\section{Segmentación}
+Los datos transporta en pequeños "bloques" (segmentos). Cada segmento se etiqueta con el número de aplicación.
+\begin{itemize}
+    \item Web = 80 
+    \item FTP = 20/21 
+    \item Telnet = 23
+    \item Correo SMTP = 25 
+    \item POP = 110 
+\end{itemize}
+
+\subsection{Características relacionadas con el diseño de Arquitecura de Red }
+\begin{itemize}
+    \item Tolerancia a fallas 
+    \item Escalabilidad 
+    \item Calidad de servicio 
+    \item Seguridad
+\end{itemize}
+
+\textbf{Hardware: routers, switches}
+
+\textbf{Software : IOS(implementación de protocolor)}
+\begin{itemize}
+    \item Aplicación: DNS, HTTP, correo, etc 
+    \item Enrutamiento, Ipv4, IPv6 
+    \item Enlace datos: Ethernet, protocolos wireless
+\end{itemize}
+
+\section{Medios de red}
+Canal por el cual se transmite el mensaje, comunicación puede atravesar diferentes medios.
+
+\section{Coberturas de redes}
+\subsection{Clasificación}
+\begin{itemize}
+    \item PAN (Red de área personal)
+    \item MAN (Redes de área metropolitana)
+    \item LAN (Redes de área local)
+    \item WLAN (Redes inalámbricas de área local)
+\end{itemize}
+
+\section{Tipos de comunicación NFC}
+
+\subsection{Pasiva}
+Uno de los dispositivos crea un campo y el otro se aprovecha de él para transferir datos
+\section{Usos cotidianos del NFC}
+\begin{itemize}
+    \item Pago mediante uso de los smartphone
+    \item Conexión entre usuarios y a juegos mediante dispositivos móviles de juegos electrónicos 
+    \item Envío de facturas electrónicas y encuestas de satisfacción facilitando la comunicación con el usuario 
+    \item Lectura de tarjetas cliente en aplicaciones de fidelización
+    \item Descuentos y promociónes mediante carteles y posters comerciales adaptados a la tecnología NFC 
+\end{itemize}
+La tasa de \textbf{transferencia} que puede alcanzar el NFC seríaentre los 106Kb / segundos, 212 Kb / segundos, 424 Kb / segundos, 848 Kb / segundos.
+
+Por lo que su enfoque más que para la transmisión de grandes cantidades de datos es para cominicación instantánea e identificación y validación de equipos/personas.
+
+\section{¿Qué es el airdrop?}
+Es un servicio Ad-Hoc que Apple, funciona tal cual una carpeta virtual conectada a otros dispositivos de Apple. 
+
+Airdrop hace uso del Bluetooth y del Wifi para detectar dispositivos y transferir los archivos, por lo tanto es necesario tener ambas conexiones activas.
+
+El Bluetooth se utiliza para detectar dispositivos y establecer la conexión, mientras que la transferencia de archivos se realiza mediante la conexión Wifi mucho más rápida y con mayor ancho de banda.
+
+\section{Nearby}
+Es la versión de Airdrop de Apple pero para Android, Nearby Sharing es un modo muy sencillo de enviar archivos de un smartphone a otro sin preocuparse por qué tecnología usar con la condición de que ambos dispositivos móviles se encuentren en las proximidades. 
+
+Usa el estándar Bluetooth Low Energy para encontrar los smartphone cercanos y mandar la petición de que se puede enviar el archivo. Si el usuario en el otro smartphone acepta recibirlo, entonces el sistema elige cual es la mejor tecnología para enviar el archivo: Bluetooth o Wi-Fi.
+
+\section{Red de Área local - LAN}
+
+\section{WLAN}
+Es lo mismo que LAN pero del mismo modo se puede establecer una \textbf{conexión inalámbrica}
+
+\section{MAN - Red de área metropolitana}
+Abarca un área más grande. 
+
+\section{Cobertura WAN}
+Técnicamente es el internet, redes de área amplia.
+
+\end{sloppypar}
+\end{document}

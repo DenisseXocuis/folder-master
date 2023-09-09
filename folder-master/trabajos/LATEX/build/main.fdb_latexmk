@@ -1,0 +1,13 @@
+# Fdb version 4
+["pdflatex"] 1693882518 "c:/Users/denis/Downloads/folder-master/trabajos/LATEX/main.tex" "build/main.pdf" "main" 1693882518 2
+  "C:/Users/denis/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1688208333 23178959 5ede1fb7fbcd299ce9769ec02d04c933 ""
+  "build/fphw.cls" 0 -1 0 ""
+  "build/main.aux" 1693882478 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "c:/Users/denis/Downloads/folder-master/trabajos/LATEX/main.tex" 1693882516 7787 e2e7bfdafafa27682ec95d778fbb88a7 ""
+  "fphw.cls" 0 -1 0 ""
+  "main.tex" 1693882516 7787 e2e7bfdafafa27682ec95d778fbb88a7 ""
+  (generated)
+  "build/main.aux"
+  "build/main.log"
+  "build/main.pdf"
+  (rewritten before read)

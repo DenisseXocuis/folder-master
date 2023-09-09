@@ -1,0 +1,103 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} %%imagen envuelta por un texto
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\title {\textbf{"Probabilidad y estadística"}}
+\author{Deniso Xocuis}
+\date{5 de abril del 2023}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+\end{sloppypar}
+\section*{Estadística}
+Una \textbf{población} es el conjunto de mediciones de interés para el investigador. Una \textbf{muestra} es un subconjunto de mediciones seleccionado de la población de interés. 
+Se pueden clasificar variables en dos categorías: cualitativas y cuantitativas.
+\vspace{0.3cm}\\
+Las variables \textbf{cualitativas} miden una cualidad o característica en cada unidad experimental. Las \textbf{cuantitativas} miden una cantidad numérica en cada unidad experimental.
+\vspace{0.3cm}\\
+Una vez recolectados los datos, éstos pueden consolidarse y resumirse para mostrarla en una tabla estadística para la distribución de datos dependiendo los tipos de variables. 
+Cuando la variable de interés es cualitativa, la tabla estadística es una lista de las categorías siendo consideradas junto con una medida de la frecuencia con que se presenta cada valor. Se puede medir “la frecuencia” en tres formas diferentes:
+\begin{itemize}
+    \item La frecuencia o número de mediciones en cada categoría 
+    \item La frecuencia relativa o proporción de mediciones en cada categoría 
+    \item El porcentaje de mediciones en cada categoría 
+\end{itemize}
+
+\begin{center}
+    Frecuencia relativa = $\displaystyle \frac{frecuencia}{n}$
+\end{center}
+Donde "n" es la suma total de frecuencia, es decir, el total de datos
+
+Ejemplo: 
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|} \hline
+                 & f & x & x*f & $(x -\bar{x})^2$ & $(x -\bar{x})^2$ * f \\ \hline
+           17-23 & 370 & 20 & 7400 & 12.18  & 4506.6\\ \hline
+           23-29 & 35  & 26 & 910  & 6.30   & 220.5\\\hline
+           29-35 & 5   & 32 & 160  & 72.42  & 362.1 \\\hline
+           35-41 & 3   & 38 & 114  & 210.54 & 631.62\\\hline
+           41-47 & 7   & 44 & 308  & 420.06 & 2940.42\\\hline
+           47-53 & 5   & 50 & 250  & 702.7  & 3513.5 \\\hline
+           53-59 & 2   & 56 & 112  & 1056.9 & 2113.8 \\\hline
+           59-65 & 8   & 62 & 496  & 1483   & 11864 \\\hline
+           65-71 & 10  & 68 & 680  & 1981   & 19810 \\\hline
+           71-77 & 4   & 74 & 296  & 2551   & 10204 \\\hline
+           77-83 & 1   & 80 & 80   & 3193   & 3193 \\ \hline
+                 & n = 460 &  & = 10806 & & = 59359
+    \end{tabular}
+\end{table}
+media = $\displaystyle x = \frac{L_2+L_1}{2}$
+
+Donde L2 es el límite superior y L1 el límite inferior. 
+\vspace{0.3cm}\\
+$\displaystyle \bar{x} = \frac{\Sigma (x * F)}{n} = \frac{10806}{460} = 23.49 (promedio)$
+\vspace{0.3cm}\\
+$\displaystyle S^{2} = \frac{\Sigma (x-\bar{x})^2 * F}{n} = \frac{59359}{460} = 129.04 (varianza)$
+$ \longrightarrow S = \sqrt{129.04}  = 11.35$ (desviación estándar)
+\vspace{0.3cm}\\
+$\displaystyle CV = \frac{S}{\bar{x}} = \frac{11.35}{23.49} * 100 = 48.36\%$ (heterogéneo, muy dispersos)
+\vspace{0.3cm}\\
+El coeficiente de varianza nos dice que es homogéneo si CV$< 25\%$ y heterogéneo si CV$> 25\%$ 
+
+\section{Frecuencia absoluta}
+Número de veces se repite un dato, la suma total de frecuencia son los datos totales. 
+
+\subsection{Frecuencia relativa}
+$$f_{ri} = \frac{f_i}{n}$$
+
+La suma total de la frecuencia relativa debe de ser 1.
+
+\subsection{Frecuencia absoluta acumulada}
+Ir acumulando la primera casilla con la segunda 
+
+Para datos agrupados en intervalos:
+
+$\displaystyle \bar{x} = \frac{\Sigma x_{i}f_{i}}{n}$ (media)
+
+$\displaystyle Me = Li + \frac{\frac{n}{2}- F_i -1}{f_i} * a_i$ (mediana, donde Li es límite inferior)
+
+Se puede encontrar el dato de en medio de la siguiente forma: 
+
+si el número es impar: $\displaystyle \frac{n+1}{2}$, y si es par: $\displaystyle \frac{n}{2}$, el dato que nos de se busca en \textbf{la frecuencia absoluta acumulada}, si el dato es exacto a alguno de la frecuencia absoluta acumulada, su media es el límite superior.
+
+\end{document}

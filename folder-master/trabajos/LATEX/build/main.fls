@@ -1,0 +1,4 @@
+PWD c:\Users\denis\Downloads\folder-master\trabajos\LATEX
+INPUT C:\Users\denis\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT c:\Users\denis\Downloads\folder-master\trabajos\LATEX\main.tex
+OUTPUT c:\Users\denis\Downloads\folder-master\trabajos\LATEX\build\main.log

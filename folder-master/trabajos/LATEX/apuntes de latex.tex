@@ -1,0 +1,192 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+
+\title{\textbf{"Latex"}}
+\author{Lara Xocuis Martha Denisse}
+\date{24 de marzo de 2023}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Estructura de documentos}
+En \LaTeX  es necesario conocer los caracteres más usados o comandos delimitadores por el compilador.
+
+\begin{center}
+Estos son: \#, \$, \%, \_, \{o\}, \verb|~|, \verb|^|, \verb|\|
+\end{center}
+!!Estos datos se ponen de la siguiente manera en \LaTeX : \verb|\#|, \verb|\$|, \verb|\%|, \verb|\_|, \verb|\verb{~}|
+
+Para latex siempre se va a comenzar de la siguiente forma:
+\begin{enumerate}
+    \item Comenzando por un \verb|\documentclass[tipodepapel,letra]{tipodehoja}|
+    \item  Usando las librerias necesarias para el documento. A continuación, librerías que considero importantes y necesarias.
+\begin{center}
+    \verb|\usepackage[utf8]{inputenc}| :
+    
+    Facilita la escritura de un documento en un idioma que no sea el inglés, permite determinar el tipo de caracteres que deben ser considerados caracteres de entrada. Habitualmente se especifica como codificación de entrada el formato utf8, permite escribir letras con tilde, diéresis o la ñ.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{geometry}| :
+    
+    Configurar las dimensiones de la página del documento, también permite cambiar la longitud, diseño, tamaño, márgenes, nota, encabezado, etc. 
+    \vspace{0.5cm}\\
+    \verb|\usepackage{float}| :
+    
+    Definir figuras
+    \vspace{0.5cm}\\
+    \verb|\usepackage{graphicx}| :
+    
+    Insertar imágenes, así como reducirlas, ampliarlas o rotarlas.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{subcaption}| :
+    
+    Serie de figuras bajo el mismo entorno de figuras. 
+    \vspace{0.5cm}\\
+    \verb|\usepackage{amssymb}| : 
+    
+    Proporciona símbolos matemáticos como flechas, operadores, caracteres especiales, figuras geométricas, etc. \textit{nota: también es importante usar amsmath y amsfonts}
+    \vspace{0.5cm}\\
+    \verb|\usepackage{adjustbox}| :
+
+    Proporciona macros para ajustar el contenido en una "caja", complementa el paquete de gráficos estándar
+    \vspace{0.5cm}\\
+    \verb|\usepackage{xcolor}| : 
+
+    Poner textos a color.
+    \vspace{0.5cm}\\ 
+    \verb|\usepackage[dvipsnames]{xcolor}| : 
+
+    Carga 68 colores con nombre (CMYK), checar los nombres adicionales en overleaf.com
+    
+    También está svgnames (carga 151 colores con nombre RGB) y x11names (carga 317 colores con nombre RGB)
+    \vspace{0.5cm}\\
+    \verb|\usepackage{fancyhdr}| :
+
+    Modifica los encabezados y pies de página de un documento.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{biblatex}| :
+
+    Para citas y bibliografías, incluye una variedad de estilos de citas.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{todonotes}| :
+
+    Permite insertar notas en el texto que marcan cosas para hacer en el documento, algo como \verb|\todo{....} \ldots| . En cualquier lugar del documento se puede generar una lista de las notas insertadas con el \verb|\listoftodos|
+    \vspace{0.5cm}\\
+    \verb|\usepackage{tikz}| :
+
+    Se puede hacer cualquier gráfico vectorial que se necesite, de 2D y hasta 3D realmente complejos. Se pueden hacer circuitos con circuitikz.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{babel}| : 
+
+    Es útil para gestionar de forma óptima las particularidades del idioma que se escribe el documento. Corrige detalles tipográficos.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{blindtext}| :
+
+    Permite insertar texto de relleno (lorem ipsum...) para maquetar secciones de un documento, se crea el texto usando: \verb|\blindtext|
+    \vspace{0.5cm}\\
+    \verb|\usepackage{hyperref}| :
+    
+    Permite crear links entre distintas partes del documento o incluso links a páginas web externas. Puede crearse una tabla de contenidos de modo que cada título pueda ser ciclado para trasladarse a la página correspondiente.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{beamer}| :
+    
+    Ya no tendrás que usar Powerpoint, se tiene nuevos comandos para definir diapositivas, soporte de animaciones y multitud de estilos distintos.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{Quotchap}| : 
+
+    Diseño especialmetne indicado para libros, redefine los comandos chapter{} para generar un texto en grande para el título y una cita inicial.
+    \vspace{0.5cm}\\
+    \verb|\usepackage{schemata}| : 
+
+    Crear esquemas con llaves 
+    \vspace{0.5cm}\\
+    \verb|\usepackage{smartdiagram}| : 
+
+    Crear diagramas de todo tipo 
+    \vspace{0.5cm}\\
+    Tamaños de letra: 
+
+    \verb|\tiny| (pequeña)
+
+    \verb|large| (grande)
+
+    \verb|LARGE|
+    \vspace{0.5cm}\\
+    Tipo de letra:
+    \verb|\usepackage[T1]{fontenc}| :
+
+    De aquí se pueden usar otros paquetes: \verb|\usepackage{arev}|, 
+    
+
+
+\end{center}
+    \item Definir título, autor y fecha (en caso de escojer article como documento).
+    \item Crear el cuerpo del documento.
+\end{enumerate}
+\noindent La estructura básica para compilar es el siguiente:
+\begin{center}
+    \verb|\documentclass[a4paper,12pt]{article}|
+    \vspace{0.5cm}\\
+    \textit{(paquetes:)}
+    
+    \verb|\usepackage[utf8]{inputenc}|
+
+    \verb|\usepackage[spanish]{babel}|
+
+    \verb|\usepackage{geometry}|
+    \vspace{0.5cm}\\
+    \textit{(definir título,autor y fecha:)}
+
+    \verb|\title{Título}|
+
+    \verb|\author{Autor}|
+
+    \verb|\date{fecha}|
+    \vspace{0.5cm}\\
+    \textit{Crear el cuerpo del documento:}
+    \vspace{0.5cm}\\
+    \verb|\begin{document}| 
+    \vspace{0.5cm}\\
+    \verb|\maketitle| 
+    \vspace{0.6cm}\\
+    \noindent \textit{(contenido del documento)}
+    \vspace{0.6cm}\\
+    \verb|\end{document}| 
+
+\end{center}
+\subsection{Sintaxis de elementos básicos}
+\begin{itemize}
+    \item Comandos: empiezan por la backslash \verb|\|, ocasionalmente van acompañados de argumentos que se escriben entre llaves \verb|{...}| y opcionales que se escriben entre corchetes [...]
+    \item Ambiente/Entorno : bloques de código sobre lo que se aplica alguna acción y están delimitados por un comando de apertura \verb|\begin{entorno}| y cierre \verb|\end{entorno}|
+    \item Comentarios: usando el símbolo de \%
+    \item Símbolos reservados: para funciones especiales 
+    \begin{itemize}
+        \item \verb|\|: inicio de un comando
+        \item \verb|$|: entorno matemático 
+        \item \verb|&|: separa elementos en una tabla o fórmula 
+    \end{itemize}
+\end{itemize}
+
+ahora bien cuando blabla
+
+
+
+
+   
+
+
+\end{document}
