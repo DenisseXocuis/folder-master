@@ -16,9 +16,9 @@ int main(){
     }
 
     if(sum2 == a && sum2 == b)
-        printf("Los numeros son amigos");
+        printf("Los numeros son amigos\n");
     else 
-        printf("NO son numeros amigos");
+        printf("NO son numeros amigos\n");
 
     return 0;
 }
