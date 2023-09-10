@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694305516 "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Circuitos Lógicos.tex" "build/Circuitos Lógicos.pdf" "Circuitos Lógicos" 1694305517 0
-  "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Circuitos Lógicos.tex" 1694305516 1371 767919e9658e18035173f211872a87b1 ""
+["pdflatex"] 1694305698 "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Circuitos Lógicos.tex" "build/Circuitos Lógicos.pdf" "Circuitos Lógicos" 1694305699 0
+  "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Circuitos Lógicos.tex" 1694305698 1372 17a52a611c90ca3de63bc951f55d0586 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -82,8 +82,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1684972800 40326 aba987258e6d6b6da5dec3a727ea174b ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694299986 4548386 095bdf62675e309b2cc0e41f950c32d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694299702 7871860 d483dda66a529ea7c088ab5955e05c90 ""
-  "Circuitos Lógicos.tex" 1694305516 1371 767919e9658e18035173f211872a87b1 ""
-  "build/Circuitos Lógicos.aux" 1694305517 176 57f58aaa50e7ffaf99a667c3dbdc2493 "pdflatex"
+  "Circuitos Lógicos.tex" 1694305698 1372 17a52a611c90ca3de63bc951f55d0586 ""
+  "build/Circuitos Lógicos.aux" 1694305699 176 57f58aaa50e7ffaf99a667c3dbdc2493 "pdflatex"
   (generated)
   "build/Circuitos Lógicos.aux"
   "build/Circuitos Lógicos.log"
