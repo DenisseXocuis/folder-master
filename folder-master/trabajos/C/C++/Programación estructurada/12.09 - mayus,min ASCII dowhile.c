@@ -3,7 +3,7 @@
 
 
 int main(){
-    int i, op;
+    int i = 0, op;
     char palabra[T];
 
     do{ /*va a esperar que le de la opción*/
@@ -21,7 +21,7 @@ int main(){
         {
             case 1: printf("Ingresa una palabra en minuscula\n");
             scanf("%s", &palabra);
-            while(palabra[i] != '\0'){
+            while(palabra[i]){
                 printf("%c", palabra[i] - 32);
                 i++;
             }
@@ -30,7 +30,7 @@ int main(){
 
             case 2: printf("Ingresa una palabra en mayuscula\n");
             scanf("%s", &palabra);
-            while(palabra[i] != '\0'){
+            while(palabra[i]){
                 printf("%c", palabra[i] + 32);
                 i++;
             }
