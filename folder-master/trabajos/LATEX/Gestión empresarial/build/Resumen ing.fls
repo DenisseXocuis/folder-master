@@ -2,8 +2,8 @@ PWD /home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Ge
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial/tarea 2.tex
-OUTPUT build/tarea 2.log
+INPUT /home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial/Resumen ing.tex
+OUTPUT build/Resumen ing.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -99,27 +99,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
-INPUT /usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-es.ini
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
@@ -493,10 +472,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT build/tarea 2.aux
-INPUT build/tarea 2.aux
-INPUT build/tarea 2.aux
-OUTPUT build/tarea 2.aux
+INPUT build/Resumen ing.aux
+INPUT build/Resumen ing.aux
+INPUT build/Resumen ing.aux
+OUTPUT build/Resumen ing.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -538,30 +517,22 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+OUTPUT build/Resumen ing.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT ./images/sis.png
+INPUT ./images/sis.png
+INPUT images/sis.png
+INPUT ./images/sis.png
+INPUT ./images/sis.png
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+INPUT /usr/share/texlive/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ts1-qtmr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmb.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmri.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmri.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/tex-gyre/ec-qtmb.tfm
-OUTPUT build/tarea 2.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT ./images/organigrama.png
-INPUT ./images/organigrama.png
-INPUT images/organigrama.png
-INPUT ./images/organigrama.png
-INPUT ./images/organigrama.png
-INPUT ./images/admin.png
-INPUT ./images/admin.png
-INPUT images/admin.png
-INPUT ./images/admin.png
-INPUT ./images/admin.png
-INPUT ./images/admin2.png
-INPUT ./images/admin2.png
-INPUT images/admin2.png
-INPUT ./images/admin2.png
-INPUT ./images/admin2.png
-INPUT build/tarea 2.aux
+INPUT build/Resumen ing.aux
+INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb
