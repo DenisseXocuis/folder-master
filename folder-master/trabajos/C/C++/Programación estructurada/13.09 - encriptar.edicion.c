@@ -16,6 +16,7 @@ int main(){
     puts("[1] Encriptar");
     puts("[2] Desencriptar");
     puts("[3] About");
+    puts("[4] Desencriptar manualmente");
     puts("[0] Salir");
 
     printf("Opcion: >");
@@ -24,24 +25,25 @@ int main(){
     switch(op)
         {
             case 1: 
+                    fflush(stdin);
                     printf("Ingresar una palabra\n>");
-                    scanf("%[^\n]", &pa);
+                    scanf("%s", &pa);
                     printf("Ingresa una palabra clave\n>");
                     scanf("%s", &pclave);
 
 
                     /*calculando el factor*/
-                    while(pa[i] != '\0'){
-                        F += pa[i];
+                    while(pclave[i]){
+                        F += pclave[i];
                         i++;
                     }
     
-                        F /= 10;
+                    F /= 10;
 
                     i = 0;
-                    printf("Factor = %d \n", F); /*universidad fiee 118*/
+                    printf("Factor = %d \n", F);
 
-                    while(pa[i] != '\0'){
+                    while(pa[i]){
                         pa[i] += F;
                         i++;
                     }
@@ -49,30 +51,28 @@ int main(){
                     printf("La palabra encriptada es %s \n", pa);
             break; 
                     
-            case 2: /*universidad, bebé*/
-                    printf("Ingresar una palabra\n>");
-                    scanf("%s", &pa);
-                    printf("Ingresa una palabra clave\n>");
-                    scanf("%s", &pclave);
-
-                    /*calculando el factor*/
+            case 2:
                     while(pclave[i]){
                         F += pclave[i];
                         i++;
                     }
-                    i = 0;
-                    printf("Factor = %d \n", F);
+    
+                    F /= 10;
 
+                    i = 0;
+
+                    printf("Factor = %d \n", F);
+                    /**/
                     while(pa[i]){
                         pa[i] -= F;
                         i++;
                     }
-
                     printf("La palabra desencriptada es %s \n", pa);
+
             break;
 
-            case 3: puts("Lara Xocuis Martha Denisse");
-                    puts("Ingenieria Informatica :) ");
+            case 3: puts("deniso");
+                    puts(":) :) ");
 
 
             break; 
@@ -86,15 +86,6 @@ int main(){
             default: puts("ERROR: opcion no valida");
         }
     
-
-   
-
-    while(pa[i] != '0'){
-        printf("%c ", pa[i] - F);
-        i++;
-    }
-
-
     }while(op);
 
 
