@@ -1,64 +1,66 @@
-/*Funciones por parámetro por valor y retorno de valor.CÁLCULO DE ÁREAS*/
 #include<stdio.h>
 #include<stdlib.h>
 #define pi 3.1416
-float cir(float r); //1
-float tri(float b, float h); //2
-float cua(float l); //3
-float rec(float b, float h); //4
-float pen(float l, float ap); //5
-float trap(float B, float b, float h); //6
-float rombo(float B, float b); //7
-float romboide(float B, float h); //8
+float cir(float r);
+float tri(float b, float h);
+float cua(float l);
+float rec(float b, float h);
+float pen(float l, float ap);
+float trap(float B, float b, float h);
+float rombo(float B, float b);
+float romboide(float B, float h);
 void menu();
 void menuerror();
 int main(){
     int op,e;
     float r,b,h,l,ap,B;
     do{
-        system("clear||cls"); //depende del sistema operativo
+        system("clear||cls");
         fflush(stdin);
         menu();
         scanf("%d", &op);
-        if(op<=8 && op>0)
+        if(op<=9 && op>0)
             e=1;
         else if(op==0)
             e=0;
         switch(op){
-            case 1: puts("Ingrese el radio: "); //circulo
+            case 1: puts("Ingrese el radio: ");
                     scanf("%f", &r);
                     printf("El area del circulo es de: %g cm²", cir(r)); 
             break;
-            case 2: puts("Ingrese la base y la altura: "); //triangulo
+            case 2: puts("Ingrese la base y la altura: ");
                     scanf("%f %f",&b,&h);
                     printf("El area del triangulo es de: %g cm²", tri(b,h));
             break;
-            case 3: puts("Ingrese el lado: "); //cuadrado
+            case 3: puts("Ingrese el lado: ");
                     scanf("%f", &l);
                     printf("El area del cuadrado es de %g cm²", cua(l));
             break;
-            case 4: puts("Ingrese la base y la altura: "); //rectangulo
+            case 4: puts("Ingrese la base y la altura: ");
                     scanf("%f %f", &b,&h);
                     printf("El area del rectangulo es de %g cm²", rec(b,h));
             break;
-            case 5: puts("Ingrese el lado y el apotema: "); //pentagono
+            case 5: puts("Ingrese el lado y el apotema: ");
                     scanf("%f %f", &l, &ap);
                     printf("El area del pentagono es de %g cm²", pen(l,ap));
             break;
-            case 6: puts("Ingrese la base mayor, base menor y la altura: "); //trapecio
+            case 6: puts("Ingrese la base mayor, base menor y la altura: ");
                     scanf("%f %f %f", &B, &b,&h);
                     printf("El area del trapecio es de %g cm²", trap(B,b,h));
             break;
-            case 7: puts("Ingrese la diagonal mayor y la diagonal menor: "); //rombo
+            case 7: puts("Ingrese la diagonal mayor y la diagonal menor: ");
                     scanf("%f %f", &B, &b);
                     printf("El area del rombo es de %g cm²", rombo(B, b));
             break;
-            case 8: puts("Ingrese la base y la altura: "); //rombo
+            case 8: puts("Ingrese la base y la altura: ");
                     scanf("%f %f", &B, &h);
                     printf("El area del romboide es de %g cm²", romboide(B,h));
             break;
-            case 0: system("clear");
-                    puts("Saliendo.....");
+            case 9: system("clear");
+                    putchar('\n');
+                    puts("Programa para calcular areas by Lara Xocuis Martha Denisse©\nProgramacion estructurada");
+            break;
+            case 0: puts("Saliendo.....");
             break;
             default:system("clear");
                     menuerror();
@@ -74,9 +76,6 @@ int main(){
         getchar();
         getchar();
         }
-    //espera que de cualquier caracter para que refresque, es igual que system pause 
-        //putchar('\n');
-        //system("pause");
     }while(op);
     return 0;
 }
