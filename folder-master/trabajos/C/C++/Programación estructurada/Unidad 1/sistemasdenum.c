@@ -1,11 +1,12 @@
 #include<stdio.h>
-#include<string.h>
+#include<math.h>
 #define R 60
 void debi(int n);
+void bide(int n);
 void menu();
 
 int main(){
-    int op,n,bi[R],res;
+    int op,n,bi[R],res, de[n];
     do{
         menu();
         scanf("%d", &op);
@@ -17,9 +18,11 @@ int main(){
                     debi(n);
                     //printf("%d es %d en binario", n, debi(n,n2));
             break;
-            case 2:
+            case 2: puts("Ingrese el numero binario a convertir");
+                    scanf("%d", &n);
+                    bide(n);
             break;
-            case 3:  
+            case 0: puts("Saliendo....");
             break;
             default:
                 printf("ERROR: Opcion no valida\n");
@@ -35,9 +38,7 @@ void menu(){
     puts("--Programa que hace conversiones de los sistemas de numeracion--");
     puts("----------------------------------------------------------------");
     puts("[1] Decimal a Binario"); //yo
-    puts("[2] Decimal a Octal"); //karina
-    puts("[3] Decimal a Hexadecimal"); //memo
-    puts("[4] About");
+    puts("[2] Binario a Decimal"); 
     puts("[0] Salir");
     printf("Opcion: \n >");
 }
@@ -50,4 +51,13 @@ int bi[R], i;
     for(i=i-1; i>=0; i--){
         printf("%d", bi[i]);
     }
+}
+
+void bide(int n){
+int n1,i;
+for(int i=1;n != '\0'; i*=2){
+    n1 += (n%10) * i;
+    n /= 10;
+}
+    printf("%d", n1);
 }
