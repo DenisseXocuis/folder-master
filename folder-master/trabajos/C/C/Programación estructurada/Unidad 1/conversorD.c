@@ -12,7 +12,12 @@ void info();
 void pausa();
 
 //Funciones prototipo para calculo
-
+void dec_bin(int n);
+void dec_oct(int n);
+void dec_hex(int n);
+void bin_dec(int n);
+void oct_dec(int n);
+void hex_dec(char hex_n[T]);
 
 int main(){
     int opc, n;
@@ -121,8 +126,9 @@ void pausa(){
     printf("Presione cualquier tecla para continuar . . . ");
     fflush(stdin);
     getchar();
+    getchar();
 }
-//Decimal a binario
+
 void dec_bin(int n){
 int R[T], i;
     for(i=0; n > 0; i++){
@@ -136,7 +142,7 @@ int R[T], i;
         printf("%d", R[i]);
     putchar('\n');
 }
-//Decimal a octal
+
 void dec_oct(int n){ 
 int R[T], i;
 	//Se ejectua la función siempre y cuando decimal sea mayor o igual que 8
@@ -151,7 +157,7 @@ int R[T], i;
 	    printf("%d", R[i]);
     putchar('\n');
 }
-//Decimal a hexadecimal
+
 void dec_hex(int n){
     //Definición de i, temporal y Resultado
     int i=0, t;
@@ -179,4 +185,59 @@ void dec_hex(int n){
     for (i-=1; i>=0; i--)
     printf("%c", R[i]);
     putchar('\n');
+}
+
+void bin_dec(int n){
+int R,R1,err;
+for(int i = 1;n != '\0' ; i*=2){
+    R1 = n%10;
+    if(R1 < 0)
+        R1 *= -1;
+
+    if(R1 != 1 && R1 != 0){ 
+        putchar('\n');
+        puts("ERROR: El numero no es binario");
+        err = 1;
+        break;
+        }
+    else
+        R += (R1 * i);
+        n /= 10;
+}
+    if(err != 1)
+        printf("El valor decimal es: %d \n", R);
+}
+
+void oct_dec(int n){
+int R;
+for(int i=1;n !='\0'; i*=8){
+    R += (n%10)* i;
+    n /= 10;
+}
+    printf("El valor decimal es: %d \n", R);
+}
+
+void hex_dec(char hex_n[T]){
+    //Se crean las variables, Resultado, i, temporal y largo
+    int R=0, i = 0, t, l;
+  
+    //Largo del numero hexadecimal
+    l = strlen(hex_n)-1;
+    //Se ejecuta siempre y cuando hex_n tenga un caracter
+    while (hex_n[i]) {
+  
+        //Convieritendo codigo ASCII a valores decimales
+        if (hex_n[i] >= '0' && hex_n[i] <= '9') 
+            t = hex_n[i] - 48;
+        else if (hex_n[i] >= 'A' && hex_n[i] <= 'F')
+            t = hex_n[i] - 65 + 10;
+        //Calculo del numero decimal
+        //Se multiplica el valor decimal * 16 ^ a la posición del numero
+        R += t * pow(16, l);
+        l--;
+        i++;
+    }
+    //Imprime del resultado
+    printf("El valor decimal es: %d \n", R);
+
 }

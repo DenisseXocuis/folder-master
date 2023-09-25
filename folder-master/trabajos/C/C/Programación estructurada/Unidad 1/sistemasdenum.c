@@ -6,7 +6,7 @@ void bide(int n);
 void menu();
 
 int main(){
-    int op,n,bi[R],res, de[n];
+    int op,n,bi[R];
     do{
         menu();
         scanf("%d", &op);
@@ -54,10 +54,22 @@ int bi[R], i;
 }
 
 void bide(int n){
-int n1,i;
-for(int i=1;n != '\0'; i*=2){
-    n1 += (n%10) * i;
-    n /= 10;
+int res,err = 0,dec = 0;
+for(int i = 1;n != '\0' ; i*=2){
+    res = n%10;
+    if(res < 0)
+        res *= -1;
+
+    if(res != 1 && res != 0){ 
+        putchar('\n');
+        puts("ERROR: El numero no es binario");
+        err = 1;
+        break;
+        }
+    else
+        dec += (res * i);
+        n /= 10;
 }
-    printf("%d", n1);
+    if(err != 1)
+        printf("Decimal : %d", dec);
 }
