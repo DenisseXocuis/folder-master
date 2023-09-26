@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.7.1)  7 SEP 2023 14:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/CVE-2023-32700 patched) (preloaded format=pdflatex 2023.9.9)  25 SEP 2023 11:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/denis/Downloads/folder-master/trabajos/LATEX/Gesti贸n empresarial/PROYECTO GESTION.tex"
-(c:/Users/denis/Downloads/folder-master/trabajos/LATEX/Gesti贸n empresarial/PROYECTO GESTION.tex
-LaTeX2e <2022-11-01> patch level 1
-L3 programming layer <2023-03-30> (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
-File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+**"/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gesti贸n empresarial/PROYECTO GESTION.tex"
+(/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gesti贸n empresarial/PROYECTO GESTION.tex
+LaTeX2e <2022-06-01> patch level 5
+L3 programming layer <2022-12-17> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -19,32 +19,26 @@ File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \c@subparagraph=\count190
 \c@figure=\count191
 \c@table=\count192
-\abovecaptionskip=\skip48
-\belowcaptionskip=\skip49
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
 \bibindent=\dimen140
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\charter.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/charter.sty
 Package: charter 2020/03/25 PSNFSS-v9.3 (P.Dyballa) 
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2023/03/28 3.87 The Babel package
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/12/26 3.84 The Babel package
 \babel@savecnt=\count193
 \U@D=\dimen141
-\l@unhyphenated=\language79
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\l@unhyphenated=\language86
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
 \bbl@dirlevel=\count194
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+ (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
 \es@quottoks=\toks18
 \es@quotdepth=\count195
@@ -52,41 +46,41 @@ Package babel Info: Making " an active character on input line 570.
 Package babel Info: Making . an active character on input line 675.
 Package babel Info: Making < an active character on input line 722.
 Package babel Info: Making > an active character on input line 722.
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+)) (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count196
 \calc@Bcount=\count197
 \calc@Adimen=\dimen142
 \calc@Bdimen=\dimen143
-\calc@Askip=\skip50
-\calc@Bskip=\skip51
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count198
-\calc@Cskip=\skip52
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\calc@Cskip=\skip51
+) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen144
 \ESO@tempdimb=\dimen145
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
 Package xcolor Info: Model `RGB' extended on input line 1369.
@@ -96,13 +90,13 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
@@ -113,7 +107,7 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \AM@pagewidth=\dimen148
 \AM@pageheight=\dimen149
 \AM@fboxrule=\dimen150
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count199
@@ -124,11 +118,11 @@ File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks22
 \c@AM@survey=\count267
 \AM@templatesizebox=\box52
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
 \Gm@cnth=\count268
@@ -143,21 +137,21 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen157
 \Gm@layoutvoffset=\dimen158
 \Gm@dimlist=\toks23
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
-\@mathmargin=\skip53
+\@mathmargin=\skip52
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks24
 \ex@=\dimen159
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen160
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count271
@@ -202,24 +196,24 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \totwidth@=\dimen166
 \lineht@=\dimen167
 \@envbody=\toks27
-\multlinegap=\skip54
-\multlinetaggap=\skip55
+\multlinegap=\skip53
+\multlinetaggap=\skip54
 \mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count283
 \float@exts=\toks29
 \float@box=\box55
 \@float@everytoks=\toks30
 \@floatcapt=\box56
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
-Package: subcaption 2023/02/19 v1.6 Sub-captions (AR)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2023/03/12 v3.6j Customizing captions (AR)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2023/03/12 v2.4 caption3 kernel (AR)
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen168
 \captionmargin=\dimen169
 \caption@leftmargin=\dimen170
@@ -234,34 +228,32 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count285
 Package caption Info: float package is loaded.
 )
-Package caption Info: New subtype `subfigure' on input line 239.
 \c@subfigure=\count286
-Package caption Info: New subtype `subtable' on input line 239.
 \c@subtable=\count287
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks31
 \XKV@tempa@toks=\toks32
 )
 \XKV@depth=\count288
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
 Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box57
 )
@@ -270,7 +262,7 @@ Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \tc@urx=\dimen178
 \tc@ury=\dimen179
 Package trimclip Info: Using driver 'tc-pdftex.def'.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
 \adjbox@Width=\dimen180
@@ -281,43 +273,43 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@pheight=\dimen185
 \adjbox@pdepth=\dimen186
 \adjbox@ptotalheight=\dimen187
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count289
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box58
 \sift@deathcycles=\count290
 \@vwid@loff=\dimen188
 \@vwid@roff=\dimen189
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen190
 \WF@size=\dimen191
 \c@WF@wrappedlines=\count291
 \WF@box=\box59
 \WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
-\f@nch@headwidth=\skip56
-\f@nch@O@elh=\skip57
-\f@nch@O@erh=\skip58
-\f@nch@O@olh=\skip59
-\f@nch@O@orh=\skip60
-\f@nch@O@elf=\skip61
-\f@nch@O@erf=\skip62
-\f@nch@O@olf=\skip63
-\f@nch@O@orf=\skip64
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+\f@nch@headwidth=\skip55
+\f@nch@O@elh=\skip56
+\f@nch@O@erh=\skip57
+\f@nch@O@olh=\skip58
+\f@nch@O@orh=\skip59
+\f@nch@O@elf=\skip60
+\f@nch@O@erf=\skip61
+\f@nch@O@olf=\skip62
+\f@nch@O@orf=\skip63
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \col@sep=\dimen192
 \ar@mcellbox=\box60
 \extrarowheight=\dimen193
 \NC@list=\toks34
-\extratabsurround=\skip65
-\backup@length=\skip66
+\extratabsurround=\skip64
+\backup@length=\skip65
 \ar@cellbox=\box61
 )
 \TX@col@width=\dimen194
@@ -329,13 +321,13 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@ftn=\toks35
 )
 LaTeX Font Info:    Trying to load font information for T1+bch on input line 32.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1bch.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2023-03-30 L3 backend support: PDF output (pdfTeX)
+) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box62
-) (c:\Users\denis\Downloads\folder-master\trabajos\LATEX\Gesti贸n empresarial\build\PROYECTO GESTION.aux
+) (build/PROYECTO GESTION.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 )
@@ -357,7 +349,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
 LaTeX Info: Redefining \. on input line 32.
 LaTeX Info: Redefining \% on input line 32.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
 \scratchdimen=\dimen199
@@ -370,16 +362,16 @@ LaTeX Info: Redefining \% on input line 32.
 \MPnumerator=\count298
 \makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks37
-) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+)) (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nometadata.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
 Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -422,22 +414,22 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
-(C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/denis/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}] (c:\Users\denis\Downloads\folder-master\trabajos\LATEX\Gesti贸n empresarial\build\PROYECTO GESTION.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (build/PROYECTO GESTION.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write3
 \openout3 = `"PROYECTO GESTION.toc"'.
 
- [2] (c:\Users\denis\Downloads\folder-master\trabajos\LATEX\Gesti贸n empresarial\build\PROYECTO GESTION.lof
+ [2] (build/PROYECTO GESTION.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -454,7 +446,7 @@ LaTeX Info: Redefining \% on input line 99.
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
  [4]
-<images/lineapdf.pdf, id=31, 602.25pt x 1505.62488pt>
+<images/lineapdf.pdf, id=32, 602.25pt x 1505.62488pt>
 File: images/lineapdf.pdf Graphic file (type pdf)
 <use images/lineapdf.pdf>
 Package pdftex.def Info: images/lineapdf.pdf  used on input line 110.
@@ -463,7 +455,7 @@ File: images/lineapdf.pdf Graphic file (type pdf)
 <use images/lineapdf.pdf>
 Package pdftex.def Info: images/lineapdf.pdf  used on input line 110.
 (pdftex.def)             Requested size: 602.24852pt x 1505.62122pt.
-<images/lineapdf.pdf, id=34, page=1, 602.25pt x 1505.62488pt>
+<images/lineapdf.pdf, id=35, page=1, 602.25pt x 1505.62488pt>
 File: images/lineapdf.pdf Graphic file (type pdf)
 <use images/lineapdf.pdf, page 1>
 Package pdftex.def Info: images/lineapdf.pdf , page1 used on input line 110.
@@ -494,7 +486,7 @@ LaTeX Info: Redefining \% on input line 149.
 LaTeX Info: Redefining \. on input line 173.
 LaTeX Info: Redefining \% on input line 173.
  [8]
-<images/organigramaaaa2.png, id=64, 770.88pt x 578.16pt>
+<images/organigramaaaa2.png, id=65, 770.88pt x 578.16pt>
 File: images/organigramaaaa2.png Graphic file (type png)
 <use images/organigramaaaa2.png>
 Package pdftex.def Info: images/organigramaaaa2.png  used on input line 186.
@@ -506,13 +498,13 @@ LaTeX Info: Redefining \. on input line 210.
 LaTeX Info: Redefining \% on input line 210.
  [10]
 LaTeX Font Info:    Trying to load font information for TS1+bch on input line 226.
- (C:\Users\denis\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1bch.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
 LaTeX Info: Redefining \. on input line 237.
 LaTeX Info: Redefining \% on input line 237.
  [11]
-<images/formato_de_empleo (1).pdf, id=77, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo (1).pdf, id=78, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo (1).pdf Graphic file (type pdf)
 <use images/formato_de_empleo (1).pdf>
 Package pdftex.def Info: images/formato_de_empleo (1).pdf  used on input line 249.
@@ -521,7 +513,7 @@ File: images/formato_de_empleo (1).pdf Graphic file (type pdf)
 <use images/formato_de_empleo (1).pdf>
 Package pdftex.def Info: images/formato_de_empleo (1).pdf  used on input line 249.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<images/formato_de_empleo (1).pdf, id=80, page=1, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo (1).pdf, id=81, page=1, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo (1).pdf Graphic file (type pdf)
 <use images/formato_de_empleo (1).pdf, page 1>
 Package pdftex.def Info: images/formato_de_empleo (1).pdf , page1 used on input line 249.
@@ -546,7 +538,7 @@ File: images/formato_de_empleo (1).pdf Graphic file (type pdf)
 Package pdftex.def Info: images/formato_de_empleo (1).pdf , page1 used on input line 249.
 (pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
  [13 <./images/formato_de_empleo (1).pdf>]
-<images/formato_de_empleo-002.pdf, id=122, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo-002.pdf, id=123, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo-002.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-002.pdf>
 Package pdftex.def Info: images/formato_de_empleo-002.pdf  used on input line 253.
@@ -555,7 +547,7 @@ File: images/formato_de_empleo-002.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-002.pdf>
 Package pdftex.def Info: images/formato_de_empleo-002.pdf  used on input line 253.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<images/formato_de_empleo-002.pdf, id=125, page=1, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo-002.pdf, id=126, page=1, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo-002.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-002.pdf, page 1>
 Package pdftex.def Info: images/formato_de_empleo-002.pdf , page1 used on input line 253.
@@ -577,7 +569,7 @@ File: images/formato_de_empleo-002.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/formato_de_empleo-002.pdf , page1 used on input line 253.
 (pdftex.def)             Requested size: 562.12665pt x 795.00201pt.
  [14 <./images/formato_de_empleo-002.pdf>]
-<images/formato_de_empleo-003.pdf, id=158, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo-003.pdf, id=159, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo-003.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-003.pdf>
 Package pdftex.def Info: images/formato_de_empleo-003.pdf  used on input line 257.
@@ -586,7 +578,7 @@ File: images/formato_de_empleo-003.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-003.pdf>
 Package pdftex.def Info: images/formato_de_empleo-003.pdf  used on input line 257.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<images/formato_de_empleo-003.pdf, id=161, page=1, 597.51233pt x 845.0471pt>
+<images/formato_de_empleo-003.pdf, id=162, page=1, 597.51233pt x 845.0471pt>
 File: images/formato_de_empleo-003.pdf Graphic file (type pdf)
 <use images/formato_de_empleo-003.pdf, page 1>
 Package pdftex.def Info: images/formato_de_empleo-003.pdf , page1 used on input line 257.
@@ -639,7 +631,7 @@ Overfull \hbox (28.45644pt too wide) has occurred while \output is active
 LaTeX Info: Redefining \. on input line 430.
 LaTeX Info: Redefining \% on input line 430.
  [22]
-<images/test.pdf, id=219, 597.73312pt x 845.40843pt>
+<images/test.pdf, id=221, 597.73312pt x 845.40843pt>
 File: images/test.pdf Graphic file (type pdf)
 <use images/test.pdf>
 Package pdftex.def Info: images/test.pdf  used on input line 431.
@@ -648,7 +640,7 @@ File: images/test.pdf Graphic file (type pdf)
 <use images/test.pdf>
 Package pdftex.def Info: images/test.pdf  used on input line 431.
 (pdftex.def)             Requested size: 597.73166pt x 845.40636pt.
-<images/test.pdf, id=222, page=1, 597.73312pt x 845.40843pt>
+<images/test.pdf, id=224, page=1, 597.73312pt x 845.40843pt>
 File: images/test.pdf Graphic file (type pdf)
 <use images/test.pdf, page 1>
 Package pdftex.def Info: images/test.pdf , page1 used on input line 431.
@@ -713,22 +705,22 @@ Underfull \hbox (badness 1092) in paragraph at lines 498--532
 \T1/bch/m/it/12 Hu-ma-nos De Biz-neo HR: Pr醕-ti-co Y Ac-tual. https://www.bizneo.com/blog/ejemplos-pruebas-
  []
 
-<images/faurecia.jpg, id=258, 1284.8pt x 722.7pt>
+<images/faurecia.jpg, id=260, 1284.8pt x 722.7pt>
 File: images/faurecia.jpg Graphic file (type jpg)
 <use images/faurecia.jpg>
 Package pdftex.def Info: images/faurecia.jpg  used on input line 537.
 (pdftex.def)             Requested size: 200.19054pt x 112.60179pt.
-<images/faureciamexico.jpg, id=259, 451.6875pt x 301.125pt>
+<images/faureciamexico.jpg, id=261, 451.6875pt x 301.125pt>
 File: images/faureciamexico.jpg Graphic file (type jpg)
 <use images/faureciamexico.jpg>
 Package pdftex.def Info: images/faureciamexico.jpg  used on input line 540.
 (pdftex.def)             Requested size: 200.19054pt x 133.46031pt.
-<images/elfaure.jpg, id=260, 370.0224pt x 512.21362pt>
+<images/elfaure.jpg, id=262, 370.0224pt x 512.21362pt>
 File: images/elfaure.jpg Graphic file (type jpg)
 <use images/elfaure.jpg>
 Package pdftex.def Info: images/elfaure.jpg  used on input line 545.
 (pdftex.def)             Requested size: 135.13112pt x 187.05411pt.
-<images/ffffa.jpg, id=261, 1204.5pt x 1222.5675pt>
+<images/ffffa.jpg, id=263, 1204.5pt x 1222.5675pt>
 File: images/ffffa.jpg Graphic file (type jpg)
 <use images/ffffa.jpg>
 Package pdftex.def Info: images/ffffa.jpg  used on input line 550.
@@ -739,17 +731,17 @@ LaTeX Info: Redefining \% on input line 555.
 LaTeX Info: Redefining \. on input line 555.
 LaTeX Info: Redefining \% on input line 555.
  [28 <./images/faurecia.jpg> <./images/faureciamexico.jpg> <./images/elfaure.jpg> <./images/ffffa.jpg>]
-<images/niveles administrativos.jpg, id=269, 420.57124pt x 446.66875pt>
+<images/niveles administrativos.jpg, id=271, 420.57124pt x 446.66875pt>
 File: images/niveles administrativos.jpg Graphic file (type jpg)
 <use images/niveles administrativos.jpg>
 Package pdftex.def Info: images/niveles administrativos.jpg  used on input line 558.
 (pdftex.def)             Requested size: 300.29344pt x 318.92952pt.
-<images/entrevista.png, id=270, 813.0375pt x 500.87125pt>
+<images/entrevista.png, id=272, 813.0375pt x 500.87125pt>
 File: images/entrevista.png Graphic file (type png)
 <use images/entrevista.png>
 Package pdftex.def Info: images/entrevista.png  used on input line 561.
 (pdftex.def)             Requested size: 200.19054pt x 123.32211pt.
-<images/entrevis2.png, id=271, 623.32875pt x 402.50375pt>
+<images/entrevis2.png, id=273, 623.32875pt x 402.50375pt>
 File: images/entrevis2.png Graphic file (type png)
 <use images/entrevis2.png>
 Package pdftex.def Info: images/entrevis2.png  used on input line 564.
@@ -757,29 +749,30 @@ Package pdftex.def Info: images/entrevis2.png  used on input line 564.
 LaTeX Info: Redefining \. on input line 568.
 LaTeX Info: Redefining \% on input line 568.
  [29 <./images/niveles administrativos.jpg> <./images/entrevista.png> <./images/entrevis2.png>]
-<images/ADECUACIONPER.png, id=277, 973.6375pt x 579.16376pt>
+<images/ADECUACIONPER.png, id=279, 973.6375pt x 579.16376pt>
 File: images/ADECUACIONPER.png Graphic file (type png)
 <use images/ADECUACIONPER.png>
 Package pdftex.def Info: images/ADECUACIONPER.png  used on input line 571.
 (pdftex.def)             Requested size: 400.38872pt x 238.16566pt.
 LaTeX Info: Redefining \. on input line 577.
 LaTeX Info: Redefining \% on input line 577.
- [30 <./images/ADECUACIONPER.png>] (c:\Users\denis\Downloads\folder-master\trabajos\LATEX\Gesti贸n empresarial\build\PROYECTO GESTION.aux
+ [30 <./images/ADECUACIONPER.png>] (build/PROYECTO GESTION.aux
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
 ) ) 
 Here is how much of TeX's memory you used:
- 9500 strings out of 476331
- 160810 string characters out of 5787766
- 1862660 words of memory out of 5000000
- 29742 multiletter control sequences out of 15000+600000
+ 9448 strings out of 476175
+ 156551 string characters out of 5796272
+ 1861793 words of memory out of 6000000
+ 29568 multiletter control sequences out of 15000+600000
  563479 words of font info for 91 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 72i,17n,77p,2053b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchb8a.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchbi8a.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchr8a.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/bitstrea/charter/bchri8a.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/denis/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "c:\Users\denis\Downloads\folder-master\trabajos\LATEX\Gesti贸n empresarial\build\PROYECTO GESTION.pdf" (33 pages, 4912486 bytes).
+ 1137 hyphenation exceptions out of 8191
+ 70i,17n,77p,2073b,682s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "build/PROYECTO GESTION.pdf" (33 pages, 4880756 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
+ 328 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

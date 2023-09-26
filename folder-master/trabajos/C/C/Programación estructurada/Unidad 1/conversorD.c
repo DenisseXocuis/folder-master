@@ -188,7 +188,7 @@ void dec_hex(int n){
 }
 
 void bin_dec(int n){
-int R,R1,err;
+int R = 0,R1,err;
 for(int i = 1;n != '\0' ; i*=2){
     R1 = n%10;
     if(R1 < 0)
@@ -230,7 +230,7 @@ void hex_dec(char hex_n[T]){
         if (hex_n[i] >= '0' && hex_n[i] <= '9') 
             t = hex_n[i] - 48;
         else if (hex_n[i] >= 'A' && hex_n[i] <= 'F')
-            t = hex_n[i] - 65 + 10;
+            t = hex_n[i] - 55;
         //Calculo del numero decimal
         //Se multiplica el valor decimal * 16 ^ a la posición del numero
         R += t * pow(16, l);

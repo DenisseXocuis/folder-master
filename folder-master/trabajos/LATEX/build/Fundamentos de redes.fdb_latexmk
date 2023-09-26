@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1694380636 "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Fundamentos de redes.tex" "build/Fundamentos de redes.pdf" "Fundamentos de redes" 1694380638 0
-  "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Fundamentos de redes.tex" 1694305455 6018 74dfc3795029025a627a08a4d975ddd1 ""
+["pdflatex"] 1695763402 "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Fundamentos de redes.tex" "build/Fundamentos de redes.pdf" "Fundamentos de redes" 1695763403 0
+  "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Fundamentos de redes.tex" 1695763402 8428 6da1843f6ad89fb3078986ae84e4d75a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -75,8 +75,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1684972800 40326 aba987258e6d6b6da5dec3a727ea174b ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694299986 4548386 095bdf62675e309b2cc0e41f950c32d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694299702 7871860 d483dda66a529ea7c088ab5955e05c90 ""
-  "Fundamentos de redes.tex" 1694305455 6018 74dfc3795029025a627a08a4d975ddd1 ""
-  "build/Fundamentos de redes.aux" 1694380637 2543 79a59f2bb3423b7cc2a779c885c989c0 "pdflatex"
+  "Fundamentos de redes.tex" 1695763402 8428 6da1843f6ad89fb3078986ae84e4d75a ""
+  "build/Fundamentos de redes.aux" 1695763403 3806 fb5ac20c8679f9d0aef4193f9cf76430 "pdflatex"
   (generated)
   "build/Fundamentos de redes.aux"
   "build/Fundamentos de redes.log"
