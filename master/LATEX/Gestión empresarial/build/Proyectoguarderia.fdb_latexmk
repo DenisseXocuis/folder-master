@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1695824024 "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial/Proyectoguarderia.tex" "build/Proyectoguarderia.pdf" "Proyectoguarderia" 1695824025 0
-  "/home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial/Proyectoguarderia.tex" 1695824023 8354 bab19f4207a33a8ba786d8d23b9bb9b3 ""
+["pdflatex"] 1697120127 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Proyectoguarderia.tex" "build/Proyectoguarderia.pdf" "Proyectoguarderia" 1697120128 0
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Proyectoguarderia.tex" 1697120127 8354 bab19f4207a33a8ba786d8d23b9bb9b3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -75,8 +75,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1684972800 40326 aba987258e6d6b6da5dec3a727ea174b ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694299986 4548386 095bdf62675e309b2cc0e41f950c32d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694299702 7871860 d483dda66a529ea7c088ab5955e05c90 ""
-  "Proyectoguarderia.tex" 1695824023 8354 bab19f4207a33a8ba786d8d23b9bb9b3 ""
-  "build/Proyectoguarderia.aux" 1695824025 1167 26fd27a3e646d90c60b1a3b57cf73075 "pdflatex"
+  "Proyectoguarderia.tex" 1697120127 8354 bab19f4207a33a8ba786d8d23b9bb9b3 ""
+  "build/Proyectoguarderia.aux" 1697120128 1167 26fd27a3e646d90c60b1a3b57cf73075 "pdflatex"
   (generated)
   "build/Proyectoguarderia.aux"
   "build/Proyectoguarderia.log"

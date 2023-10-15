@@ -250,5 +250,117 @@ Publicado en 2017
     \item Estándar orientado al "Internet de las cosas" (Internet of things) abrebiado IOT y en español seria IDC. Por el cual su beneficio será la cobertura y no la velocidad.
     \item Funciona con conexiones de hasta 150 Kbps
 \end{itemize}
+
+demostrar que tipo de estandar ieee 802.11 soporta el ap, modem, router que tienes en tu casa o departamento.
+
+explicar el procedimiento desde que entras a la configuracion de tu ap o moden y demostrar que tipo de estandarizacion ocupa (a,b,n,g o todas), apoyate por medio de capturas de pantalla
+
+explicar como entrar a la cong de router. 
+
+\section{CAPAS DEL MODELO OSI} 
+EL modelo de interconexión para sistemas abiertos (OSI) define todos los métodos y protocolos necesarios para conectar una computadora a cualquier otra para formar una red.
+
+Se utiliza con mucha frecuencia para diseñar redes y elaborar la ingeniería de las soluciones de red. OPEN SYSTEM INTERCONNECTION
+
+\begin{enumerate}
+    \item Física 
+    \item Enlace de datos 
+    \item Red 
+    \item Transporte 
+    \item Sesión 
+    \item Presentación
+    \item Aplicación
+\end{enumerate}
+
+\section{Comunicación entre capas}
+\subsection{CAPA 1. FÍSICA}
+Define las propiedades del medio físico de transmisión que se utiliza para llevar a cabo la conexión de la red. Las especificaciones de la capa física se resume en un medio físico de transmisión (se resume en nuestro cableado, cable de red o wifi, cuando tenemos esa comunicación por ese medio, es la parte tangible) \textbf{-un cable de red-} que transmite un flujo de bits entre los nodos a través de la red física.
+\subsection{CAPA 2. ENLACE DE DATOS}
+Establece un protocolo confiable a través de la capa física a fin de que la capa red (capa tres) pueda transmitir sus datos.
+
+La capa de enlace de datos típicamente detecta y corrige los errores para asegurar un flujo de datos confiable.
+
+Los elementos de datos que transporta la capa de enlace de datos se les llama \textbf{tramas}. ALgunos ejemplos de tramas típicas son los estándares IEEE de los X.25 y 802.X (802.s incluye tanto a las redes ethernet como token ring). 
+\vspace{0.3cm}\\ 
+La capa de enlace de datos se divide generalmente en dos subcapas, llamadas:
+\subsubsection{Control de enlace lógico(LLC)}
+Realiza las tareas como establecer, terminar una llamada (puede aplicarse tanto en redes de telecomunicaciones como en las LAN) y transferir datos
+\subsubsection{Acceso al medio (MAC)}
+Es responsable del ensamblado y desamblado de las tramas, la detección y correción de errores y el direccionamiento.
+
+Los dos protocolos MAC más comunes son el 802.3 ETHERNET y el 802.5 TOKEN RING. Otros protocolos MAC son el 802.12 100Base-VBG, el 802.11 Wireless y el 802.7 BROADBAND. En la mayoría de los sistemas, los controladores de las NIC (tarjeta de red) llevan a cabo del trabajo que la capa de enlace de datos realiza.
+
+Terminos de la capa de enlace de datos, trama, nodo, medio, red.
+
+\subsection{CAPA 3. Red}
+La capa de red se ocupa de la navegación de los datos a través de ella y su principal función que es encontrar la mejor ruta a través de la red. Utiliza como medio de comunicación los protocolos:  IP o IPX(protocolo de intercambio de internet.)
+
+Para realizar este transporte de extremo a extremo, la capa de red utiliza cuatro procesos básicos: \textbf{direccionamiento, encapsulamiento, enrutamiento, desencapsulamiento. }
+
+\subsubsection{Direccionamiento}
+Los equipos tienen una dirección única (IP), que los identifica como host. 
+Buscar el mejor camino o mejor punto para llegar a su destino. 
+
+
+Sin direccionamiento no hay enrutamiento.
+
+\subsubsection{Encapsulamiento}
+El encapsulamiento rodea los datos con la informacion de protocolo necesaria antes de que se una al tránsito de la red.
+
+\subsubsection{Enrutamiento}
+La función del router es seleccionar las rutas y dirigir paquetes hacia su destino. Este proceso se lo conoce como enrutamiento. 
+\subsubsection{Desencapsulamiento}
+Finalmente, el paquete llega al host destino y es procesado en la capa 3. EL host examina la dirección de destino para verificar que el paquete fue direccionado a ese dispositivo, si la dirección es correcta, el paquete es desencapsulado por la capa de red y la PDU (unidades de procotolo de datos) de la capa 4 contenida en el paquete pasa hasta el servicio adecuado en la capa de transporte.
+
+\subsection{CAPA 4. Transporte}
+Administra el flujo de información desde un nodo de red hasta otro. Se asegura de que los paquetes sean decodificados en la secuencia correcta y que se reciban todos.
+
+El transporte se apoya de protocolos, estos resguardan la información dependiendo de cómo esté configurada la red, el más usado es el TCP
+\begin{itemize}
+    \item Protocolo de control de transmisión (TCP)
+    \item Protocolo de datagramas de usuario (UDP)
+    \item Protocolo de transmisión para el control de flujo (SCTP)
+\end{itemize}
+Los protocolos TCP y SCTP proporcionan un servicio completo y fiable. UDP proporciona un servicio de datagrama poco confiable.
+
+Ayuda a identificar a que se trata la información manipulada, por ejemplo si el mensaje se trata de un correo electrónico, muestra un correo electrónico.
+
+\subsubsection{Protocolo de control de transmisión (TCP)}
+Permite a las aplicaciones comunicarse entre sí como si estuvieran conectadas físicamente. TCP envía los datos en un formato que se transmite caracter por caracter, en lugar de transmitirse por paquetes discretos. Esta transmisión consiste en lo siguiente: 
+\vspace{0.3cm}\\ 
+Punto de partida, que abre la conexión.
+\vspace{0.3cm}\\ 
+Transmisión completa en orden de bytes.
+\vspace{0.3cm}\\ 
+Punto de fin que cierra la conexión.
+\vspace{0.3cm}\\ 
+El protocolo TCP confirma que un paquete ha alcanzado su destino estableciendo una conexión de punto a punto entre los hosts de envó y recepción. Por tanto, el protocolo TCP se considera un protocolo fiable orientado a la conexión.
+
+\subsubsection{Protocolo de transmisión para el control de flujo (SCTP)}
+Admite conexiones entre sistema que tienen más de una dirección, o de host multiple. La conexión SCTP entre el sistema transmisor y receptor se denomina asociación. Dado que el protocolo SCTP admite varios host, determinadas aplcaciones, en especial las que se utilizan en el sector de las telecomunicaciones, necesitan ejecutar SCTP en lugar de TCP. (exam)
+
+\subsubsection{Protocolo de datagramas de usuario (UDP)}
+Proporciona un servicio de entrega de datagramas. UDP no verifica las conexiones entre los host transmisores y receptores. Dado que el protocoloo UDP elimina los procesos de establecimientos y verificación de las conexiones, resulta ideal para las aplicaciones que envían pequeñas cantidades de datos.
+
+Lo hace más fácil brincando más pasos pero quita protocolos de seguridad, sería conveniente para pequeños datos, a falta de seguridad, conexión o verificar, estos datos pueden caer en manos de otros usuarios.
+\vspace{0.3cm}\\ 
+UDP
+\begin{itemize}
+    \item No orienta la conexión, no sabe a donde va
+    \item No se establece sesión entre aplicaciones antes de enviar datos
+    \item Simple, poco overhead(tiempo extra)
+    \item No confiable 
+    \item EJEMPLOS: DNS, VoIP, Streaming(video)
+\end{itemize}
+TCP
+\begin{itemize}
+    \item Orientado a conexión 
+    \item Confiable
+    \item Web, email, transferencia de archivos
+\end{itemize}
+
+\subsection{CAPA 5. Sesión}
+Es la conexión de una computadora de un usuario a un servidor de red y de una computadora a otra en una red con configuración de igual a igual. Estas conexiones virtuales se conocen como sesiones. Incluyen la negociación entre el cliente y el anfitrión, o de igual a igual, aspectos como el control de flujo, el procesamiento de transacciones, la transferencia de información de usuario y la autentificación de red.
+
 \end{sloppypar}
 \end{document}
