@@ -1,5 +1,5 @@
 #include<stdio.h> //funcion parametro por valor, parametro por referencia
-int pow(int b, int e);
+int potencia(int b, int e);
 
 int main(){
     int b,e;

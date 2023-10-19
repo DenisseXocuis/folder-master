@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[T1]{fontenc}
-\usepackage{tgtermes} %%%font
+\usepackage{charter}
 
 \usepackage{geometry}
 \usepackage{amsmath}
@@ -149,7 +149,12 @@ Técnicamente es el internet, redes de área amplia.
 2.1 Protocolos de comunicación de red
 
 2.1.1 Estructura de protocolo de internet (ip)
-
+\subsection{Jerarquías de protocolos}
+La mayoría de las redes se organizan como una pila \textbf{de capas o niveles}, cada una construida a partir de la que está abajo. El número de capas, su nombre, el contenido
+de cada una y su función difieren de una red a otra. El propósito de cada capa es ofrecer ciertos servicios
+a las capas superiores, mientras les oculta los detalles relacionados con la forma en que se implementan
+los servicios ofrecidos. Es decir, cada capa es un tipo de máquina virtual que ofrece ciertos servicios a la
+capa que está encima de ella.
 \subsection{Protocolo}
 Reglas establecidad para el trato social o es el conjunto de reglas de formalidad establecidas para actos diplomáticos y ceremonias oficiales, tener la base de un conjunto de pasos a seguir para hacer algo o para respetar algún tipo de reglamento
 
@@ -361,6 +366,55 @@ TCP
 
 \subsection{CAPA 5. Sesión}
 Es la conexión de una computadora de un usuario a un servidor de red y de una computadora a otra en una red con configuración de igual a igual. Estas conexiones virtuales se conocen como sesiones. Incluyen la negociación entre el cliente y el anfitrión, o de igual a igual, aspectos como el control de flujo, el procesamiento de transacciones, la transferencia de información de usuario y la autentificación de red.
+
+Sincroniza el intercambio de información o de datos entre capas inferiores y superiores.
+\vspace{0.3cm}\\ 
+Esta capa establece, mantiene y termina las comunicaciones que se forman entre dispositivos.
+Ejemplo, las sesiones \textbf{SQL, NetBIOS}, etc
+
+La capa utiliza un protocolo de seguridad llamado \textbf{SSL} responden a los términos en inglés (SECYRE SOCKET LAYER O CAPA DE PUERTOS SEGUROS), el cual es un protocolo de seguridad que hace que sus datos viajen de manera íntegra y segura, es decir, la transmisión de los datos entre un servidor y usuario web, y en retroalimentación, es totalmente cifrada o encriptada.
+
+\subsection{CAPA 6. Presentación}
+La capa de presentación se enfoca en la sintaxis y la semántica de la información transmitida. Para hacer posible la comunicación entre computadoras con distintas representaciones internas de datos, podemos definir de una manera abstracta las estructuras de datos que se van a intercambiar, junto con una codificación estándar que se use “en el cable”. La capa de presentación maneja estas estructuras de datos abstractas y permite definir e intercambiar estructuras de datos de mayor nivel.
+
+\subsection{CAPA 7. Aplicación}
+La capa de aplicación contiene una variedad de protocolos que los usuarios necesitan con frecuencia. Un protocolo muy utilizado es HTTP (Protocolo de Transferencia de Hipertexto) del inglés, HyperText Transfer Protocolo. El cual forma la base para la World Wide Web. Cuando un navegador desea una pagina web, envía el nombre de la página que quiere al servidor que la hospeda mediante el uso HTTP. Después el servidor envía a la pagina de vuelta. Hay otros protocolos de aplicación que se utilizan para transferir archivos, enviar y recibir correo electrónico y noticias.
+
+Ejemplos de: 
+\begin{itemize}
+    \item Comunicación cliente-servidor
+    \item Servidor Telnet 
+    \item Mensajería instantánea
+    \item Protocolo DNS
+\end{itemize}
+
+\section{MODELO TCP/IP}
+El protocolo TCP/IP proporciona la estructura básica de software para la transmision de datos más importantes que lo componen: protocolo de control de transmisión (TCP) y el protocolo de internet (IP). Estos dos protocolos fueron los primeros en definirse y son los más utilizados. El protocolo TCP/IP es la base de internet y permite interconectar computadoras con diferentes sistemas operativos.
+
+TCP/IP proporciona el esquema de dirección para que las computadoras se comuniquen en internet a través de una dirección IP, como puede ser 148.226.225.XXX en el caso de la UV y de TELMEX 192.168.256.XXX
+
+\begin{itemize}
+    \item Capa aplicación - datos
+    \item Capa transporte - segmentos
+    \item Capa de red - paquetes
+    \item Capa enlace de datos - trama
+    \item Capa física - bits 
+\end{itemize}
+
+El tcp/ip solo maneja la aplicación, transporte, interred, enlace.  
+
+datagramas, tramas y paquetes.
+
+UN paquete es cualquier grupo de dato enviado a través de una red.
+
+\subsection{VPN (VIRTUAL PRIVATE NETWORK O RED PRIVADA VIRTUAL)}
+Es una red privada que sea crea mediante una red pública, típicamente internet.
+\vspace{0.3cm}\\ 
+Una VPN se llama "privada" debido a que todos los paquetes entre dos puntos están encriptados, por lo que a pesar de que los paquetes se transmiten a través de una red pública, su información se conserva segura.
+\vspace{0.3cm}\\ 
+La VPN va a conectar a un servidor que actúa como un tunel, y así se pueda navegar de manera más tranquila.
+
+ACTIVIDAD 6: Buscar 3 opciones de VPN gratuitas, mencionar el factor principal. 1. elegir vpn dependiendo la necesidad, facil de instalar y que sea gratis. 3. configurar de forma facil. navegar y usarlo, conclusión (3 objetivos para ocupar esa vpn )
 
 \end{sloppypar}
 \end{document}

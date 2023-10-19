@@ -1,8 +1,8 @@
-PWD /home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial
+PWD /home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/denissexocuis/Documentos/folder-master/folder-master/trabajos/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex
+INPUT /home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex
 OUTPUT build/Apuntes gestión empresarial.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
