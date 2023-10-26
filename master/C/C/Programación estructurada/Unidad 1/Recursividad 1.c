@@ -28,8 +28,7 @@ int suma(int n){
 /*al reverso*/
 int sum(int n){
 
-    if(n>0)
-        return n + sum(n-1);
+    if(n>0) return n + sum(n-1);
 }
 /*factorial*/
 long long int fac(int n){

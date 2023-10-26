@@ -29,9 +29,9 @@ int main(){
 	//mayor o menor
 	for(i = 0; i < per; i++)
 	{
-		if(gru[i] > may)
+		if(gru[i] > may) //mayor
 			may = gru[i];
-		if(gru[i] < min)
+		if(gru[i] < min) //menor
 			min = gru[i];
 		prom = prom + gru[i]; //acumulador de edades
 	}

@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+void menu();
+int mayor(int n);
+int main(){
+    int num;
+    menu();
+    scanf("%d", &num);
+    printf("El digito mayor de %d es: %d", num , mayor(num));
+
+    return 0;
+}
+void menu(){
+    puts("---------------------------------------------------");
+    puts("Programa que dado un numero muestra el digito mayor");
+    puts("---------------------------------------------------\n");
+    printf("Ingresa un numero:\n>");
+}
+
+int mayor(int n){ 
+    int may = 0,n1;
+    while(n>0){
+        n1 = n%10; 
+        if(n1 > may) 
+            may = n1; 
+        n /= 10; 
+    }
+    return may;
+}
+
+
+
