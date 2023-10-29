@@ -8,8 +8,6 @@ int main(){
     scanf("%d", &a);
     scanf("%d", &b);
     printf("La suma de los números primos de %d hasta %d es: %d",a,b, primos(a,b));
-
-
     return 0;
 }
 
@@ -21,13 +19,21 @@ void menu(){
 }
 
 int primos(int inicio,int fin){
-    int sum = 0;
-    while(inicio<=fin){
-        if(((inicio % inicio) == 0) && ((inicio % 1) == 0))
-            if((inicio%2) != 0){
-                sum += inicio;
-                inicio++;
-            }
+    static int sum = 0;
+    if(inicio == 1){
+        sum += 2;
+        return primos(inicio+2,fin);
     }
-    return sum;
-}
+    for(int i=2; i*i <= inicio; i++){
+        if((inicio % i) == 0)
+            return primos(inicio+1, fin);
+    }
+    if(inicio<=fin){
+        sum+=inicio;
+        return primos(inicio+1, fin);
+    }
+    else
+        return sum;
+    
+    
+}   
