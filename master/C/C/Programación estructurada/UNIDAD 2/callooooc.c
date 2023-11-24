@@ -1,1 +1,0 @@
-/*vector o arreglo de estructuras, matriz*/

@@ -49,6 +49,7 @@ int main(){
                         for(int i=0; i<n; i++){
                                 free(ap[i]);
                         }
+                        free(ap);
                         puts("LISTO!, la matriz ha sido redimensionada");
                         pause();
                     }
