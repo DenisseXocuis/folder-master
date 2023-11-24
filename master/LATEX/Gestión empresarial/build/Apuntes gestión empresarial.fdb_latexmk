@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1698243336 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex" "build/Apuntes gestión empresarial.pdf" "Apuntes gestión empresarial" 1698243337 0
-  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex" 1698243336 24722 18e80d600903e4fef929ca0b1dff47ce ""
+["pdflatex"] 1700027306 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex" "build/Apuntes gestión empresarial.pdf" "Apuntes gestión empresarial" 1700027307 0
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/Apuntes gestión empresarial.tex" 1700027305 26844 3c31bbafb89c5879b78f256bab8622c4 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc" 1529098226 2457 aaabbccba4df2a7f7371410ee4e075a3 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -83,10 +83,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1655066402 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1684972800 40326 aba987258e6d6b6da5dec3a727ea174b ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1694299986 4548386 095bdf62675e309b2cc0e41f950c32d2 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1694299702 7871860 d483dda66a529ea7c088ab5955e05c90 ""
-  "Apuntes gestión empresarial.tex" 1698243336 24722 18e80d600903e4fef929ca0b1dff47ce ""
-  "build/Apuntes gestión empresarial.aux" 1698243337 610 fdef52a3dfacf912f8fbf69e19b6db8d "pdflatex"
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1699213447 535263 72cb405c5fd7dd2dd41dc69a7813776f ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1699757675 7676150 8721443fcbb24b4d307dec36fdc9869e ""
+  "Apuntes gestión empresarial.tex" 1700027305 26844 3c31bbafb89c5879b78f256bab8622c4 ""
+  "build/Apuntes gestión empresarial.aux" 1700027306 610 4a7c052c4c2e00698f43277b7abfaf62 "pdflatex"
   "images/GE.1.png" 1696130997 90647 c13180159237fd459f798b88b2df59f4 ""
   "images/ola .png" 1696130998 29757 2a91c8a8b523302eb444fff725c9a51c ""
   (generated)

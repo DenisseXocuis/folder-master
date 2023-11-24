@@ -135,7 +135,6 @@ int R[T], i;
         R[i] = n%2;
         n /= 2;
     }
-
     //Imprime el resultado
     printf("El valor binario es: ");
     for(i-=1; i>=0; i--)

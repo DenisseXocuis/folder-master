@@ -1,5 +1,17 @@
 \documentclass[letterpaper,12pt]{article}
 \usepackage[utf8]{inputenc}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname specialformat#1\endcsname
+    \csname specialformat#1\endcsname
+  \else
+    \csname the#1\endcsname\quad % default
+  \fi
+}
+\makeatother
+
+\newcommand{\specialformatsection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
 
 \usepackage[T1]{fontenc}
 \usepackage{charter}
@@ -387,7 +399,7 @@ Ejemplos de:
     \item Mensajería instantánea
     \item Protocolo DNS
 \end{itemize}
-
+\newpage
 \section{MODELO TCP/IP}
 El protocolo TCP/IP proporciona la estructura básica de software para la transmision de datos más importantes que lo componen: protocolo de control de transmisión (TCP) y el protocolo de internet (IP). Estos dos protocolos fueron los primeros en definirse y son los más utilizados. El protocolo TCP/IP es la base de internet y permite interconectar computadoras con diferentes sistemas operativos.
 
@@ -415,6 +427,105 @@ Una VPN se llama "privada" debido a que todos los paquetes entre dos puntos est�
 La VPN va a conectar a un servidor que actúa como un tunel, y así se pueda navegar de manera más tranquila.
 
 ACTIVIDAD 6: Buscar 3 opciones de VPN gratuitas, mencionar el factor principal. 1. elegir vpn dependiendo la necesidad, facil de instalar y que sea gratis. 3. configurar de forma facil. navegar y usarlo, conclusión (3 objetivos para ocupar esa vpn )
+\newpage 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \textbf{\LARGE{UNIDAD III}}
+\end{center}
+\section{DIRECCIONAMIENTO DE RED}
+\subsection{¿Qué es?}
+El término direccionamiento de red hace referencia a la \textbf{manera en que se consigue que la información se transmita entre dos equipos conectados en red.}
+\vspace{0.3cm}\\ 
+El \textbf{direccionamiento} es una función clave de los protocolos de la capa de red del modelo OSI que permite la comunicación de datos entre hosts, independientemente si los hosts se encuentran en la misma red o en redes diferentes. 
+
+\subsection{Información adicional}
+\begin{itemize}
+    \item \textbf{Direccionamiento:} El número único ID asignado a una host o interfaz en una red. 
+    \item \textbf{Subred:} Una porción de una red que comparte a una dirección de subred. 
+    \item \textbf{Máscara de subred:} Una combinación de 32 bits usada para describir que la porción de un direccionamiento refiere a la subred y que refiere la parte al host.
+    \item \textbf{Interfaz:} Una conexión de red.
+\end{itemize}
+
+\section{IP o Addresses o Dirección IP}
+Una dirección IP es un direccionamiento usado para identificar únicamente un dispositivo en una red. 
+\vspace{0.3cm}\\
+El direccionamiento se compone de 32 bits binarios que pueden ser divisibles ne una porción de la red y recibir la porción con la ayuda de una máscara de subred. Los 32 bits binarios se dividen en cuatro octetos (\textbf{1 octeto = 8 bits}). Cada octeto se convierte a decimal y se separa con un punto. Por esta razón, se dice que una dirección IP se expresa en formato decimal con puntos (por ejemplo, 172.16.81.100). El valor en cada octeto posee un rango decimal de 0 a 255 o binario de 00000000 a 11111111.
+\vspace{0.3cm}\\
+La \textbf{subred} se identifica en el 3er octeto pero dependiendo del tipo de ip.
+
+He aquí como se convierten a los octetos binarios a decimal: 
+La derecha la mayoría del bit, o bit menos significativo, de un octeto lleva a cabo un valor de $2^0$. El bit apenas a la izquierda de ése lleva a cabo un valor de $2^1$. Esto continúa hasta el bit más a la izquierda, o el bit más significativo, que lleva a cabo un valor de $2^7$.
+\vspace{0.3cm}\\
+Por tanto, si todos los bits son un uno, el equivalente decimal sería 255 como se muestra aquí:
+
+128, 64, 32, 16,8,4,2,1.
+\vspace{0.3cm}\\
+\textbf{Nota Importante:} Los números 0,127 y 255 están generalmente reservados para propósitos especiales, por lo que típicamente \textbf{no se encuentran disponibles para los nodos}, mientras que las 253 direcciones restantes están disponibles para asignarse en cada octeto.
+
+Dirección IPv4 la cual es 192.168.10.10, notacion decimal con puntos,octetos binarios etc.
+
+\subsection{Clases diferentes de redes}
+Dado una dirección IP, su clase se puede determinar de los tres bits de orden alto (los tres bits más a la izquierda en el primer octeto). Las direcciones IP están formadas por dos componentes principales. 
+\vspace{0.3cm}\\ 
+\textbf{El primero -el de la izquierda-} es la ID de red, también llamada \textbf{netid}(a que subred está el equipo conectado, a q tipo de red), el otro es el \textbf{hostid}(num con el que se identifica el equipo)
+\vspace{0.3cm}\\ 
+La netid identifica la red mientras que el hostid identifica cada nodo de esa red (los nodos se llaman host sin tomar en cuenta si es un servidor). 
+
+\subsection{Clases diferentes de redes (A-E)}
+\subsubsection{CLASE A}
+En una dirección de \textbf{Clase A}, el primer octeto es la parte de la red, así que el ejemplo de la Clase A en la imagen de abajo, tiene una dirección de red principal de 1.0.0.0 - 127.255.255.255 
+\vspace{0.3cm}\\ 
+Los octetos 2,3 y 4 (los 24 bits siguientes) son para que el administrador de la red divida en subredes y hosts como estime conveniente. Las direcciones de CLase A se utilizan para redes que tienen más de 65,536 hosts. Para lugares muy grandes donde tienen muchos equipos.
+\vspace{0.3cm}\\ 
+NetID = 1
+\vspace{0.3cm}\\ 
+HostID = 2,3,4
+
+\subsubsection{CLASE B}
+NetID = 1,2
+\vspace{0.3cm}\\ 
+HostID= 3,4
+
+\subsubsection{CLASE C}
+NetID= 1,2,3
+\vspace{0.3cm}\\ 
+HostID=4
+
+\subsubsection{CLASE D}
+Utilizado para los multicast, la clase D es levemente diferente de las primeras tres clases. Tiene un primer bit con valor de 1, segundo bit con valor de 1, tercer bit con valor de 1 y cuarto bit con valor 0. Los otros 28 bits se utilizan para identificar el grupo de computadoras al que el mensaje del multicast está dirigido.
+
+\subsubsection{CLASE E}
+Se utiliza para propósitos experimentales solamente. Como la clase D es diferente de las primeras tres clases. Tiene un primer bit con valor de 1, segundo valor de 1, tercer con valor de 1 y cuarto bit con valor de 1. Los otros 28 bits se utilizan para identificar el grupo de computadoras que el mensaje del multicast está dirigido. La clase E totaliza 1/16 ava (268,435,456 o 228) de las direcciones disponibles del IP.
+
+\section{Unicast}
+Es el proceso por el cual se envía un paquete de un host a un host individual. \textbf{UNO A UNO}
+\vspace{0.3cm}\\ 
+Es usada en las clases A,B Y C, ocupa TCP y UDP
+
+\section{Broadcast}
+Proceso por el cual se envía un paquete de un host a todos los hosts de la red. Estos mensajes utilizan siempre la dirección IP 255.255.255.255. \textbf{UNO A TODOS}
+\vspace{0.3cm}\\ 
+Transmite a todos los host de la red ocupa el UDP
+
+\section{Multicast}
+Envía un paquete de un host a un grupo selecto, es decir, selecciona distintos hosts específicos. UNO A ESPECÍFICOS
+\vspace{0.3cm}\\ 
+Es usada en las clases D, ocupa el transporte UDP solamente
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{images/redes 1.png}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/redes2.png}
+\end{figure}
+
+La máscarada de red \textbf{NO} especifica las clases de IP, sino los \textbf{NODOS} que pueden existir en una red o subred.
+
+
 
 \end{sloppypar}
 \end{document}

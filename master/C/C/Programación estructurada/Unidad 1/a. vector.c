@@ -1,6 +1,6 @@
 #include<stdio.h> //funciones con retorno de apuntador
 /*Examen: */
-char *textomeses(int m);
+char *textomeses(int);
 
 int main(){
 

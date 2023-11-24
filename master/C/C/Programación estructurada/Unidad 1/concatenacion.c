@@ -1,6 +1,6 @@
 #include<stdio.h>
 #define T 20
-void *concatenacion(char*, char*);
+char *concatenacion(char*, char*);
 
 int main(){
     char w[T], w2[T];
@@ -13,6 +13,6 @@ int main(){
     return 0;
 }
 
-void *concatenacion(char *w, char *w2){
+char *concatenacion(char *w, char *w2){
     printf("%s %s\n", w,w2);
 }
