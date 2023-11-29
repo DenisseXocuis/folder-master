@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  29 NOV 2023 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  25 NOV 2023 23:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex"
-(/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex
+**"/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/analisisdelcliente.tex"
+(/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Gestión empresarial/analisisdelcliente.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -268,30 +268,30 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@cols=\count283
 \TX@ftn=\toks31
 )
-LaTeX Font Info:    Trying to load font information for T1+bch on input line 38.
+LaTeX Font Info:    Trying to load font information for T1+bch on input line 36.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1bch.fd
 File: t1bch.fd 2004/10/18 font definitions for T1/bch.
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
 \l__pdf_internal_box=\box60
-) (build/Fundamentos de redes.aux)
-\openout1 = `"Fundamentos de redes.aux"'.
+) (build/analisisdelcliente.aux)
+\openout1 = `analisisdelcliente.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -349,61 +349,139 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-LaTeX Font Info:    Trying to load font information for TS1+bch on input line 54.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
-File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
-) [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
-<images/redes 1.png, id=57, 867.24pt x 563.10374pt>
-File: images/redes 1.png Graphic file (type png)
-<use images/redes 1.png>
-Package pdftex.def Info: images/redes 1.png  used on input line 517.
-(pdftex.def)             Requested size: 300.29344pt x 194.98416pt.
-<images/redes2.png, id=59, 779.91376pt x 223.83624pt>
-File: images/redes2.png Graphic file (type png)
-<use images/redes2.png>
-Package pdftex.def Info: images/redes2.png  used on input line 523.
-(pdftex.def)             Requested size: 350.33727pt x 100.54776pt.
- [17 <./images/redes 1.png>] [18 <./images/redes2.png>]
-<images//redesss2.png, id=68, 371.13657pt x 133.24782pt>
-File: images//redesss2.png Graphic file (type png)
-<use images//redesss2.png>
-Package pdftex.def Info: images//redesss2.png  used on input line 552.
-(pdftex.def)             Requested size: 350.33727pt x 125.78362pt.
-<images//redes3.png, id=69, 795.97375pt x 427.5975pt>
-File: images//redes3.png Graphic file (type png)
-<use images//redes3.png>
-Package pdftex.def Info: images//redes3.png  used on input line 556.
-(pdftex.def)             Requested size: 350.33727pt x 188.19568pt.
- [19 <./images//redesss2.png> <./images//redes3.png>]
-<images//redes4.png, id=75, 582.175pt x 553.06625pt>
-File: images//redes4.png Graphic file (type png)
-<use images//redes4.png>
-Package pdftex.def Info: images//redes4.png  used on input line 573.
-(pdftex.def)             Requested size: 350.33727pt x 332.82968pt.
- [20 <./images//redes4.png>] (build/Fundamentos de redes.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] [2]
+<images//1.png, id=12, 1165.35374pt x 634.37pt>
+File: images//1.png Graphic file (type png)
+<use images//1.png>
+Package pdftex.def Info: images//1.png  used on input line 54.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+<images//2.png, id=14, 1165.35374pt x 634.37pt>
+File: images//2.png Graphic file (type png)
+<use images//2.png>
+Package pdftex.def Info: images//2.png  used on input line 60.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+ [3 <./images//1.png> <./images//2.png>]
+<images//3.png, id=20, 1165.35374pt x 634.37pt>
+File: images//3.png Graphic file (type png)
+<use images//3.png>
+Package pdftex.def Info: images//3.png  used on input line 67.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+<images//4.png, id=21, 1165.35374pt x 634.37pt>
+File: images//4.png Graphic file (type png)
+<use images//4.png>
+Package pdftex.def Info: images//4.png  used on input line 73.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+ [4 <./images//3.png> <./images//4.png>]
+<images//5.png, id=27, 1165.35374pt x 634.37pt>
+File: images//5.png Graphic file (type png)
+<use images//5.png>
+Package pdftex.def Info: images//5.png  used on input line 80.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+<images//6.png, id=28, 1165.35374pt x 634.37pt>
+File: images//6.png Graphic file (type png)
+<use images//6.png>
+Package pdftex.def Info: images//6.png  used on input line 86.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+ [5 <./images//5.png> <./images//6.png>]
+<images//7.png, id=34, 1165.35374pt x 634.37pt>
+File: images//7.png Graphic file (type png)
+<use images//7.png>
+Package pdftex.def Info: images//7.png  used on input line 93.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+<images//8.png, id=35, 1165.35374pt x 634.37pt>
+File: images//8.png Graphic file (type png)
+<use images//8.png>
+Package pdftex.def Info: images//8.png  used on input line 99.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+<images//9.png, id=36, 1165.35374pt x 634.37pt>
+File: images//9.png Graphic file (type png)
+<use images//9.png>
+Package pdftex.def Info: images//9.png  used on input line 105.
+(pdftex.def)             Requested size: 300.29344pt x 163.46098pt.
+ [6 <./images//7.png> <./images//8.png> <./images//9.png>]
+<images//10.png, id=43, 945.5325pt x 359.3425pt>
+File: images//10.png Graphic file (type png)
+<use images//10.png>
+Package pdftex.def Info: images//10.png  used on input line 111.
+(pdftex.def)             Requested size: 300.29344pt x 114.12561pt.
+<images//11.png, id=44, 1038.88126pt x 348.30125pt>
+File: images//11.png Graphic file (type png)
+<use images//11.png>
+Package pdftex.def Info: images//11.png  used on input line 117.
+(pdftex.def)             Requested size: 300.29344pt x 100.67526pt.
+<images//12.png, id=45, 1106.1325pt x 502.87875pt>
+File: images//12.png Graphic file (type png)
+<use images//12.png>
+Package pdftex.def Info: images//12.png  used on input line 123.
+(pdftex.def)             Requested size: 300.29344pt x 136.5157pt.
+<images//13.png, id=46, 1145.27875pt x 297.11pt>
+File: images//13.png Graphic file (type png)
+<use images//13.png>
+Package pdftex.def Info: images//13.png  used on input line 129.
+(pdftex.def)             Requested size: 300.29344pt x 77.90413pt.
+ [7 <./images//10.png> <./images//11.png> <./images//12.png>]
+<images//14.png, id=54, 1063.975pt x 276.03125pt>
+File: images//14.png Graphic file (type png)
+<use images//14.png>
+Package pdftex.def Info: images//14.png  used on input line 135.
+(pdftex.def)             Requested size: 300.29344pt x 77.90315pt.
+ [8 <./images//13.png> <./images//14.png>]
+<images//gestionalanilis.png, id=60, 970.62625pt x 659.46375pt>
+File: images//gestionalanilis.png Graphic file (type png)
+<use images//gestionalanilis.png>
+Package pdftex.def Info: images//gestionalanilis.png  used on input line 163.
+(pdftex.def)             Requested size: 450.43253pt x 306.03365pt.
+<images//ges1.png, id=61, 618.31pt x 875.27pt>
+File: images//ges1.png Graphic file (type png)
+<use images//ges1.png>
+Package pdftex.def Info: images//ges1.png  used on input line 168.
+(pdftex.def)             Requested size: 450.43253pt x 637.64632pt.
+<images//ges2.png, id=62, 618.31pt x 875.27pt>
+File: images//ges2.png Graphic file (type png)
+<use images//ges2.png>
+Package pdftex.def Info: images//ges2.png  used on input line 172.
+(pdftex.def)             Requested size: 450.43253pt x 637.64632pt.
+ [9 <./images//gestionalanilis.png>]
+<images//ges3.png, id=67, 618.31pt x 875.27pt>
+File: images//ges3.png Graphic file (type png)
+<use images//ges3.png>
+Package pdftex.def Info: images//ges3.png  used on input line 176.
+(pdftex.def)             Requested size: 450.43253pt x 637.64632pt.
+ [10 <./images//ges1.png>]
+<images//ges4.png, id=72, 619.31375pt x 612.2875pt>
+File: images//ges4.png Graphic file (type png)
+<use images//ges4.png>
+Package pdftex.def Info: images//ges4.png  used on input line 180.
+(pdftex.def)             Requested size: 450.43253pt x 445.34053pt.
+ [11 <./images//ges2.png>]
+<images//gestion5.png, id=77, 582.175pt x 820.06375pt>
+File: images//gestion5.png Graphic file (type png)
+<use images//gestion5.png>
+Package pdftex.def Info: images//gestion5.png  used on input line 184.
+(pdftex.def)             Requested size: 450.43253pt x 634.50426pt.
+ [12 <./images//ges3.png>] [13 <./images//ges4.png>] [14 <./images//gestion5.png>] (build/analisisdelcliente.aux) ) 
 Here is how much of TeX's memory you used:
- 7040 strings out of 477136
- 113790 string characters out of 5813391
- 1857388 words of memory out of 6000000
- 27210 multiletter control sequences out of 15000+600000
- 542054 words of font info for 77 fonts, out of 8000000 for 9000
+ 7132 strings out of 477136
+ 115432 string characters out of 5813391
+ 1855388 words of memory out of 6000000
+ 27298 multiletter control sequences out of 15000+600000
+ 537330 words of font info for 59 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 67i,6n,77p,687b,353s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on "build/Fundamentos de redes.pdf" (20 pages, 873565 bytes).
+ 67i,7n,77p,671b,422s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
+Output written on build/analisisdelcliente.pdf (14 pages, 643905 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -525,6 +525,54 @@ Es usada en las clases D, ocupa el transporte UDP solamente
 
 La máscarada de red \textbf{NO} especifica las clases de IP, sino los \textbf{NODOS} que pueden existir en una red o subred.
 
+\section{SUBNETEO}
+Dividir una red primaria en una serie de subredes, de tal forma que cada una de ellas va a funcionar luego, a nivel de envío y recepción de paquetes, como una red individual aunque todas pertenezcan a la misma red principal y por lo tanto, al mismo dominio.
+\vspace{0.3cm}\\ 
+De una red generar otras subredes.
+
+\section{Localhost}
+Tiene utilidades muy interesantes, especialmente si vas a crear una página web, quieres aprender a programar o estás al cargo de una red local.
+
+Localhost es el nombre que se usa para designar para la computadora o el dispositivo que estás utilizando en un momento determinado. Es lo que la traducción literal define como "huésped local", pero es más correcto definirlo como dispositivo local o servidor local.
+\vspace{0.3cm}\\ 
+Todo localhost tiene asignada la dirección IP 127.0.0.1 (o ::1 en IPv6), también llamada dirección IP de loopback o bucle reverso. Se llama así porque permite utilizar ciertas herramientas TCP/IP (relacionadas con páginas web) apuntando así misma, es decir, en modo local, sin necesidad de conectarse a internet y sin salir del ordenador.
+\section{HOST}
+Un host es cualquier computadora o máquina conectada a una red a través de un dominio y un número de IP definidos. Su función es proporcionarle recursos, información y servicios a los usuarios.
+\newpage
+\section{MÁSCARAS DE RED}
+La máscara de red es una combinación de bits que sirve para delimitar el ámbito de una red de computadoras. Su función es indicar a los dispositivos qué parte de la dirección IP es el número de la red, incluyendo a la subred y qué parte es la correspondiente al host.
+\vspace{0.3cm}\\ 
+La máscara de red se divide en 2 partes:
+
+\subsection{Porción de Red}
+\subsection{Porción de Host}
+
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{redesss2.png}
+\end{figure}
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{redes3.png}
+\end{figure}
+
+\subsubsection{Mascaras de subred por defecto por clases}
+\begin{itemize}
+    \item CLASE A: 255.0.0.0
+    \item CLASE B: 255.255.0.0
+    \item CLASE C: 255.255.255.0
+\end{itemize}
+
+\subsubsection{SUBNETEO O SUBNETTING}
+Es el proceso de dividir una red en redes más pequeñas y manejables. Las subredes se crean para evitar que el tráfico broadcast se envíe a todos los destinos de una red determinada. El exceso de broadcast consume recursos como ancho de banda, ciclos del CPU de los dispositivos, así como memoria.
+\vspace{0.3cm}\\ 
+Otro concepto importante en subneteo es la máscara de subred. La máscara de subred es una cantidad de 32 bits, que se expresa en formato decimal punteado; esta indica qué parte de una dirección IP pertenece a la red y la cantidad que pertenece al host.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{redes4.png}
+\end{figure}
+
 
 
 \end{sloppypar}
