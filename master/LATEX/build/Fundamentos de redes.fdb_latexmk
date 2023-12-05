@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1701300227 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex" "build/Fundamentos de redes.pdf" "Fundamentos de redes" 1701300228 0
-  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex" 1701300226 32414 09eeb59a337ae3b5624dce35711df03d ""
+["pdflatex"] 1701809299 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex" "build/Fundamentos de redes.pdf" "Fundamentos de redes" 1701809300 0
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Fundamentos de redes.tex" 1701809299 34674 4b930377c7c9d430ad0711855be53331 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1689984000 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm" 1136768653 5184 4fd08a9613e75c1da82714d79cf8b4f1 ""
@@ -27,8 +27,11 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb" 1136849748 33799 6c8c18c1e1a138641a52c29f0b878445 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb" 1136849748 34869 539b6fed90ef630e9049bc13079bc598 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchb8t.vf" 1136768653 2348 8d5673a28b31b0de9aa581c30f65dd1e ""
   "/usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8c.vf" 1136768653 3492 1012f7b53b5692e6d6f11a0fab90a971 ""
   "/usr/share/texlive/texmf-dist/fonts/vf/bitstrea/charter/bchr8t.vf" 1136768653 2348 67712062c9694a242fa13da6829cc4f1 ""
@@ -85,8 +88,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700711887 534650 e1f586943c9a5721b8b95436a1249427 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700711843 7682927 32474bbce70bc86f42569dee5b988acc ""
-  "Fundamentos de redes.tex" 1701300226 32414 09eeb59a337ae3b5624dce35711df03d ""
-  "build/Fundamentos de redes.aux" 1701300227 10115 2e69e538d3d9b1f14d5e663f064f5724 "pdflatex"
+  "Fundamentos de redes.tex" 1701809299 34674 4b930377c7c9d430ad0711855be53331 ""
+  "build/Fundamentos de redes.aux" 1701809300 10368 b7a60fd34ed7f9428377cc1a02a3b40a "pdflatex"
   "images//redes3.png" 1701293910 37056 84a91e0fdd5be6836fcc30e167c431d9 ""
   "images//redes4.png" 1701294459 108123 cc6297dc906ec9d72c1db7a14e4ef17c ""
   "images//redesss2.png" 1701293890 6652 0d0bdd07096a0ebdd97512d88d7047ef ""

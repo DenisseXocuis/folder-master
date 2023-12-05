@@ -562,6 +562,7 @@ La máscara de red se divide en 2 partes:
     \item CLASE B: 255.255.0.0
     \item CLASE C: 255.255.255.0
 \end{itemize}
+La mascara de red NO especifica la calse de ip, sino los nodos que pueden existir en una red o subred.
 
 \subsubsection{SUBNETEO O SUBNETTING}
 Es el proceso de dividir una red en redes más pequeñas y manejables. Las subredes se crean para evitar que el tráfico broadcast se envíe a todos los destinos de una red determinada. El exceso de broadcast consume recursos como ancho de banda, ciclos del CPU de los dispositivos, así como memoria.
@@ -572,7 +573,34 @@ Otro concepto importante en subneteo es la máscara de subred. La máscara de su
     \centering
     \includegraphics[width=0.7\textwidth]{redes4.png}
 \end{figure}
+\textbf{La mascara de red NO especifica la clase de ip, sino los nodos que pueden existir en una red o subred.}
+\vspace{0.3cm}\\ 
+10.0.0.0/8 (el 8 prefijo de los bits de la subred)
+\vspace{0.3cm}\\ 
+El subneteo se realiza tomando bits prestados de los bits de hosts. Eso significa que los bits de redes no PUEDEN MODIFICARSE.
+\vspace{0.3cm}\\ 
+\textbf{tabla de bits prestados para subnetting}
+\newpage
+\subsubsection{Calcular la cantidad de subredes y hosts por subred}
+\textbf{Cantidad de subredes es igual a :} $2^n$ donde "N" es el número de bits "robados" a la porción de host
+\vspace{0.3cm}\\ 
+\textbf{Cantidad de hosts x subred es igual a :} $2^M - 2$, donde "M" es el número de bits disponibles en la porción de host y "-2" es debido a que toda subred debe tener su propia dirección de red y su propia dirección de broadcast. (dice cuantos puedes ocupar)
+\vspace{0.3cm}\\ 
+\textbf{Cantidad TOTAL de host x subred es igual a:} 256-J, donde "J" es el número de la máscara de red adaptada.
 
+\section{Subneteo manual}
+\begin{enumerate}
+    \item IP a binario
+    \item Adaptar la máscara de red por defecto a nuestras subredes (cálculo con formula)
+    \item Una vez hecho el cálculos nos da que debemos robar 3 bits a la porción de host para hacer 7 subredes o más y que tal de subredes útiles va a ser de 8, es decir que, va a quedar 1 para uso futuro
+    $$bit robado \longrightarrow 2^3 = 8 \longleftarrow subredes$$
+    \item tomando la máscara de clase A por defecto, a la parte de red le agregamos los 3 bits que le robamos a la porcipon de host reemplazándolos por 1 y así se obtiene 255.224.0.0.
+    \item 8 bits que se tiene por prefijo más los 3 bits quedan 11 bits adaptados.
+    \item Obtener el rango de subredes: se modifica el mismo octeto de bits (el segundo) que modificamos anteriormente en la máscara de red pero esta vez en la dirección IP. Quitar mascara de red y poner dirección IP.
+    \item Restar 256 (num de mascara de red adaptada): 256 - 224 = 32 (rango que va a tener la subred)
+\end{enumerate}
+
+SI queremos calcular cuántos hosts debemos ocupar la fórmula $2^M - 2$ donde M es el número de bits "0".
 
 
 \end{sloppypar}

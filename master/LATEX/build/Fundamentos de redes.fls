@@ -550,5 +550,8 @@ INPUT ./images//redes4.png
 INPUT build/Fundamentos de redes.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
