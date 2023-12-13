@@ -31,5 +31,5 @@ int main(){
 
     return 0;
 }
-//que el archivo exista o q no exista, guardar lo del usuario
+//que el archivo exiszta o q no exista, guardar lo del usuario
 //guardar los numeros en el binario, promedio, num más alto

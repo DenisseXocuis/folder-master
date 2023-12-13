@@ -1,4 +1,3 @@
-/*MÁQUINA DESPACHADORA*/
 #include<stdio.h>
 #include<stdlib.h>
 #define T 40
@@ -7,9 +6,6 @@ void pause();
 void help();
 void error(int err_);
 void cam(float din,float pago);
-
-/* El programa deberá permitir al usuario crear la matriz de la máquina despachadora de botanas y
-refrescos de NxN. */
 
 typedef struct{
     int clave,cantidad;
