@@ -1,0 +1,8 @@
+Clave,Nombre,Cantidad Vendida,Precio ($MXN),Tipo (1: Refresco 2:Botana)
+123,COCA,2,21.00,1
+456,PEPSI,0,12.00,1
+9878,GANSITO,0,2.00,2
+987,WIWINO,0,23.00,2
+Total recabado:,$42.00
+Total recabado refrescos:,$42.00
+Total recabado botanas:,$0.00

@@ -1,0 +1,91 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname specialformat#1\endcsname
+    \csname specialformat#1\endcsname
+  \else
+    \csname the#1\endcsname\quad % default
+  \fi
+}
+\makeatother
+
+\newcommand{\specialformatsection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} %%imagen envuelta por un texto
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx} %%TABLAS OH YEAH
+
+\title {\textbf{Redes de computadoras}}
+\author{Lara Xocuis Martha Denisse}
+\date{7 de Febrero del 2024}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+\maketitle
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar}
+
+\section{Router de una computadora}
+Son computadoras que se especializan en el envío de \textbf{paquetes} a través de redes de datos. Son los responsables de la interconexión de redes. Seleccionan la mejor ruta para transmitir los pquetes y los reenvían al destino.
+\vspace{0.3cm}\\ 
+Router es capa 3 = red.
+\vspace{0.3cm}\\
+Los routers son el centro de una red, tienen 2 conexiones.
+\begin{itemize}
+    \item Conexión WAN 
+    \item Conexión LAN
+\end{itemize}
+
+inserte dibujito de redes*
+
+Tabla de enrutamiento
+
+\subsection{Componentes de los routers y sus funciones} 
+\begin{itemize}
+    \item CPU 
+    \item Memoria de acceso aleatorio (RAM)
+    \item Memoria de sólo lectura (ROM)
+    \item RAM no volátil (NVRAM)
+    \item Memoria flash
+    \item Interfaces
+\end{itemize}
+
+\subsection{Grupos principales de interfaces del router}
+LAN:
+\begin{itemize}
+    \item Se usan para conectar el router a la red LAN 
+    \item Tienen una dirección MAC de capa 2
+    \item Se les puede asignar una dirección IP de capa 3
+\end{itemize}
+WAN:
+\begin{itemize}
+    \item oal chavo 
+    \item tengo hambre
+\end{itemize}
+
+Cable $\rightarrow$ CSMA / CD
+\vspace{0.3cm}\\  
+WLAN $\rightarrow$ CSMA / CA 
+
+\section{Comandos del router}
+
+
+
+\end{sloppypar}
+\end{document}
