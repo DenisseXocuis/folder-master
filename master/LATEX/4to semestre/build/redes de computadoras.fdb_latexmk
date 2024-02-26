@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1707349963 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" "build/redes de computadoras.pdf" "redes de computadoras" 1707349963 0
-  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" 1707349963 2293 adebfc4952a295a886bf0fb67c169b4c ""
+["pdflatex"] 1707866894.66737 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" "build/redes de computadoras.pdf" "redes de computadoras" 1707866894.96577 0
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" 1707866894.47535 3606 92e5967cf5abb963e76777fb28f1cda6 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1689984000 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm" 1136768653 5184 4fd08a9613e75c1da82714d79cf8b4f1 ""
@@ -82,10 +82,10 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1655066402 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700711887 534650 e1f586943c9a5721b8b95436a1249427 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700711887.45523 534650 e1f586943c9a5721b8b95436a1249427 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700711843 7682927 32474bbce70bc86f42569dee5b988acc ""
-  "build/redes de computadoras.aux" 1707349963 556 6fc5c4e5c22f53806b0e3ab571c52a2c "pdflatex"
-  "redes de computadoras.tex" 1707349963 2293 adebfc4952a295a886bf0fb67c169b4c ""
+  "build/redes de computadoras.aux" 1707866894.91535 1350 2de834dd2d3c0869df74ea5f555e0fcf "pdflatex"
+  "redes de computadoras.tex" 1707866894.47535 3606 92e5967cf5abb963e76777fb28f1cda6 ""
   (generated)
   "build/redes de computadoras.aux"
   "build/redes de computadoras.log"

@@ -1,19 +1,15 @@
 #include<stdio.h>
 
-void cubo(int *n);
-
 int main(){
 
-    int valor = 3;
-    int *apuntador = &valor;
+    int num = 10;
+    int *a = &num;
 
-    printf("%d\n", *apuntador);
+    printf("%d\n", *a);
 
-    *apuntador = 80;
+    *a = 12;
 
-    printf("%d\n", valor);
-    //%p ubicacion de memoria como entero hexadecimal
-
+    printf("%d\n", num);
 
     return 0;
 }
