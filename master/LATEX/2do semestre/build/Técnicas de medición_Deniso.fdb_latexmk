@@ -1,0 +1,23 @@
+# Fdb version 4
+["pdflatex"] 1709679241.65638 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/2do semestre/Técnicas de medición_Deniso.tex" "build/Técnicas de medición_Deniso.pdf" "Técnicas de medición_Deniso" 1709679241.805 2
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/2do semestre/Técnicas de medición_Deniso.tex" 1696130997.91465 18214 f7acbd511c0c423102ae71944a45e963 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty" 1644112042 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
+  "/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty" 1572645307 1057 525c2192b5febbd8c1f662c9468335bb ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/article.cls" 1689984000 20144 d5ecf0a5140c8d8d8b72cbe86e320eff ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty" 1689984000 5048 84b05796b49b69e2d4257d537721c960 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo" 1689984000 8464 63bf71cc1214ffdd38288da73a7ca182 ""
+  "/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty" 1578002852 41601 9cf6c5257b1bc7af01a58859749dd37a ""
+  "/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty" 1654720880 2671 7e67d78d9b88c845599a85b2d41f2e39 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700711843 7682927 32474bbce70bc86f42569dee5b988acc ""
+  "Técnicas de medición_Deniso.tex" 1696130997.91465 18214 f7acbd511c0c423102ae71944a45e963 ""
+  "build/Técnicas de medición_Deniso.aux" 1709679241.6551 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "build/circuitikz.sty" 0 -1 0 ""
+  "circuitikz.sty" 0 -1 0 ""
+  (generated)
+  "build/Técnicas de medición_Deniso.aux"
+  "build/Técnicas de medición_Deniso.log"
+  "build/Técnicas de medición_Deniso.pdf"
+  (rewritten before read)

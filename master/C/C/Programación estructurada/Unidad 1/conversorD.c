@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#define T 256
+#define T 256 //-lm 
 
 //Funciones prototipo para menú
 void menu();

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.22)  13 FEB 2024 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.3.10)  12 MAR 2024 12:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -365,7 +365,7 @@ File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 ) [2] [3] (build/redes de computadoras.aux) ) 
 Here is how much of TeX's memory you used:
  6992 strings out of 477136
- 112904 string characters out of 5813391
+ 112904 string characters out of 5813392
  1856388 words of memory out of 6000000
  27170 multiletter control sequences out of 15000+600000
  542054 words of font info for 77 fonts, out of 8000000 for 9000

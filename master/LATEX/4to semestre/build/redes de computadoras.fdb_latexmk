@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1707866894.66737 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" "build/redes de computadoras.pdf" "redes de computadoras" 1707866894.96577 0
-  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" 1707866894.47535 3606 92e5967cf5abb963e76777fb28f1cda6 ""
+["pdflatex"] 1710267765.53726 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" "build/redes de computadoras.pdf" "redes de computadoras" 1710267765.81662 0
+  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/4to semestre/redes de computadoras.tex" 1710267765.35708 3605 841b2512d322678d5e246f7d79fee218 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1689984000 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/bitstrea/charter/bchb8r.tfm" 1136768653 5184 4fd08a9613e75c1da82714d79cf8b4f1 ""
@@ -83,9 +83,9 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1655411236 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1689984000 40900 887e0dc8cac988a9e9c574af364cf837 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1700711887.45523 534650 e1f586943c9a5721b8b95436a1249427 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1700711843 7682927 32474bbce70bc86f42569dee5b988acc ""
-  "build/redes de computadoras.aux" 1707866894.91535 1350 2de834dd2d3c0869df74ea5f555e0fcf "pdflatex"
-  "redes de computadoras.tex" 1707866894.47535 3606 92e5967cf5abb963e76777fb28f1cda6 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1710116528 7682910 191f907cf71ef16fbd7d73fdc17e0acc ""
+  "build/redes de computadoras.aux" 1710267765.77009 1350 2de834dd2d3c0869df74ea5f555e0fcf "pdflatex"
+  "redes de computadoras.tex" 1710267765.35708 3605 841b2512d322678d5e246f7d79fee218 ""
   (generated)
   "build/redes de computadoras.aux"
   "build/redes de computadoras.log"
