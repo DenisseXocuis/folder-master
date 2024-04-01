@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-//buscar en una lista, buscar en el elemento y regresar la dirección del puntero siguiente al elemento q encontré
 #define T 30
 int jerarquia(char cad){
     /* para el algoritmo de Shunting Yard

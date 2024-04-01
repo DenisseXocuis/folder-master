@@ -11,7 +11,7 @@ struct lista{
     int dato;
     struct elementolista *sig;
 };
-
+    
 
 int inserta_lista(struct elementolista **inicio, int dato){
     struct elementolista *nuevo = (struct elemento lista*) malloc (sizeof(struct elementolista));

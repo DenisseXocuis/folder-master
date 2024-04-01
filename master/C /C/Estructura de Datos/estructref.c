@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<string.h>
 
-//void *, función suma, recibir 2 param, dig tipo y que haga la suma, float, string and integer
 struct persona{
     int edad;
     char *nombre;
