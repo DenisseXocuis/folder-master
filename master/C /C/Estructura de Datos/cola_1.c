@@ -1,23 +1,32 @@
+/* Cola con una lista enlazada 
+    Permite ajustarse al núm de elementos de la cola, utiliza dos punteros para acceder a la lista 
+    Al ser una estructura dinámica puede crecer y decrecer según las necesidades (el límite está en la memoria libre del computador) */
 #include <stdlib.h>
-/* we have 2 structures types */
+//estructura cola con punteros frente y final
 typedef struct cola{
     struct ecola *frente;
     struct ecola *final; //si está vacia, si es el mismo elemento
 }COLA;
 
-typedef struct ecola{
+//se declara la estructura del nodo de la lista enlazada
+typedef struct{
     int valor;
-    struct ecola *next_node;
-}ecola;
+    COLA *next_node;
+}NODO;
 
+//crea un nodo, regresa una estructura
+NODO *crear(int x){
+    NODO *new = NULL;
+    new= (NODO *)malloc(sizeof(NODO));
+    new->valor = x;
+    new->next_node=NULL;
+}                       
 int push(COLA *cola, int x){
-    ecola *new = NULL;
-    new = (ecola *)malloc(sizeof(ecola));
+    NODO *a;
     if(cola->frente == NULL && cola->final==NULL){ //primer valor
-        new->valor = x;
-        new->next_node=NULL;
-        cola->frente = new;
-        cola->final = new;
+        a = crear(x);
+        cola->frente = a;
+        cola->final = a;
     } //if (función llena)
     cola->final=x;
 
