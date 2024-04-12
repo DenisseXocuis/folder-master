@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-typedef int TipoElemento;
-/* INFORMATION:::  
+/* INFORMATION del programita if u don know what this is supposed to do :::  
 (ordenarlas alfabeticamente, eliminarlas, agregar)
     abra->kadabra->alakazam-> mega-alakazam
     charmander blalblablablalblab :)
@@ -17,26 +16,15 @@ typedef int TipoElemento;
                 }
             -> recursión
                 la función se va a llamar para invertir el orden de la sublista (empieza a partir del segundo elemento)
+
+    what u do
+    how u resolve it ;)
+
  */
 
-void menu(){ //menu interactivo
-    system("clear || cls");
-    puts("------------------------------------");
-    puts("Lista enlazada con memoria dinamica");
-    puts("------------------------------------");
-    puts("1. Insertar elemento"); //inserta y ordena el elemento
-    puts("2. Imprimir lista");
-    puts("3. Eliminar elemento");
-    puts("4. Info :) ");
-    puts("0. Salir");
-    printf("Opcion: \n>");
-}
-
-void error(){
-    puts("ERROR! Pulsa enter para regresar al menu principal");
-    getchar();
-    getchar();
-}
+typedef int TipoElemento;
+void menu();
+void error();
 
 enum _bool{FALSE, TRUE}BOOL;
 
@@ -45,6 +33,7 @@ typedef struct nodo{
     struct nodo *next;
 }NODO;
 
+//función de tipo nodo
 NODO *nodo(TipoElemento x){
     NODO *new_node = (NODO *) malloc(sizeof(NODO));
     if(!new_node) return 0;
@@ -103,4 +92,23 @@ int main(){
     }while(op);
 
     return 0;
+}
+
+void menu(){ //menu interactivo
+    system("clear || cls");
+    puts("------------------------------------");
+    puts("Lista enlazada con memoria dinamica");
+    puts("------------------------------------");
+    puts("1. Insertar elemento"); //inserta y ordena el elemento
+    puts("2. Imprimir lista");
+    puts("3. Eliminar elemento");
+    puts("4. Info :) ");
+    puts("0. Salir");
+    printf("Opcion: \n>");
+}
+
+void error(){
+    puts("ERROR! Pulsa enter para regresar al menu principal");
+    getchar();
+    getchar();
 }

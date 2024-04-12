@@ -125,9 +125,9 @@ int operacion(char *polish_not){
     }
 }
 int main(){
-    char op[T] = "3 * 5 +  6", polish[T];
+    char op[T], polish[T];
     printf("Ingresa una expresion aritmetica \n>");
-    /* scanf(" %[^\n]", &op); */
+    scanf(" %[^\n]", &op); //guarda la expresión aritmética
     shunting_yard(op, polish);
 
     printf("Conversion a notacion polaca inversa: ");
