@@ -31,7 +31,6 @@ int elimina_x(NODO **inicio, int dato){
     if(temp == NULL || temp->valor == dato){
         *inicio = (*inicio)->next_node;
     }
-
 }
 
 int main(int argc, char **argv){

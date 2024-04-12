@@ -1,0 +1,118 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname specialformat#1\endcsname
+    \csname specialformat#1\endcsname
+  \else
+    \csname the#1\endcsname\quad % default
+  \fi
+}
+\makeatother
+
+\newcommand{\specialformatsection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+
+\title {\textbf{Francés :)}}
+\author{Lara Xocuis Martha Denisse}
+\date{6 de abril del 2024}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+\section{Passé Composé}
+\texttt{On l'utilise pour décrire des événements que se sont finis dans le passé.}
+\begin{center}
+    \begin{tabular}{|c|c|c|}\hline
+        & Verbe Auxiliaire & \\
+        Sujet + & être & + Participe Passé du verbe principal\\
+        & avoir & \\
+        & Conjugue au présent de l'indicatif & \\
+        \hline
+    \end{tabular}
+\end{center}
+
+\subsection{Maison D'être $\longrightarrow$ L'accord du genre et nombre}
+\begin{itemize}
+    \item naître
+    \item mourir
+    \item descendre
+    \item arriver
+    \item sortir
+    \item venir
+    \item entrer
+    \item rentrer
+    \item devenir
+    \item aller 
+    \item passer
+    \item tomber
+    \item monter
+    \item retourner
+    \item partir
+    \item rester
+    \item revenir
+    \item \textbf{verbes pronominaux}
+\end{itemize}
+\textbf{Avec être:}\\ 
+\texttt{Elle \underline{est partie} chez elle \\ Vous \underline{êtes partis} à l'école ce jour-là. \\ Elles sont parties en France}
+\vspace{0.3cm}\\ 
+\textbf{Le verbe "avoir" sont le reste des verbes:} \\ 
+\texttt{J'ai eu une soeur \\ Elles ont mangé leurs fraises}
+
+\subsection{Négation}
+\subsubsection{Estructura}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|} \hline
+                &    & Auxiliaire &  & Verbe au \\
+        Sujet& NE &  être &  PAS & Participe \\ 
+                &    &  avoir &     & passé \\  
+        \hline
+    \end{tabular}
+    \vspace{0.3cm}\\ 
+    \texttt{Alain ne est pas parti hier}
+\end{center}
+\subsubsection{Verbes pronominaux}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|c|} \hline
+             && Pronom réflechi &&& \\
+        Sujet&NE&Nous&Auxiliaire&PAS&Participe\\ 
+             &&Vous&être&&Passé \\  
+             &&Se&&& \\
+\hline
+\end{tabular}
+\vspace{0.3cm}\\ 
+\texttt{Je ne me suis pas réveillé tôt, hier}
+\end{center}
+
+\texttt{Nous \underline{ne sommes pas descendus} \textit{(descendre)} près de la Gare \\ Vous \underline{n'êtes pas devenus} \textit{(devenir)} médicins \\ Elles \underline{ne sont pas montées} \textit{(monter)} dans la voiture \\ Il \underline{n'est pas rentré} \textit{(rentrer)} chez le coiffeur}
+\vspace{0.3cm}\\ 
+\textbf{Pour le verbes pronominaux: }
+
+\texttt{Lina et Mario \underline{ne se sont pas habillés} \textit{(habiller)} au même-temps \\ On \underline{ne s'est pas rasé} \textit{(raser)} dans le matin \\ Mari, Sven et moi, \underline{ne nous sommes pas preparés} \textit{(preparer)} pour l'examen}
+
+
+\end{sloppypar}
+\end{document}

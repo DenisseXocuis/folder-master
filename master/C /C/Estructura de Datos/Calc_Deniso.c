@@ -1,8 +1,12 @@
+/* WIP  */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
 #define T 30
+
+
 int jerarquia(char cad){
     /* para el algoritmo de Shunting Yard
     Se asigna un valor numérico a cada operador según su jerarquía, los de mayor tendrán valores más altos
@@ -121,7 +125,7 @@ int operacion(char *polish_not){
     }
 }
 int main(){
-    char op[T] = "5 * 2 + 1", polish[T];
+    char op[T] = "3 * 5 +  6", polish[T];
     printf("Ingresa una expresion aritmetica \n>");
     /* scanf(" %[^\n]", &op); */
     shunting_yard(op, polish);
@@ -130,6 +134,6 @@ int main(){
     for(int j =0; polish[j] != '\0'; j++)
         printf("%c ", polish[j]);
 
-    //printf ("\nResultado: %d", operacion(polish, i));
+    printf ("\nResultado: %d", operacion(polish));
     return 0;
 }

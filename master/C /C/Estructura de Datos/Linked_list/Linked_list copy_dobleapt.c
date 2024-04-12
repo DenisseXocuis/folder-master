@@ -11,7 +11,7 @@ int puts_elem(NODO **inicio, int dato){
         return 0;
     new_node-> valor = dato;
     new_node-> next_node = *inicio; //le asigna NULL
-    *inicio = new_node;
+    *inicio = new_node; 
     return 1;
 }
 

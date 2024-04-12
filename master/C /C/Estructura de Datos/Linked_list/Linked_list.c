@@ -20,7 +20,6 @@ NODO *search(NODO *apt, int dato_buscar, NODO *apt2){
         return apt2;
     return search(apt->next_node, dato_buscar, apt); 
 }
-
 int main(int argc, char **argv){
     NODO *apt_inicio = NULL; //lista vacia, no tiene elementos
     puts_elem(&apt_inicio,1);
@@ -30,6 +29,5 @@ int main(int argc, char **argv){
     puts_elem(&apt_inicio,8);
     NODO *anterior = search(apt_inicio, 8, apt_inicio);
     printf("Elemento anterior en la lista: %d\nDireccion del puntero: %p", anterior->valor, (*anterior).valor);
-
     return 0;
 }
