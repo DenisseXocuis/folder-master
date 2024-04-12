@@ -26,14 +26,16 @@ typedef int TipoElemento;
 void menu();
 void error();
 
+//variables de control de entrada de nodos de la lista
 enum _bool{FALSE, TRUE}BOOL;
 
+//estructura del nodo base
 typedef struct nodo{
     TipoElemento dato;
     struct nodo *next;
 }NODO;
 
-//función de tipo nodo
+//función de tipo nodo (estructura) donde va a retornar el nodo "base"
 NODO *nodo(TipoElemento x){
     NODO *new_node = (NODO *) malloc(sizeof(NODO));
     if(!new_node) return 0;
@@ -42,6 +44,7 @@ NODO *nodo(TipoElemento x){
     return new_node;
 }
 
+//función que imprime la lista, claro q si ;)
 void *imprimir(NODO **lista){
     NODO *aux;
     puts("Lista:");
@@ -50,6 +53,7 @@ void *imprimir(NODO **lista){
     puts("NULL");
 }
 
+//inserta el nodo base en la lista ;)
 int insertar(NODO **lista, TipoElemento x){
     NODO *n = nodo(x); //crea un nodo y se lo asigna a n
     n->next= *lista;
