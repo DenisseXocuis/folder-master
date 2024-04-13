@@ -1,4 +1,13 @@
-/* WIP  */
+/* INFORMATION::: 
+        WIP....
+        Lara Xocuis Martha Denisse
+    
+    Calculadora que guarda una expresión aritmética en un string y la evalua
+    Para hacer el trabajo más sencillo, se converite la expresión a notación polaca inversa (por método de Shunting Yard) y calcular maś rápido.
+
+    Es fácil hacerlo con pilas y colas.
+    Pero en este caso no se hará fácil ;)
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -6,7 +15,11 @@
 #include <string.h>
 #define T 30
 
+/* _____ASIGNAR JERARQUÍA________
+    Para el algoritmo de Shunting Yard se nece
+    
 
+ */
 int jerarquia(char cad){
     /* para el algoritmo de Shunting Yard
     Se asigna un valor numérico a cada operador según su jerarquía, los de mayor tendrán valores más altos
@@ -96,7 +109,7 @@ char *shunting_yard(char *cad, char *polish_not){
                 }
             }
     }
-    if (prev_operator != 0) {
+    if (prev_operator != 0){
         polish_not[i] = ascii(prev_operator);
     }
     polish_not[i+1] = '\0';
