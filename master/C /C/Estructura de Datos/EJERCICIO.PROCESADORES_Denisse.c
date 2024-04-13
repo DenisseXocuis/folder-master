@@ -171,7 +171,7 @@ typedef int TipoTarea;
 
 
         */
-        int atender(COLA_PROCESOS **head, int **tareas_atendidas){
+       // int atender(COLA_PROCESOS **head, int **tareas_atendidas){
             NODE *PID_ACTUAL = (*head)->frente->TASK;
             NODE *PID_PRIMERO= PID_ACTUAL;
             do{ //si hay tareas en el procesador vv
