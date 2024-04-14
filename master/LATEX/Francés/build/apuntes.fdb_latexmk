@@ -1,9 +1,0 @@
-# Fdb version 4
-["pdflatex"] 0 "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Francés/apuntes.tex" "build/apuntes.pdf" "apuntes" 0 -1
-  "/home/denissexocuis/Documentos/folder-master-1/master/LATEX/Francés/apuntes.tex" 0 -1 0 ""
-  "build/apuntes.aux" 0 -1 0 "pdflatex"
-  (generated)
-  "build/apuntes.aux"
-  "build/apuntes.log"
-  "build/apuntes.pdf"
-  (rewritten before read)
