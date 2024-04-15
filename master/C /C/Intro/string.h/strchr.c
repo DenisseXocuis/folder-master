@@ -7,7 +7,7 @@ int main(){
     system("cls || clear");
     printf("Ingresa una cadena\n");
     scanf("%s", &s);
-    printf("la primera aparicion de %c es desde %s", c, strchr(s,c));
+    printf("la primera aparicion de \"%c\" es desde \"%s\"", c, strchr(s,c));
 
     return 0;
 

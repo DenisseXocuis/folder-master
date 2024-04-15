@@ -23,9 +23,6 @@ typedef int Tipo; //para que sea de cualquier tipo
     Grado del árbol es el máximo grado de todos los nodos del árbol
     Nivel es el número de arcos que deben ser recorridos para llegar a un determinado nodo. RAIZ TIENE NIVEL 1
     Altura del árbol es el máximo núm de niveles de todos los nodos (lineas, saltos)
-
-
-
  */
 
     //Estructura del nodo árbol-base

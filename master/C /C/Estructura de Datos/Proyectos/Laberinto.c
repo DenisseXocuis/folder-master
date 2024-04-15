@@ -13,6 +13,8 @@ void introduccion();
         struct paso *derecha;
     }PASO;
 
+enum _bool{false, true}BOOL;
+
 int main(){
     int op;
     introduccion();
