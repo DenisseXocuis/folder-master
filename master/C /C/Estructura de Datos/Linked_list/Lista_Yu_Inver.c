@@ -39,7 +39,7 @@ typedef struct nodo{
 NODO *nodo(TipoElemento x){
     NODO *new_node = (NODO *) malloc(sizeof(NODO));
     if(!new_node) return 0;
-    new_node->dato=x;
+    new_node->dato=x; //ola
     new_node->next=NULL;
     return new_node;
 }

@@ -60,7 +60,7 @@ typedef int TipoTarea;
         typedef struct nodo_procesador{
             NODE *TASK; //apuntador a nodo de procesos
             int contador_procesos;
-            struct nodo_procesador *next;
+            struct nodo_procesador *next; 
         }PROCESADOR;
 
         //apuntadores para cola 2 (frente y final)
@@ -93,7 +93,7 @@ typedef int TipoTarea;
 
         /*_______________LLENAR COLA CIRCULAR DE PROCESADORES_____________________*/
         //desencola 1 nodo de la cola de tareas
-        NODE *desencolar(COLA_TAREAS **head){
+        NODE *desencolar(COLA_TAREAS **head){ 
             if((*head)->frente==NULL){ //ya no hay tareas
                 return NULL;
             }
@@ -168,10 +168,8 @@ typedef int TipoTarea;
 
                        frente2 v    final2 v
             |TASK| -> >*|NODO1| -> |NODO2|*--
-
-
         */
-       // int atender(COLA_PROCESOS **head, int **tareas_atendidas){
+            int atender(COLA_PROCESOS **head, int **tareas_atendidas){
             NODE *PID_ACTUAL = (*head)->frente->TASK;
             NODE *PID_PRIMERO= PID_ACTUAL;
             do{ //si hay tareas en el procesador vv
@@ -275,6 +273,7 @@ void pause(){
     getchar();
     getchar();
 }
+
 void about(){
     system("clear || cls");
     puts("----------------------------------------");
@@ -287,6 +286,4 @@ void about(){
     puts("Marzo 9 de Abril del 2024");
     putchar('\n');
     putchar('\n');
-
-
 }
