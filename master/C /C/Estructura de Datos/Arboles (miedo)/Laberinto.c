@@ -76,13 +76,13 @@ int main(){
 void introduccion(){
     system("cls || clear");
     puts("Eres un pequenio conejo en una pradera");
-    //sleep(3);
+    sleep(3);
     puts("Un dia vas al lugar donde siempre buscas tus ricas y nutritivas zanahorias");
-    //sleep(4);
+    sleep(4);
     puts("Sin embargo, te pierdes");
-    //sleep(5);
+    sleep(5);
     puts(":(");
-    //sleep(3);
+    sleep(3);
     puts("¿Eres capaz de encontrar la zanahoria?");
     putchar('\n');
     puts("[1]: Si, dale");

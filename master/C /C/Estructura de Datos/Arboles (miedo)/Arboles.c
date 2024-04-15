@@ -65,5 +65,7 @@ int main(){
     raiz->len = ramita_l;
     raiz->rin = ramita_r;
 
+    puts("ñañañ");
+    
     return 0;
 }
