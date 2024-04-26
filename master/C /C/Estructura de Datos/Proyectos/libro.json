@@ -1,0 +1,10 @@
+{
+    "libro": {
+        "titulo": "El Señor de los Anillos",
+        "autor": "J.R.R. Tolkien",
+        "publicacion": {
+               "fecha": "1954-07-29",
+               "editorial": "George Allen & Unwin"
+         }
+   }
+}

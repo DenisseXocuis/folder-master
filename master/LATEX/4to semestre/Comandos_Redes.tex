@@ -1,0 +1,139 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\title {\textbf{Comandos para Cisco}}
+\author{Deniso Xocuis}
+\date{15 de abril del 2024}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{sloppypar}
+
+%%%%CONF BÁSICA DEL ROUTER
+\section{Configuración básica del router}
+
+\texttt{Router(config) \#hostname [NAME]}
+\vspace{0.3cm}\\ 
+\textbf{Contraseñas:} 
+
+\texttt{Router(config) \#enable secret [PASSWORD]}
+
+\texttt{Router(config) \#service password-encryption}
+
+\texttt{Router(config) \#line console 0 \\ Router(config-line) \#loggin synchronous}
+
+\texttt{Router(config-line) \#password [PASSWORD]}
+
+\texttt{Router(config-line) \#login}
+
+\texttt{Router(config)\#line vty 0 4 \\ Router(config-line) \#password [PASSWORD] \\ Router(config-line)\#login (y exit)}\\
+\texttt{Router(config) \#no service password-encryption}
+\vspace{0.3cm}\\
+\textbf{Conf de un mensaje de bienvenida:} \\ 
+\texttt{Router(config)\#banner motd \# MESSAGE \#}
+\vspace{0.3cm}\\
+\textbf{Configuración de una interfaz} \\
+\texttt{Router(config)\#interface [TYPE NUMBER] \\ Router(config-if)\#ip address [IP] [MASK] \\ Router(config-if) \#no shu}
+\vspace{0.3cm}\\ 
+\textbf{No interactuar con el DNS} \\ 
+\texttt{no ip domain-lookup}
+\vspace{0.3cm}\\ 
+\textbf{Guardar cambios realizados:}
+\texttt{Router\#copy run start} 
+\newpage
+\textbf{Verificación de la configuración básica:}\\
+\texttt{Router\#show run conf \\ Router\#show ip route \\ Router\#show ip int br \\ Router\#show interfaces \\ show ip protocols}
+\vspace{0.3cm}\\ 
+\textbf{Análisis de interfaces del router:}
+\texttt{show ip route \\ show int \\ show ip int br \\ show run}
+\vspace{0.3cm}\\ 
+\textbf{Historial de comandos} \\ 
+Almacena temporalmente la lista de comandos ejecutados que se deben recuperar \\ 
+\texttt{terminal history size 200 \\ show history}
+
+
+%%%%%%%%%ENRUTAMIENTO ESTÁTICO
+\subsection{Enrutamiento estático}
+\textbf{1. Agregar conf básica ;)}\\
+\texttt{Router(config)\#ip route [IP RED DESCONOCIDA][MASK][PUERTA ENLACE]}
+\subsection{Enrutamiento dinámico}
+\subsubsection{RIPv2}
+\textbf{1. Agregar conf básica ;)} \\  
+\texttt{Router(config)\#router rip \\ Router(config-router)\#version 2 \\ Router (config-router)\#network [IP] (clase completa nomas) \\ Router(config-router)\#passive-interface [NAME] \\ Router(config-router)\#no auto-summary}
+\subsubsection{EIGRP}
+\textbf{1. Agregar conf básica ;)} \\  
+\texttt{Router(config)\#router eigrp 100 \\ Router(config-router)\#no auto-summary\\ Router(config-router)\#eigrp log-neighbor-changes\\ Router(config-router)\#network [IP] (clase completa nomas)}
+\newpage
+\subsection{ACCESS LIST}
+\textbf{1. Agregar conf básica ;)} \\ 
+\textbf{2. Enrutamiento estático o dinámico}\\
+\textbf{Creación} \\
+\texttt{access-list [ID][deny|permit][ip][wildcard][log]}
+\vspace{0.3cm}\\ 
+\textbf{Aplicación:}\\ 
+Para permitir el resto del tráfico
+\texttt{R2(config)\#access-list [ID] permit any}\\ 
+Para aplicar la ACL a una interfaz:
+\texttt{R2(config)\# int [NAME] \\ R2(config-if)\#ip access-group [ID] (in|out)}
+\vspace{0.3cm}\\ 
+\textbf{Verificar:}\\ 
+\texttt{show ip interface \\ show access-lists}
+\vspace{0.3cm}\\ 
+\textbf{ACL ESTÁNDAR}\\
+\texttt{access-list [ID] [deny|permit][IP][WILDCARD]}
+
+or
+
+\texttt{access-list [ID] [deny|permit] host [IP]}
+\vspace{0.3cm}\\ 
+\textbf{ACL ESTENDIDA}\\
+\texttt{access-list [ID] [permit|deny][PROTOCOL][IP][IP destino wildcard][TCP APPLICATION]}
+\vspace{0.3cm}\\ 
+\textbf{Sintaxis} \\ 
+Protocolo: ip | tcp | udp | icmp \\ 
+Comparación: gt | it | eq \\ 
+Origen de una sola ip: host \\ 
+Origen de cualquier ip: any \\ 
+Máscara wildcard: el inverso de la máscara\\ 
+\textbf{¿Dónde se aplican?} \\ 
+Las ESTÁNDAR se colocan cerca del destino \\ 
+Las EXTENDIDAS se deben colocar cerca de la fuente \\
+IN : El tráfico que llega a la interfaz y luego pasa por el router. \\ 
+OUT: El tráfico que ya ha pasado por el router y está saliendo de la interfaz
+
+\textbf{EJEMPLO:}
+
+\textit{La red 192.168.11.0/24 (R2) no tiene permiso para acceder al DNS en la red 192.168.20.0/24. Se permite el resto de los tipos de acceso.} \\ 
+Se debe crear una ACL en R2, la lista de acceso se debe colocar en la interfaz de salida hacia el DNS. Se debe crear una segunda regla en el R2 para permitir el resto del tráfico.\\ 
+\textit{La red 192.168.10.0/24(R3) no tiene permiso para comunicarse con la red 192.168.30.0/24. Se permite el resto de los tipos de acceso}
+\vspace{0.3cm}\\ 
+Para restringir el acceso de la red 192.168.10.0/24(R3) a la red 192.168.30/24 sin interferir con otro tráfico, se
+debe crear una lista de acceso en el R3. La ACL se debe colocar en la interfaz de salida hacia la PC3.
+Se debe crear una segunda regla en el R3 para permitir el resto del tráfico.
+\newpage
+\section{VLAN}
+\section{VTP}
+VTP: protocolo troncal de vlan (solo se usa en cisco)
+
+mode access: recibe la info del servidor
+
+mode trunk: manda toda la info para el resto de los clientes(switches)
+\newpage
+\section{INTER VLAN}
+
+\end{sloppypar}
+\end{document}

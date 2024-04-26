@@ -13,6 +13,8 @@
 
     ÁRBOLES BINARIOS DE BÚSQUEDA ABB
     Agilizan las búsquedas, yeah
+    La función recibe el nodo raíz del árbol y dato a buscar
+    1. Comparar la clave a insertar en la raíz del árbol, si es mayor se sigue con el arbol derecho. Si es menor, se continua con el izquierdo.
  */
 
 int main(){

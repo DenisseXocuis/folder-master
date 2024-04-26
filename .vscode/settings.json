@@ -3,5 +3,6 @@
         "cstdlib": "c",
         "stdio.h": "c",
         "string.h": "c"
-    }
+    },
+    "workbench.colorTheme": "Kanagawa Dragon"
 }

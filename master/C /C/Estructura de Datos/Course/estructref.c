@@ -9,9 +9,11 @@ struct persona{
 void llenado(struct persona *per){
     scanf("%d", &per->edad);
     scanf("%f", &per->peso);
-    strcpy(per->nombre, "deniso"); //or may be scanf idk
+    scanf("%s", &per->nombre);
+    //strcpy(per->nombre, "deniso"); //or may be scanf idk
 }
 int main(){
+
     struct persona variable;
     llenado(&variable);
     return 0;   

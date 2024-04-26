@@ -37,7 +37,6 @@ typedef int Tipo; //para que sea de cualquier tipo
     {
         //crea memoria del nodito ;)
         TREE_NODE *nodito = malloc(sizeof(TREE_NODE));
-
         if(!nodito) return 1;
 
         //inicializando:

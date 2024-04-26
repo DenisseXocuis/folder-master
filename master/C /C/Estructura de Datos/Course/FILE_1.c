@@ -1,18 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+struct{
+    char *nom;
+    short edad;
+    float peso;
+}datos[10];
+
 int main(){
     FILE *archivo;
-    struct{
-        char *nom;
-        short edad;
-        float peso;
-    }datos[10];
 
     for(int i=0; i<2; i++){
         printf("datos\n");
         scanf("%s", &datos[i].nom);
         scanf("%d", &datos[i].edad);
-        scanf("%f", &datos[i].peso);
+        scanf("%f" , &datos[i].peso);
     }
     archivo = fopen("Datos.csv", "w");
     fprintf(archivo, "Nombre, Edad, Peso\n");

@@ -1,0 +1,8 @@
+<libro>
+  <titulo>El Señor de los Anillos</titulo>
+  <autor>J.R.R. Tolkien</autor>
+  <publicacion>
+    <fecha>1954-07-29</fecha>
+    <editorial>George Allen & Unwin</editorial>
+  </publicacion>
+</libro>
