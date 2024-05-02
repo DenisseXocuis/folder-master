@@ -32,7 +32,7 @@ void about();
     //ESTRUCTURA BASE DE COLA DE TAGS
     typedef struct nodocola_tags
     {   //por si está anidado o el tag tiene Atributo 
-        ATRIBUTO *Atributo;  
+        struct apt_nodo *Atributo;  
         char *NombreTAG; //Tag principal
         struct nodocola_tags *next;
     }NODO_TAG;
@@ -46,22 +46,23 @@ void about();
 
     /*_________CREACIÓN DE NODO PARA COLA PRINCIPAL_______ */
     NODO_TAG *nodo(const char *cadena)
-    {   NODO_TAG *nuevo_nodo = (NODO_TAG *) malloc(sizeof(NODO_TAG));
+    {   
+        NODO_TAG *nuevo_nodo = (NODO_TAG *) malloc(sizeof(NODO_TAG));
         if(!nuevo_nodo)
         {
             puts("ERROR! No hay memoria T_T");
             exit(1);
         }
-        nuevo_nodo->Atributo = NULL;
+        nuevo_nodo->Atributo = nuevo_nodo->Atributo;
         nuevo_nodo->NombreTAG= cadena;
         nuevo_nodo->next = NULL;
         return nuevo_nodo;
     }
 
     /*_________CREACIÓN DE NODO PARA EL NODO COLA_______ */
-    NODO_ATRIBUTO *nodito_atributo(const char *Tag_Atributo, const char *info){
+    NODO_ATRIBUTO *nodito_atributo(const char *Tag_Atributo, const char *info)
+    {
         NODO_ATRIBUTO *nuevo_nodo = (NODO_ATRIBUTO*) malloc(sizeof(NODO_ATRIBUTO));
-
         if(!nuevo_nodo)
         {
             puts("ERROR! No hay memoria :(");
@@ -103,10 +104,10 @@ void about();
         {
             (Cola2)->frente2 = noodito;
             (Cola2)->final2 = noodito;
-           /*  if(cierre_anidado!=1)
+            if(cierre_anidado!=1)
             {
-                (*Cola_Princ)->final->Atributo=noodito;
-            } */
+                (*Cola_Princ)->frente->Atributo = &Cola2->frente2;
+            }
             if(TAG == NULL)//quiere decir que NO es un atributo del TAG y es un elemento nada más 
             {
                 return 1;
@@ -115,13 +116,13 @@ void about();
             return 1;
         }
 
-        (Cola2)->final2->otro=noodito;
-        (Cola2)->final2=noodito;
-        /* if(cierre_anidado!=1)
+        (Cola2)->final2->otro= noodito;
+        (Cola2)->final2= noodito;
+        if(cierre_anidado!=1)
             {   
                 (*Cola_Princ)->final->Atributo=NULL;
-                (*Cola_Princ)->final->Atributo=noodito;
-            } */
+                (*Cola_Princ)->final->Atributo= noodito;
+            }
         if(TAG == NULL)//quiere decir que NO es un atributo del TAG y es un elemento nada más 
         {
                 return 1;
@@ -265,7 +266,6 @@ void about();
         
     }
 
-
 /*___________________PILA___________________*/
     //ESTRUCTURA BASE DE PILA DE TAGS
 
@@ -289,7 +289,6 @@ void about();
         struct nodopila_tag *TOPE;
         struct nodo_pila *HEAD; //lista
     }PILA;
-
 
 /*______________CREACIÓN NODO PARA PILA______________*/
     NODO_PILA *crearnodo(const char *TAG)
@@ -700,5 +699,3 @@ void about(){
     puts("~*==========================================*~");
 
 }
-
-

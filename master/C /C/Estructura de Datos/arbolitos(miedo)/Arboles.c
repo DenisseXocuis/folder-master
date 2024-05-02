@@ -28,7 +28,7 @@ typedef int Tipo; //para que sea de cualquier tipo
     //Estructura del nodo árbol-base
     typedef struct treenode{
         Tipo Dato;
-        struct treenode *len;
+        struct treenode *len;   
         struct treenode *rin; //it's just basically left & right lol
     }TREE_NODE;
 
