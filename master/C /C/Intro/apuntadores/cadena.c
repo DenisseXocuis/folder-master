@@ -3,11 +3,11 @@
 void inversa(char *);
 
 int main(){
-    char w[T], p;
+    char *w, p;
     puts("PALABRA:");
     gets(w);
 
-    p = w[0];
+    p = w;
 
     inversa(p);
     

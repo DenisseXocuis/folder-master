@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.4.13)  29 APR 2024 10:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.4.13)  8 MAY 2024 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,8 +264,10 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 \TX@delta=\dimen190
 \TX@cols=\count283
 \TX@ftn=\toks31
-)
-LaTeX Font Info:    Trying to load font information for OT1+bch on input line 21.
+) (/usr/share/texlive/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+ Excluding comment 'comment')
+LaTeX Font Info:    Trying to load font information for OT1+bch on input line 22.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -275,20 +277,20 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (out/Plantilla_Trabajos_Redes.aux)
 \openout1 = `Plantilla_Trabajos_Redes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -349,72 +351,105 @@ Package caption Info: End \AtBeginDocument code.
 <images//logoUV.png, id=1, 194.7275pt x 263.98625pt>
 File: images//logoUV.png Graphic file (type png)
 <use images//logoUV.png>
-Package pdftex.def Info: images//logoUV.png  used on input line 32.
+Package pdftex.def Info: images//logoUV.png  used on input line 33.
 (pdftex.def)             Requested size: 50.05145pt x 67.85335pt.
 <images//PORTADA.png, id=2, 1024.82875pt x 193.72375pt>
 File: images//PORTADA.png Graphic file (type png)
 <use images//PORTADA.png>
-Package pdftex.def Info: images//PORTADA.png  used on input line 42.
+Package pdftex.def Info: images//PORTADA.png  used on input line 43.
 (pdftex.def)             Requested size: 450.43253pt x 85.1441pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./images//logoUV.png> <./images//PORTADA.png>]
-<images//swappy-20240428-004521.png, id=11, 1182.4175pt x 734.745pt>
-File: images//swappy-20240428-004521.png Graphic file (type png)
-<use images//swappy-20240428-004521.png>
-Package pdftex.def Info: images//swappy-20240428-004521.png  used on input line 57.
-(pdftex.def)             Requested size: 350.33727pt x 217.68964pt.
-<images//router.png, id=12, 876.27374pt x 446.66875pt>
-File: images//router.png Graphic file (type png)
-<use images//router.png>
-Package pdftex.def Info: images//router.png  used on input line 64.
-(pdftex.def)             Requested size: 300.29344pt x 153.07172pt.
-<images//rout2.png, id=13, 862.22125pt x 425.59pt>
-File: images//rout2.png Graphic file (type png)
-<use images//rout2.png>
-Package pdftex.def Info: images//rout2.png  used on input line 66.
-(pdftex.def)             Requested size: 300.29344pt x 148.21841pt.
-<images//rout3.png, id=14, 870.25125pt x 128.48pt>
-File: images//rout3.png Graphic file (type png)
-<use images//rout3.png>
-Package pdftex.def Info: images//rout3.png  used on input line 68.
-(pdftex.def)             Requested size: 300.29344pt x 44.33543pt.
- [1 <./images//swappy-20240428-004521.png>]
-<images//s1.png, id=19, 867.24pt x 489.83pt>
-File: images//s1.png Graphic file (type png)
-<use images//s1.png>
-Package pdftex.def Info: images//s1.png  used on input line 73.
-(pdftex.def)             Requested size: 300.29344pt x 169.61188pt.
-<images//s2.png, id=20, 852.18375pt x 293.095pt>
-File: images//s2.png Graphic file (type png)
-<use images//s2.png>
-Package pdftex.def Info: images//s2.png  used on input line 75.
-(pdftex.def)             Requested size: 300.29344pt x 103.28246pt.
-<images//s3.png, id=21, 872.25874pt x 501.875pt>
-File: images//s3.png Graphic file (type png)
-<use images//s3.png>
-Package pdftex.def Info: images//s3.png  used on input line 77.
-(pdftex.def)             Requested size: 300.29344pt x 172.77946pt.
- [2 <./images//router.png> <./images//rout2.png> <./images//rout3.png>]
-<images//pruebitsa.png, id=25, 631.35875pt x 147.55125pt>
-File: images//pruebitsa.png Graphic file (type png)
-<use images//pruebitsa.png>
-Package pdftex.def Info: images//pruebitsa.png  used on input line 81.
-(pdftex.def)             Requested size: 300.29344pt x 70.17987pt.
- [3 <./images//s1.png> <./images//s2.png> <./images//s3.png> <./images//pruebitsa.png>] (out/Plantilla_Trabajos_Redes.aux) ) 
+<images//topo.png, id=11, 722.7pt x 477.785pt>
+File: images//topo.png Graphic file (type png)
+<use images//topo.png>
+Package pdftex.def Info: images//topo.png  used on input line 59.
+(pdftex.def)             Requested size: 400.38872pt x 264.69994pt.
+<images//spaningtre1.png, id=12, 860.21375pt x 505.89pt>
+File: images//spaningtre1.png Graphic file (type png)
+<use images//spaningtre1.png>
+Package pdftex.def Info: images//spaningtre1.png  used on input line 66.
+(pdftex.def)             Requested size: 300.29344pt x 176.60098pt.
+<images//spa2.png, id=13, 857.2025pt x 496.85625pt>
+File: images//spa2.png Graphic file (type png)
+<use images//spa2.png>
+Package pdftex.def Info: images//spa2.png  used on input line 68.
+(pdftex.def)             Requested size: 300.29344pt x 174.05391pt.
+<images//s2spa.png, id=14, 864.22874pt x 501.875pt>
+File: images//s2spa.png Graphic file (type png)
+<use images//s2spa.png>
+Package pdftex.def Info: images//s2spa.png  used on input line 70.
+(pdftex.def)             Requested size: 300.29344pt x 174.38765pt.
+ [1 <./images//topo.png>]
+<images//vlanbrief1.png, id=19, 859.21pt x 558.085pt>
+File: images//vlanbrief1.png Graphic file (type png)
+<use images//vlanbrief1.png>
+Package pdftex.def Info: images//vlanbrief1.png  used on input line 75.
+(pdftex.def)             Requested size: 300.29344pt x 195.05165pt.
+<images//vlanbrief2.png, id=20, 879.285pt x 457.71pt>
+File: images//vlanbrief2.png Graphic file (type png)
+<use images//vlanbrief2.png>
+Package pdftex.def Info: images//vlanbrief2.png  used on input line 77.
+(pdftex.def)             Requested size: 300.29344pt x 156.31076pt.
+<images//vlanbrief3.png, id=21, 884.30376pt x 554.07pt>
+File: images//vlanbrief3.png Graphic file (type png)
+<use images//vlanbrief3.png>
+Package pdftex.def Info: images//vlanbrief3.png  used on input line 79.
+(pdftex.def)             Requested size: 300.29344pt x 188.15303pt.
+ [2 <./images//spaningtre1.png> <./images//spa2.png> <./images//s2spa.png>] [3 <./images//vlanbrief1.png> <./images//vlanbrief2.png> <./images//vlanbrief3.png>]
+<images//trunk1.png, id=28, 856.19875pt x 580.1675pt>
+File: images//trunk1.png Graphic file (type png)
+<use images//trunk1.png>
+Package pdftex.def Info: images//trunk1.png  used on input line 85.
+(pdftex.def)             Requested size: 300.29344pt x 203.47772pt.
+<images//trunk2.png, id=29, 870.25125pt x 557.08125pt>
+File: images//trunk2.png Graphic file (type png)
+<use images//trunk2.png>
+Package pdftex.def Info: images//trunk2.png  used on input line 87.
+(pdftex.def)             Requested size: 300.29344pt x 192.23573pt.
+<images//trunk3.png, id=30, 836.12375pt x 584.1825pt>
+File: images//trunk3.png Graphic file (type png)
+<use images//trunk3.png>
+Package pdftex.def Info: images//trunk3.png  used on input line 89.
+(pdftex.def)             Requested size: 300.29344pt x 209.81526pt.
+<images//vtp1.png, id=31, 875.27pt x 483.8075pt>
+File: images//vtp1.png Graphic file (type png)
+<use images//vtp1.png>
+Package pdftex.def Info: images//vtp1.png  used on input line 94.
+(pdftex.def)             Requested size: 300.29344pt x 165.99098pt.
+<images//vtp2.png, id=32, 867.24pt x 427.5975pt>
+File: images//vtp2.png Graphic file (type png)
+<use images//vtp2.png>
+Package pdftex.def Info: images//vtp2.png  used on input line 96.
+(pdftex.def)             Requested size: 300.29344pt x 148.06284pt.
+<images//vtp3.png, id=33, 870.25125pt x 424.58624pt>
+File: images//vtp3.png Graphic file (type png)
+<use images//vtp3.png>
+Package pdftex.def Info: images//vtp3.png  used on input line 98.
+(pdftex.def)             Requested size: 300.29344pt x 146.5148pt.
+ [4 <./images//trunk1.png> <./images//trunk2.png> <./images//trunk3.png>] [5 <./images//vtp1.png> <./images//vtp2.png> <./images//vtp3.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [6] (out/Plantilla_Trabajos_Redes.aux) ) 
 Here is how much of TeX's memory you used:
- 6801 strings out of 476034
- 111920 string characters out of 5792864
- 1851388 words of memory out of 6000000
- 27160 multiletter control sequences out of 15000+600000
- 531308 words of font info for 54 fonts, out of 8000000 for 9000
+ 6946 strings out of 476034
+ 114592 string characters out of 5792864
+ 1862388 words of memory out of 6000000
+ 27276 multiletter control sequences out of 15000+600000
+ 536927 words of font info for 72 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  67i,6n,77p,390b,415s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on out/Plantilla_Trabajos_Redes.pdf (4 pages, 411980 bytes).
+Output written on out/Plantilla_Trabajos_Redes.pdf (7 pages, 684165 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 64 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
