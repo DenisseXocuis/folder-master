@@ -1,85 +1,114 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <string.h>
 
-// Definición de la estructura del nodo del árbol Trie
-typedef struct ROOT_NODE {
-    char letter; // La letra que representa este nodo
-    struct LISTA *lista_apt; // Apuntador a la lista de hijos
-    char isEndOfWord; // Flag para indicar si este nodo es el final de una palabra
-} ROOT_NODE;
+// Definición de la estructura del nodo del árbol trie
+typedef struct Nodo {
+    char letra;
+    struct ListaNodoRaiz *hijos; // Lista de apuntadores a nodos raíz
+    bool finPalabra; // Indica si el nodo es el final de una palabra
+} Nodo;
 
-// Definición de la estructura de la lista de apuntadores a los hijos del árbol Trie
-typedef struct LISTA {
-    struct ROOT_NODE *hijo; // Apuntador al nodo hijo
-    struct LISTA *next; // Apuntador al siguiente nodo en la lista
-} LISTA;
+// Definición de la estructura del nodo de la lista de apuntadores a nodos raíz
+typedef struct ListaNodoRaiz {
+    struct NodoRaiz *raiz;
+    struct ListaNodoRaiz *siguiente;
+} ListaNodoRaiz;
 
-// Función para inicializar un nuevo nodo del árbol Trie
-ROOT_NODE* createRootNode(char letter) {
-    ROOT_NODE* newNode = (ROOT_NODE*)malloc(sizeof(ROOT_NODE));
-    newNode->letter = letter;
-    newNode->lista_apt = NULL;
-    newNode->isEndOfWord = 0;
-    return newNode;
+// Función para crear un nuevo nodo del árbol trie
+Nodo *crear_nodo(char letra) {
+    Nodo *nuevo = (Nodo *)malloc(sizeof(Nodo));
+    nuevo->letra = letra;
+    nuevo->hijos = NULL;
+    nuevo->finPalabra = false;
+    return nuevo;
 }
 
-// Función para inicializar una nueva lista de apuntadores a los hijos del árbol Trie
-LISTA* createLista(ROOT_NODE *hijo) {
-    LISTA* newList = (LISTA*)malloc(sizeof(LISTA));
-    newList->hijo = hijo;
-    newList->next = NULL;
-    return newList;
-}
-
-// Función para insertar una palabra en el árbol Trie
-void insertWord(ROOT_NODE *root, char *word) {
-    ROOT_NODE *currentNode = root;
-
-    // Recorrer cada letra de la palabra
-    for (int i = 0; word[i] != '\0'; i++) {
-        char letter = word[i];
-        LISTA *child = currentNode->lista_apt;
-        LISTA *prevChild = NULL;
-        // Buscar si ya existe un nodo con esta letra
-        while (child != NULL && child->hijo->letter != letter) {
-            prevChild = child;
-            child = child->next;
-        }
-        if (child == NULL) {
-            // Si no existe, crear un nuevo nodo y enlazarlo
-            ROOT_NODE *newNode = createRootNode(letter);
-            LISTA *newChild = createLista(newNode);
-            if (prevChild == NULL) {
-                currentNode->lista_apt = newChild;
-            } else {
-                prevChild->next = newChild;
-            }
-            currentNode = newNode;
+// Función para insertar una palabra en el árbol trie
+void insertar(Nodo *raiz, const char *palabra) {
+    Nodo *actual = raiz;
+    while (*palabra) {
+        if (actual->hijos == NULL) {
+            actual->hijos = (ListaNodoRaiz *)malloc(sizeof(ListaNodoRaiz));
+            actual->hijos->raiz = crear_nodo(*palabra);
+            actual->hijos->siguiente = NULL;
         } else {
-            // Si ya existe, seguir al siguiente nodo
-            currentNode = child->hijo;
+            ListaNodoRaiz *temp = actual->hijos;
+            while (temp->siguiente != NULL && temp->raiz->letra != *palabra) {
+                temp = temp->siguiente;
+            }
+            if (temp->raiz->letra != *palabra) {
+                temp->siguiente = (ListaNodoRaiz *)malloc(sizeof(ListaNodoRaiz));
+                temp->siguiente->raiz = crear_nodo(*palabra);
+                temp->siguiente->siguiente = NULL;
+            }
+        }
+        actual = actual->hijos->raiz;
+        palabra++;
+    }
+    actual->finPalabra = true; // Marcar el último nodo como el final de una palabra
+}
+
+// Función para buscar una palabra en el árbol trie
+bool buscar(Nodo *raiz, const char *palabra) {
+    Nodo *actual = raiz;
+    while (*palabra) {
+        if (actual->hijos == NULL) {
+            return false; // La palabra no está en el árbol
+        }
+        ListaNodoRaiz *temp = actual->hijos;
+        while (temp != NULL) {
+            if (temp->raiz->letra == *palabra) {
+                actual = temp->raiz;
+                break;
+            }
+            temp = temp->siguiente;
+        }
+        if (temp == NULL) {
+            return false; // No se encontró la letra en la lista de hijos
+        }
+        palabra++;
+    }
+    return (actual != NULL && actual->finPalabra); // Verificar si el nodo actual es el final de una palabra
+}
+
+int main() {
+    Nodo *raiz = crear_nodo('*'); // Raíz del árbol trie
+    
+    char palabra[100]; // Buffer para almacenar la palabra ingresada por el usuario
+    
+    printf("Ingrese palabras (escriba 'salir' para terminar):\n");
+    
+    // Ciclo para ingresar palabras
+    while (1) {
+        printf("> ");
+        scanf("%s", palabra);
+        
+        if (strcmp(palabra, "salir") == 0) {
+            break; // Salir del ciclo si el usuario escribe "salir"
+        }
+        
+        // Insertar la palabra en el árbol trie
+        insertar(raiz, palabra);
+    }
+    
+    // Buscar palabras
+    printf("\nBusqueda de palabras:\n");
+    while (1) {
+        printf("> ");
+        scanf("%s", palabra);
+        
+        if (strcmp(palabra, "salir") == 0) {
+            break; // Salir del ciclo si el usuario escribe "salir"
+        }
+        
+        if (buscar(raiz, palabra)) {
+            printf("La palabra '%s' está en el árbol.\n", palabra);
+        } else {
+            printf("La palabra '%s' no está en el árbol.\n", palabra);
         }
     }
-
-    // Marcar el último nodo como el final de la palabra
-    currentNode->isEndOfWord = 1;
-}
-
-// Función principal
-int main() {
-    // Crear el nodo raíz del árbol Trie
-    ROOT_NODE *root = createRootNode('*'); // Usamos '*' como raíz
-
-    // Insertar palabras en el árbol Trie
-    insertWord(root, "abeja");
-    insertWord(root, "perro");
-    insertWord(root, "arbol");
-
-    // Insertar más palabras para probar
-    insertWord(root, "casa");
-    insertWord(root, "carro");
-
-    // Ahora puedes realizar búsquedas u otras operaciones en el árbol Trie
-
+    
     return 0;
 }

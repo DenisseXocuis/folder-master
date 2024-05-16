@@ -43,7 +43,7 @@
             \includegraphics[width=0.9\textwidth]{PORTADA.png}
         \end{figure}
         \vspace{2cm}
-        {\itshape\Large E12 - STP 2 \par}
+        {\itshape\Large E14 - Etherchannel \par}
         {\large Lara Xocuis Martha Denisse \par}
         {\large S22002213 \par}
         \vfill
@@ -56,86 +56,38 @@
 \section{Topología de Red}
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=0.8\textwidth]{topo.png}
+    \includegraphics[width=0.8\textwidth]{topo1.png}
 \end{figure}
 
-\section{Información de las VLANs}
-\subsection{show spanning-tree}
+\section{Información del Etherchannel}
+%\subsection{show spanning-tree}%
+%\subsection{show interface trunk}%
+%\subsection{show vtp status}%
+
+\subsection{show etherchannel summary}
 \begin{figure}[H]
     \centering 
-    \includegraphics[width=0.6\textwidth]{spaningtre1.png}
+    \includegraphics[width = 0.6\textwidth]{ether1.png}
     \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{spa2.png}
+    \includegraphics[width=0.6\textwidth]{ether2.png}
     \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{s2spa.png}
+    \includegraphics[width=0.6\textwidth]{ether3.png}
 \end{figure}
-\subsection{show vlan brief}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{vlanbrief1.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{vlanbrief2.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{vlanbrief3.png}
-\end{figure}
-\newpage
-\subsection{show interface trunk}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{trunk1.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{trunk2.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{trunk3.png}
-\end{figure}
-\subsection{show vtp status}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth]{vtp1.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{vtp2.png}
-    \vspace{0.3cm}\\ 
-    \includegraphics[width=0.6\textwidth]{vtp3.png}
-\end{figure}
-\newpage
-\subsection{Asignaciones - Tablas}
-\subsubsection{SWITCH S1}
-    \begin{center}
-        \begin{tabular}{|c|c|c|c|c|} \hline
-            %Finalmente realiza un tabla de todos los swithces por cada VLAN con respectivos roles, estados y costo de los puertos y quién es el puente raíz.%
-        VLAN & ROL & ESTADO & COSTO PUERTOS & RAIZ \\ \hline
-        01 & Desg & FWD & 19 & Si  \\ \hline
-        10 & Desg & FWD & 19 & Si \\ \hline 
-        20 & Desg & FWD & 19 & Si \\ \hline
-        30 & Desg & FWD & 19 & Si \\ \hline
-        99 & Desg, Altn & BLK, FWD & 19 & No \\ \hline
-        \end{tabular}   
-    \end{center}
-\subsubsection{SWITCH S2}
-\begin{center}
-    \begin{tabular}{|c|c|c|c|c|} \hline
-        %Finalmente realiza un tabla de todos los swithces por cada VLAN con respectivos roles, estados y costo de los puertos y quién es el puente raíz.%
-    VLAN & ROL & ESTADO & COSTO PUERTOS & RAIZ \\ \hline
-    01 & Desg, Root, Altn & FWD, BLK & 19 & No  \\ \hline
-    10 & Desg, Root, Altn & FWD, BLK & 19 & No \\ \hline 
-    20 & Desg, Root, Altn & FWD, BLK & 19 & No \\ \hline
-    30 & Desg, Root, Altn & FWD, BLK & 19 & No \\ \hline
-    99 & Root, Altn & BLK, FWD & 19 & No \\ \hline
-    \end{tabular}   
-\end{center}
 
-\subsubsection{SWITCH S3}
-\begin{center}
-    \begin{tabular}{|c|c|c|c|c|} \hline
-        %Finalmente realiza un tabla de todos los swithces por cada VLAN con respectivos roles, estados y costo de los puertos y quién es el puente raíz.%
-    VLAN & ROL & ESTADO & COSTO PUERTOS & RAIZ \\ \hline
-    01 & Root, Altn & FWD, BLK & 19 & No  \\ \hline
-    10 & Root, Altn & FWD, BLK & 19 & No \\ \hline 
-    20 & Root, Altn & FWD, BLK & 19 & No \\ \hline
-    30 & Root, Altn & FWD, BLK & 19 & No \\ \hline
-    99 & Desg & FWD & 19 & Si \\ \hline
-    \end{tabular}   
-\end{center}
+\subsection{show interface port-channel1}
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width = 0.6\textwidth]{portchannel.png}
+\end{figure}
+\subsection{show interfaces f0/1}
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.6\textwidth]{ehetlist.png}
+    \vspace{0.3cm}\\ 
+    \includegraphics[width=0.6\textwidth]{ehetport2.png}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%\subsection{Asignaciones - Tablas}%
 
 \end{sloppypar}
 \end{document}

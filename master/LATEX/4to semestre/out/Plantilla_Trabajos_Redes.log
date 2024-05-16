@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.4.13)  8 MAY 2024 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.5.9)  15 MAY 2024 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -361,95 +361,57 @@ Package pdftex.def Info: images//PORTADA.png  used on input line 43.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./images//logoUV.png> <./images//PORTADA.png>]
-<images//topo.png, id=11, 722.7pt x 477.785pt>
-File: images//topo.png Graphic file (type png)
-<use images//topo.png>
-Package pdftex.def Info: images//topo.png  used on input line 59.
-(pdftex.def)             Requested size: 400.38872pt x 264.69994pt.
-<images//spaningtre1.png, id=12, 860.21375pt x 505.89pt>
-File: images//spaningtre1.png Graphic file (type png)
-<use images//spaningtre1.png>
-Package pdftex.def Info: images//spaningtre1.png  used on input line 66.
-(pdftex.def)             Requested size: 300.29344pt x 176.60098pt.
-<images//spa2.png, id=13, 857.2025pt x 496.85625pt>
-File: images//spa2.png Graphic file (type png)
-<use images//spa2.png>
-Package pdftex.def Info: images//spa2.png  used on input line 68.
-(pdftex.def)             Requested size: 300.29344pt x 174.05391pt.
-<images//s2spa.png, id=14, 864.22874pt x 501.875pt>
-File: images//s2spa.png Graphic file (type png)
-<use images//s2spa.png>
-Package pdftex.def Info: images//s2spa.png  used on input line 70.
-(pdftex.def)             Requested size: 300.29344pt x 174.38765pt.
- [1 <./images//topo.png>]
-<images//vlanbrief1.png, id=19, 859.21pt x 558.085pt>
-File: images//vlanbrief1.png Graphic file (type png)
-<use images//vlanbrief1.png>
-Package pdftex.def Info: images//vlanbrief1.png  used on input line 75.
-(pdftex.def)             Requested size: 300.29344pt x 195.05165pt.
-<images//vlanbrief2.png, id=20, 879.285pt x 457.71pt>
-File: images//vlanbrief2.png Graphic file (type png)
-<use images//vlanbrief2.png>
-Package pdftex.def Info: images//vlanbrief2.png  used on input line 77.
-(pdftex.def)             Requested size: 300.29344pt x 156.31076pt.
-<images//vlanbrief3.png, id=21, 884.30376pt x 554.07pt>
-File: images//vlanbrief3.png Graphic file (type png)
-<use images//vlanbrief3.png>
-Package pdftex.def Info: images//vlanbrief3.png  used on input line 79.
-(pdftex.def)             Requested size: 300.29344pt x 188.15303pt.
- [2 <./images//spaningtre1.png> <./images//spa2.png> <./images//s2spa.png>] [3 <./images//vlanbrief1.png> <./images//vlanbrief2.png> <./images//vlanbrief3.png>]
-<images//trunk1.png, id=28, 856.19875pt x 580.1675pt>
-File: images//trunk1.png Graphic file (type png)
-<use images//trunk1.png>
-Package pdftex.def Info: images//trunk1.png  used on input line 85.
-(pdftex.def)             Requested size: 300.29344pt x 203.47772pt.
-<images//trunk2.png, id=29, 870.25125pt x 557.08125pt>
-File: images//trunk2.png Graphic file (type png)
-<use images//trunk2.png>
-Package pdftex.def Info: images//trunk2.png  used on input line 87.
-(pdftex.def)             Requested size: 300.29344pt x 192.23573pt.
-<images//trunk3.png, id=30, 836.12375pt x 584.1825pt>
-File: images//trunk3.png Graphic file (type png)
-<use images//trunk3.png>
-Package pdftex.def Info: images//trunk3.png  used on input line 89.
-(pdftex.def)             Requested size: 300.29344pt x 209.81526pt.
-<images//vtp1.png, id=31, 875.27pt x 483.8075pt>
-File: images//vtp1.png Graphic file (type png)
-<use images//vtp1.png>
-Package pdftex.def Info: images//vtp1.png  used on input line 94.
-(pdftex.def)             Requested size: 300.29344pt x 165.99098pt.
-<images//vtp2.png, id=32, 867.24pt x 427.5975pt>
-File: images//vtp2.png Graphic file (type png)
-<use images//vtp2.png>
-Package pdftex.def Info: images//vtp2.png  used on input line 96.
-(pdftex.def)             Requested size: 300.29344pt x 148.06284pt.
-<images//vtp3.png, id=33, 870.25125pt x 424.58624pt>
-File: images//vtp3.png Graphic file (type png)
-<use images//vtp3.png>
-Package pdftex.def Info: images//vtp3.png  used on input line 98.
-(pdftex.def)             Requested size: 300.29344pt x 146.5148pt.
- [4 <./images//trunk1.png> <./images//trunk2.png> <./images//trunk3.png>] [5 <./images//vtp1.png> <./images//vtp2.png> <./images//vtp3.png>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 104.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 104.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [6] (out/Plantilla_Trabajos_Redes.aux) ) 
+<images//topo1.png, id=11, 588.1975pt x 245.91875pt>
+File: images//topo1.png Graphic file (type png)
+<use images//topo1.png>
+Package pdftex.def Info: images//topo1.png  used on input line 59.
+(pdftex.def)             Requested size: 400.38872pt x 167.39888pt.
+<images//ether1.png, id=12, 743.77875pt x 437.635pt>
+File: images//ether1.png Graphic file (type png)
+<use images//ether1.png>
+Package pdftex.def Info: images//ether1.png  used on input line 70.
+(pdftex.def)             Requested size: 300.29344pt x 176.69362pt.
+<images//ether2.png, id=13, 863.225pt x 448.67625pt>
+File: images//ether2.png Graphic file (type png)
+<use images//ether2.png>
+Package pdftex.def Info: images//ether2.png  used on input line 72.
+(pdftex.def)             Requested size: 300.29344pt x 156.08057pt.
+<images//ether3.png, id=14, 795.97375pt x 491.8375pt>
+File: images//ether3.png Graphic file (type png)
+<use images//ether3.png>
+Package pdftex.def Info: images//ether3.png  used on input line 74.
+(pdftex.def)             Requested size: 300.29344pt x 185.54932pt.
+ [1 <./images//topo1.png>]
+<images//portchannel.png, id=19, 886.31125pt x 686.565pt>
+File: images//portchannel.png Graphic file (type png)
+<use images//portchannel.png>
+Package pdftex.def Info: images//portchannel.png  used on input line 80.
+(pdftex.def)             Requested size: 300.29344pt x 232.62234pt.
+ [2 <./images//ether1.png> <./images//ether2.png> <./images//ether3.png>]
+<images//ehetlist.png, id=23, 578.16pt x 415.5525pt>
+File: images//ehetlist.png Graphic file (type png)
+<use images//ehetlist.png>
+Package pdftex.def Info: images//ehetlist.png  used on input line 85.
+(pdftex.def)             Requested size: 300.29344pt x 215.8349pt.
+<images//ehetport2.png, id=24, 778.91pt x 938.50626pt>
+File: images//ehetport2.png Graphic file (type png)
+<use images//ehetport2.png>
+Package pdftex.def Info: images//ehetport2.png  used on input line 87.
+(pdftex.def)             Requested size: 300.29344pt x 361.82008pt.
+ [3 <./images//portchannel.png>] [4 <./images//ehetlist.png> <./images//ehetport2.png>] (out/Plantilla_Trabajos_Redes.aux) ) 
 Here is how much of TeX's memory you used:
- 6946 strings out of 476034
- 114592 string characters out of 5792864
- 1862388 words of memory out of 6000000
- 27276 multiletter control sequences out of 15000+600000
- 536927 words of font info for 72 fonts, out of 8000000 for 9000
- 1137 hyphenation exceptions out of 8191
+ 6845 strings out of 477136
+ 112864 string characters out of 5813393
+ 1851388 words of memory out of 6000000
+ 27029 multiletter control sequences out of 15000+600000
+ 531308 words of font info for 54 fonts, out of 8000000 for 9000
+ 430 hyphenation exceptions out of 8191
  67i,6n,77p,390b,415s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on out/Plantilla_Trabajos_Redes.pdf (7 pages, 684165 bytes).
+Output written on out/Plantilla_Trabajos_Redes.pdf (5 pages, 386186 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 50 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
