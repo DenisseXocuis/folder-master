@@ -11,7 +11,7 @@ typedef struct lista
     {   struct nodito *hijo; //para apuntar al nodito pal arbolito
         struct lista *next; //para el siguiente dato de la lista
     }LISTA;
-
+    
 //ESTRUCTURA NODO BASE PARA ÁRBOL
     typedef struct nodito
     {   char letra;
