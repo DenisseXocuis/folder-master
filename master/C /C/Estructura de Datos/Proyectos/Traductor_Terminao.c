@@ -570,11 +570,6 @@ void about();
 
 
 
-
-
-
-
-
     //porque tuve problemas con el strcpy :(
     int copia_cadena(char *string)
     {

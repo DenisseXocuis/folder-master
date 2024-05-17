@@ -31,16 +31,18 @@ typedef struct lista
     LISTA *crear_apt(ROOT_NODE **nodo)
     {   LISTA *nodito = (LISTA*) malloc(sizeof(LISTA));
         if(!nodito) exit(1);
-        nodito->next = NULL;
         nodito->hijo = *nodo;
+        nodito->next = NULL;
         return nodito;
     }
+
+
 
     int *buscar(ROOT_NODE **apt, char **letra)
     {
         if((*apt)->letra == '*')
         {
-            if((*apt)->lista_apt == NULL) return 0; //<- no hay lista, no la encontró
+            if(!((*apt)->lista_apt)) return 0; //<- no hay lista, no la encontró
             if((*apt)->lista_apt->hijo->letra == *letra) return 1; //la encontró
 
             //busca en toda la lista de raices
@@ -61,37 +63,37 @@ typedef struct lista
 
 //FUNCIÓN PARA INSERTAR EL NODO, func principal
     int *insert_nodo(ROOT_NODE **root, LISTA **apt, char *letra)
-    {   ROOT_NODE *node = NULL;
-        
+    {   ROOT_NODE *node, *temp_root = NULL;
         BOOL = FALSE;
+
         while(!BOOL)
         { 
-            //si no existe raiz
-            if((*root) == NULL) *root = crear_nodo('*'); //<- porque el primero debe ser asterisco
+            //si no existe raiz, crea un nodo
+            if(!(*root)) *root = crear_nodo('*');
 
             //busca si la letra existe en los hijos de la raiz '*'
-            if(!(buscar(&(*root),&letra))) //si no está la letra, inserta toda la palabra
+            if(!(buscar(&(*root),&letra)))
+            //si no está la letra, inserta toda la palabra
             {
-                ROOT_NODE *temp_root;
                 LISTA **aux;
-                if((*apt) == NULL) //<- si no hay una lista en la raiz *
+                if((*apt) == NULL)
                 {   temp_root = (*root);
-                    while(*letra != '\0') //<- ingresa toda la palabra
-                    {   
+                    while(*letra != '\0')
+                    {   //crea el nodo y lo inserta en la lista
                         node = crear_nodo(*letra);
-                        *apt = crear_apt(&node); 
+                        *apt = crear_apt(&node);
+
+                        //inserta la lista en la raiz principal
                         temp_root->lista_apt = *apt;
-                        letra++;
                         temp_root = temp_root->lista_apt->hijo;
+                        letra++;
                     }
                 }
                 else //si ya existe una lista
                 {
                     *aux = *apt;
                     while((*aux)->next != NULL)
-                    {
                         *aux = (*aux)->next; //aux se usará como raiz provisional
-                    }
                     temp_root = (*aux)->hijo; //asigna aux a temp root
                     
                     while(*letra != '\0') //inserta toda la palabra
@@ -106,8 +108,8 @@ typedef struct lista
                 node = crear_nodo('.');
                 *apt = crear_apt(&node);
                 temp_root->lista_apt = *apt; //<- la palabra ha terminao
-                (*apt) = (*root)->lista_apt;
-                BOOL = TRUE; //<- palabra ingresada con éxito
+                (*apt) = (*root)->lista_apt; //actualiza lista de raices
+                BOOL = TRUE; //<- palabra ingresada con éxitoP
             }
         }
         return 1;
