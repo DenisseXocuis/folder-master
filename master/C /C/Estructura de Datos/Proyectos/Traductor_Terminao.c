@@ -324,6 +324,7 @@ void about();
         return nuevo_nodo;
 
     }
+
     int puts_elem(PILA **inicio, const char *aux, const char *atributo_tag)
     {
         ATRIBUTO_2 *NUEVO = nodo_atributo2(aux,atributo_tag);
@@ -334,7 +335,7 @@ void about();
 
     }
 
-//CREAR PILA PARA XML A JSON
+//CREAR PILA PARA JSON A XML
     void insertar_cola2(char **contenido_archivo, PILA *head){
         while(**contenido_archivo)
         {
@@ -483,7 +484,7 @@ void about();
                 //copia el contenido del archivo en la cadena
                 size_t Bytes = fread(contenido, 1, tamanio, archivo);
                 contenido[tamanio + 1] = '\0';
-                puts("\n El archivo ha sido encontrado y traducido!");
+                puts("\n El archivo ha sido encontrado!");
                 return contenido;
             }
             else
@@ -497,11 +498,8 @@ void about();
         } 
     }
 
-
-
-
     /*_________CONVERTIR DE XML A JSON_______ */
-/*     void xml_to_json(HEAD *apt, FILE **JSON){
+    void xml_to_json(HEAD *apt, FILE **JSON){
         //crea el archivo para poner la conversión 
         *JSON = fopen("ArchivoConvertido_XMLtoJSON.json", "w");
         static int primero=0, segundo=0; //para controlar si se imprimió un tag con o sin atributo
@@ -511,10 +509,10 @@ void about();
             {
                 if(apt->frente->NombreTAG==NULL) // ¿ya se escribió el tag?
                 {
-                    printf(" \"%s\" ", apt->frente->Atributo->info);
+                    printf(" \"%s\" ", apt->frente->Atributo->frente2->info);
                     //lo escribe en el archivo .json
-                    fprintf(*JSON," \"%s\" ",apt->frente->Atributo->info);
-                    apt->frente->Atributo->info = NULL;
+                    fprintf(*JSON," \"%s\" ",apt->frente->Atributo->frente2->info);
+                    apt->frente->Atributo->frente2->info = NULL;
                     printf("\n}\n");
                     fprintf(*JSON, "\n}\n");
                 }
@@ -538,17 +536,17 @@ void about();
                     printf("  \"%s\": ", apt->frente->NombreTAG);
                     primero = 1; //ya se imprimió el elemento
                 }
-                if(apt->frente->Atributo->HayAtributoTAG == 1) //el propio tag tiene atributo
+                if(apt->frente->Atributo->frente2->HayAtributoTAG == 1) //el propio tag tiene atributo
                 {
                     printf("{\n");
-                    printf("   \"@%s\": %s,\n", apt->frente->Atributo->Tag_atributo, apt->frente->Atributo->info);
+                    printf("   \"@%s\": %s,\n", apt->frente->Atributo->frente2->Tag_atributo, apt->frente->Atributo->frente2->info);
                     segundo = 2;
                     xml_to_json(&apt->frente->next, &JSON);
                 }
                 else{
                     if(segundo != 2)
                         printf("{\n");
-                    printf("   \"%s\": \"%s\",\n", apt->frente->NombreTAG, apt->frente->Atributo->info);
+                    printf("   \"%s\": \"%s\",\n", apt->frente->NombreTAG, apt->frente->Atributo->frente2->info);
                     if(apt->frente->next == NULL){ //si no hay otro elemento
                         printf("  }\n");
                         printf("}\n");
@@ -564,11 +562,7 @@ void about();
             puts("ERROR, no se pudo crear el archivo de traduccion");
         }
     }
- */
-
-
-
-
+ 
 
     //porque tuve problemas con el strcpy :(
     int copia_cadena(char *string)
@@ -608,18 +602,20 @@ int main(){
                     char *contenido_archivo = leer_archivo(name, &contenido_archivo);
                     pause();
             break;
-            case 2: //JSON ->XML
+            case 2: //XML -> JSON
                     system("cls || clear");
                     insertar_cola(&contenido_archivo,&head_default);
-                    //xml_to_json(&head_default, &JSON);
+                    xml_to_json(&head_default, &JSON);
                     //fclose(JSON);
                     //liberar cola
                     pause();
                     
             break;
-            case 3: //XML -> JSON
+            case 3: //JSON -> XML
+            // si es JSON, implementar solo la opción de json a xml ;) 
                     system("cls || clear");
                    insertar_cola2(&contenido_archivo, &def);
+                   
 
             break;
             case 4: about();

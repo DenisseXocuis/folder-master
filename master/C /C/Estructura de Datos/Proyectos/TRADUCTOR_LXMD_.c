@@ -395,7 +395,7 @@ int main(){
                     // insertar_cola(&contenido_archivo,&head_default);
                     pause();
             break;
-            case 2: //JSON ->XML
+            case 2: //XML -> JSON
                     system("cls || clear");
                     insertar_cola(&contenido_archivo,&head_default);
                     xml_to_json(&head_default, &JSON);
@@ -404,7 +404,7 @@ int main(){
                     pause();
                     
             break;
-            case 3: //XML -> JSON
+            case 3: //JSON -> XML
                     system("cls || clear");
                    // insertar_cola2(&contenido_archivo, &head_default2);
 

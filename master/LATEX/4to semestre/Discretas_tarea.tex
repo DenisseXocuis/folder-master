@@ -1,0 +1,242 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\makeatletter
+\renewcommand{\@seccntformat}[1]{%
+  \ifcsname specialformat#1\endcsname
+    \csname specialformat#1\endcsname
+  \else
+    \csname the#1\endcsname\quad % default
+  \fi
+}
+\makeatother
+\newcommand{\specialformatsection}{}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+\begin{document}
+
+\begin{sloppypar} 
+    %%%portadita
+\begin{titlepage}
+    \fancyhead{R}{
+    \includegraphics[width=0.1\linewidth]{logoUV.png}
+    }
+    \hspace{2.5cm}
+    {\bfseries\LARGE Universidad Veracruzana \par}
+    \hspace{2cm}
+    {\scshape\Large Facultad de Ingeniería Eléctrica y Electrónica \par}
+    \begin{center}
+        \vspace{7cm}
+        {\itshape\huge Formalización de Argumentos \par}
+        {\large Lara Xocuis Martha Denisse \\ Matemáticas Discretas \par}
+        {\large S22002213 \par}
+        \vfill
+        {\Large \today \par}
+    \end{center}
+\end{titlepage} 
+
+\hspace{1 cm}\textbf{Formalice los siguientes argumentos y en cada caso halle su fórmula lógica y escriba la fórmula correspondiente.}
+\vspace{0.7cm} \\ 
+a) Esta figura no es un cuadrilátero, puesto que es un triángulo. Es un triángulo. En consecuencia, no es un
+cuadrilátero.
+\vspace{0.3cm} \\ 
+\textbf{FORMA LÓGICA:} \\ 
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{esta figura es un triángulo}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{no es un cuadrilátero.}}\\ 
+$P_2$: \textcolor[rgb]{1,0,0}{\textbf{Esta figura es un triángulo}} \\ 
+$C$: Por tanto, \textcolor[rgb]{0.2,0.5,0.7}{\textbf{esta figura no es un cuadrilátero.}}
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES:}\\ 
+$p$: Esta figura es un triángulo. \\
+$q$: Esta figura es un cuadrilátero.
+\vspace{0.3cm}\\ 
+%%%%%%%%%%%formula
+\textbf{FÓRMULA LÓGICA:} \\ 
+$p \rightarrow q\prime \\ p \\ \noindent\rule{3cm}{0.4pt}  \\ \therefore q\prime \hspace{1cm} PP$
+%%%%%%%%%%%%%%%%%%%
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\ 
+$[(p \rightarrow q\prime) \wedge p] \rightarrow q\prime$ tautología 
+\vspace{0.3cm} 
+\hrule 
+\vspace{0.3cm} 
+b) Si la suma de dos números naturales es conmutativa, entonces si cambiamos el orden de los sumandos, se obtiene la misma suma. La suma de dos números naturales es conmutativa. Por tanto, se obtiene la misma suma si cambiamos el orden de los sumandos.
+\vspace{0.3cm} \\ 
+\textbf{FORMA LÓGICA:} \\ 
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{la suma de dos números naturales es conmutativa}}, entonces si \textcolor[rgb]{0.2,0.5,0.7}{\textbf{cambiamos el orden de los sumandos}}, entonces \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se obtiene la misma suma.}} \\ 
+$P_2$: \textcolor[rgb]{1,0,0}{\textbf{La suma de dos números naturales es conmutativa}}\\ 
+$C$: Por tanto, si \textcolor[rgb]{0.2,0.5,0.7}{\textbf{cambiamos el orden de los sumandos}}, entonces \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se obtiene la misma suma.}}
+\vspace{0.3cm} \\ 
+\textbf{PROPOSICIONES} \\ 
+$p$: La suma de dos números naturales es conmutativa. \\ 
+$q$: Cambiamos el orden de los sumandos. \\ 
+$r$: Se obtiene la misma suma.
+\vspace{0.3cm} \\ 
+\textbf{FÓRMULA LÓGICA} \\ 
+$p \rightarrow (q \rightarrow r) \\ p \\ \noindent\rule{3cm}{0.4pt} \\ \therefore q \rightarrow r $ PP
+\vspace{0.3cm} \\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\ 
+$[(p \rightarrow (q \rightarrow r)) \wedge p] \rightarrow (q \rightarrow r)$
+\newpage
+c) Un cuerpo está en estado neutro y no presenta ningún fenómeno eléctrico en su conjunto siempre que su
+carga eléctrica positiva esté en estado igual a la negativa. Pero es falso que el cuerpo esté en estado neutro
+y no presente ningún fenómeno eléctrico en su conjunto. En consecuencia, la carga eléctrica positiva de un
+cuerpo está en estado igual a la negativa.
+\vspace{0.3cm}\\ 
+\textbf{FORMA LÓGICA:} \\ 
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{la carga eléctrica positiva de un cuerpo está en estado igual a la negativa}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{el cuerpo está en estado neutro}} y \textcolor[rgb]{0.2,0.7,0.5}{\textbf{presenta un fenómeno eléctrico en su conjunto}} \\ 
+$P_2$: \textcolor[rgb]{0.2,0.5,0.7}{\textbf{El cuerpo}} no \textcolor[rgb]{0.2,0.5,0.7}{\textbf{está en estado neutro}} y no \textcolor[rgb]{0.2,0.7,0.5}{\textbf{presenta un fenómeno eléctrico en su conjunto.}} \\ 
+$C$: Por tanto, \textcolor[rgb]{1,0,0}{\textbf{la carga eléctrica de un cuerpo está en estado igual a la negativa.}}
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES:} \\ 
+$p$: La carga eléctrica positiva de un cuerpo está en estado igual a la negativa. \\ 
+$q$: El cuerpo está en estado neutro. \\ 
+$r$: El cuerpo presenta un fenómeno eléctrico en su conjunto.
+\vspace{0.3cm}\\ 
+\textbf{FÓRMULA LÓGICA:} \\ 
+$p \rightarrow (q \wedge r) \\ (q\prime \wedge r)\\ \noindent\rule{3cm}{0.4pt} \\ \therefore p $
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\
+$[(p \rightarrow (q \wedge r)) \wedge (q\prime \wedge r \prime)] \rightarrow p$ 
+\vspace{0.3cm} 
+\hrule 
+\vspace{0.3cm} 
+d) Se llama falacia o sofisma si una inferencia inválida tiene la apariencia de ser válida. Se llama falacia o sofisma.
+Luego, la inferencia inválida tiene la apariencia de ser válida.
+\vspace{0.3cm}\\ 
+\textbf{FORMA LÓGICA:} \\ 
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{una inferencia inválida tiene la apariencia de ser válida}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{se llama falacia}} o \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se llama sofisma}} \\ 
+$P_2$: \textcolor[rgb]{0.2,0.5,0.7}{\textbf{Se llama falacia}} o \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se llama sofisma}}. \\ 
+$C$: Por tanto, \textcolor[rgb]{1,0,0}{\textbf{una inferencia inválida tiene la apariencia de ser válida}}. \\ 
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES:} \\ 
+$p$: Una inferencia inválida tiene la apariencia de ser válida. \\ 
+$q$: Se llama falacia. \\ 
+$r$: Se llama sofisma. 
+\vspace{0.3cm}\\ 
+\textbf{FÓRMULA LÓGICA:} \\ 
+$p \rightarrow (q \vee r) \\ q \vee r \\ \noindent\rule{3cm}{0.4pt} \\ \therefore p$
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\ 
+$[(p \rightarrow (q \vee r)) \wedge (q \vee r)] \rightarrow p$
+\newpage
+e) Sin variables ni operadores, no hay lenguaje lógico posible. No hay variables ni operadores. Por tanto, no
+hay lenguaje lógico posible.
+\vspace{0.3cm}\\ 
+\textbf{FÓRMA LÓGICA:} \\ 
+$P_1$: Si no \textcolor[rgb]{1,0,0}{\textbf{hay variables}} y no \textcolor[rgb]{0.2,0.5,0.7}{\textbf{hay operadores}}, entonces no \textcolor[rgb]{0.2,0.7,0.5}{\textbf{hay lenguaje lógico posible.}}\\
+$P_2$: No \textcolor[rgb]{1,0,0}{\textbf{hay variables}} y no \textcolor[rgb]{0.2,0.5,0.7}{\textbf{hay operadores}}. \\ 
+$C$: Por tanto, no \textcolor[rgb]{0.2,0.7,0.5}{\textbf{hay lenguaje lógico posible}}. 
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES} \\ 
+$p$: Hay variables. \\ 
+$q$: Hay operadores. \\ 
+$r$: Hay lenguaje lógico posible. 
+\vspace{0.3cm}\\ 
+\textbf{FÓRMULA LÓGICA:} \\ 
+$(p\prime \wedge q\prime) \rightarrow r\prime \\p\prime \wedge q\prime \\ \noindent\rule{3cm}{0.4pt} \\ \therefore r\prime $ PP
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\ 
+$[((p\prime \wedge q\prime) \rightarrow r\prime) \wedge (p\prime \wedge q\prime)]\rightarrow r\prime$
+\vspace{0.3cm} 
+\hrule 
+\vspace{0.3cm} 
+f) Si hay guerra civil, hay estado de sitio. Hay estado de emergencia si se altera el orden interno de la Nación.
+En consecuencia, no hay estado de emergencia si hay guerra civil.
+\vspace{0.3cm}\\ 
+\textbf{FORMA LÓGICA:} \\ 
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{hay guerra civil}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{hay estado de sitio}}.\\ 
+$P_2$: Si \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se altera el orden interno de la Nación}}, entonces \textcolor[rgb]{0.5,0.2,0.7}{\textbf{hay estado de emergencia}} \\ 
+$C$: Por tanto, si \textcolor[rgb]{1,0,0}{\textbf{hay guerra civil}}, entonces no \textcolor[rgb]{0.5,0.2,0.7}{\textbf{hay estado de emergencia}}
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES:} \\ 
+$p$: Hay guerra civil. \\ 
+$q$: Hay estado de sitio. \\ 
+$r$: Se altera el orden interno de la Nación. \\ 
+$s$: Hay estado de emergencia.
+\vspace{0.3cm}\\ 
+\textbf{FÓRMULA LÓGICA:} \\
+$p \rightarrow q \\ r \rightarrow s \\ \noindent\rule{3cm}{0.4pt} \\ \therefore p \rightarrow s\prime$ 
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\
+$[(p \rightarrow q)\wedge(r \rightarrow s)] \rightarrow (p \rightarrow s\prime)$
+\newpage
+g) Si el Presidente de la República decreta el estado de emergencia, las Fuerzas Armadas asumen el control del
+orden interno de la Nación. Si las Fuerzas Armadas asumen el control del orden interno de la Nación, se
+suspenden las garantías constitucionales y no se impone la pena de destierro. Luego, no se impone la pena
+de destierro si el Presidente de la República decreta el estado de emergencia.
+\vspace{0.3cm}\\ 
+\textbf{FORMA LÓGICA:} \\
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{el Presidente de la República decreta el estado de emergencia}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{las Fuerzas Armadas asumen el control del orden interno de la Nación.}} \\ 
+$P_2$: Si \textcolor[rgb]{0.2,0.5,0.7}{\textbf{las Fuerzas Armadas asumen el control del orden interno de la Nación}}, entonces \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se suspenden las garantías constitucionales}} y no \textcolor[rgb]{0.5,0.2,0.7}{\textbf{se impone la pena de destierro.}} \\ 
+$C$: Por tanto, si \textcolor[rgb]{1,0,0}{\textbf{el Presidente de la República decreta el estado de emergencia}}, entonces no \textcolor[rgb]{0.5,0.2,0.7}{\textbf{se impone la pena de destierro.}}
+\vspace{0.3cm}\\ 
+\textbf{PROPOSICIONES:} \\
+$p$: El Presidente de la República decreta el estado de emergencia. \\ 
+$q$: Las Fuerzas Armadas asumen el control del orden interno de la Nación. \\ 
+$r$: Se suspenden las garantías constitucionales. \\ 
+$s$: Se impone la pena de destierro. 
+\vspace{0.3cm}\\ 
+\textbf{FÓRMULA LÓGICA:} \\
+$p \rightarrow q \\ q \rightarrow (r \wedge s\prime) \\ \noindent\rule{3cm}{0.4pt} \\ \therefore p \rightarrow s\prime$
+\vspace{0.3cm}\\ 
+\textbf{IMPLICACIÓN LÓGICA:} \\
+$[(p \rightarrow q)\wedge(q \rightarrow (r \wedge s\prime))]\rightarrow (p \rightarrow s\prime)$
+\vspace{0.3cm} 
+\hrule 
+\vspace{0.3cm} 
+h) Si un número natural es primo, es mayor que uno. Es divisible por sí mismo si es primo. Por tanto, es
+divisible por sí mismo si es mayor que uno.
+\vspace{0.3cm}\\ 
+\textbf{FORMA LÓGICA:} \\
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{un número natural es primo}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{el número natural es mayor que uno.}} \\ 
+$P_2$: Si \textcolor[rgb]{1,0,0}{\textbf{el número natural es primo}}, entonces \textcolor[rgb]{0.2,0.7,0.5}{\textbf{el número natural es divisible por sí mismo}}. \\ 
+$C$: Por tanto, si \textcolor[rgb]{0.2,0.5,0.7}{\textbf{el número natural es mayor que uno}}, entonces \textcolor[rgb]{0.2,0.7,0.5}{\textbf{el número natural es divisible por sí mismo}}.
+\vspace{0.3cm}\\
+\textbf{PROPOSICIONES:} \\
+$p$: El número natural es primo. \\ 
+$q$: El número natural es mayor que uno. \\ 
+$r$: El número natural es divisible por sí mismo.
+\vspace{0.3cm}\\
+\textbf{FÓRMULA LÓGICA:} \\
+$p \rightarrow q \\ p \rightarrow r \\ \noindent\rule{3cm}{0.4pt} \\ \therefore q \rightarrow r $
+\newpage
+\textbf{IMPLICACIÓN LÓGICA:} \\
+$[(p \rightarrow q)\wedge(p \rightarrow r)]\rightarrow(q \rightarrow r)$
+\vspace{0.3cm} 
+\hrule 
+\vspace{0.3cm} 
+i) Si Carlos estudia música podrá obtener un puesto en la Orquesta Sinfónica. Debo concluir que Carlos podrá obtener un puesto en la orquesta Sinfónica ya que, o se dedica al deporte o estudia música, y Carlos no se
+dedica al deporte. 
+\vspace{0.3cm} \\
+\textbf{FORMA LÓGICA:} \\
+$P_1$: Si \textcolor[rgb]{1,0,0}{\textbf{Carlos estudia música}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{Carlos podrá obtener un puesto en la Orquesta Sinfónica}}. \\ 
+$P_2$: \textcolor[rgb]{0.2,0.7,0.5}{\textbf{Carlos se dedica al deporte}} o \textcolor[rgb]{1,0,0}{\textbf{Carlos estudia música}}. \\ 
+$C$: Por tanto, Si  y \textcolor[rgb]{0.2,0.7,0.5}{\textbf{Carlos}} no \textcolor[rgb]{0.2,0.7,0.5}{\textbf{se dedica al deporte}}, entonces \textcolor[rgb]{0.2,0.5,0.7}{\textbf{Carlos podrá obtener un puesto en la Orquesta Sinf"ónica}}. 
+\vspace{0.3cm} \\
+\textbf{PROPOSICIONES:} \\
+$p$: Carlos estudia música. \\ 
+$q$: Carlos podrá obtener un puesto en la Orquesta Sinfónica. \\ 
+$r$: Carlos se dedica al deporte. 
+\vspace{0.3cm} \\
+\textbf{FÓRMULA LÓGICA:} \\
+$p \rightarrow q \\ r \vee p \\ \noindent\rule{3cm}{0.4pt} \\ \therefore r\prime \rightarrow q$
+\vspace{0.3cm} \\
+\textbf{IMPLICACIÓN LÓGICA:} \\
+$[(p \rightarrow q)\wedge(r \vee p)] \rightarrow ( r\prime \rightarrow q)$
+
+\end{sloppypar}
+\end{document}

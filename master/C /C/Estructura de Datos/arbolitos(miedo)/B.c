@@ -1,28 +1,31 @@
 /*  INFORMATION
     Estructura de datos. Lara Xocuis Martha Denisse - S22002213 
     Árbol multicamino - Árbol B
+    m=5
+    max. children = m
+    max. keys = m-1
 */
 #include <stdio.h>
 #include <stdlib.h>
 
-//ESTRUCTURA BASE DE NODO PARA LISTA DE NODOS
-    typedef struct lista
+//estructura base para nodo-clave
+    typedef struct node
     {   int clave;
-        struct pagina *izquierda, *derecha;
-        struct lista *next;
-    }LISTA;
+        struct key *izquierda, *derecha;
+        struct node *next; //hijos
+    }NODE;
 
-//ESTRUCTURA BASE DE NODO LISTA
-    typedef struct pagina //<-lista de nodos
-    {   int m; //magnitud de la página
+//estructura base para key-list
+    typedef struct key //<-lista de nodos
+    {   int k; //¿Cuántas llaves tendrá el nodo?
         struct lista *head;
-    }PAGE;
+    }KEY_LIST;
 
-//FUNCIÓN BUSCAR: retorna el apuntador en la posición donde se encuentra el valor (si está)
-    LISTA *buscar(PAGE *root, int clave)
+//FUNCIÓN BUSCAR: retorna el apuntador en la posición donde }se encuentra el valor (si está)
+    NODE *buscar(KEY_LIST *root, int clave)
     {
         if(!root) return NULL;
-        LISTA *actuel = root->head;
+        NODE *actuel = root->head;
         while(actuel != NULL)
         {
             if(actuel->clave == clave) return actuel;
@@ -30,18 +33,19 @@
         }
         return NULL; //<- no lo encontró
     }
+
 //FUNCIÓN CREAR NUEVO NODO BASE PÁGINA
-    PAGE *new_page(PAGE **root)
-    {   PAGE *new_nodito = (PAGE *) malloc(sizeof(PAGE));
+    KEY_LIST *crear_bt(KEY_LIST **root)
+    {   KEY_LIST *new_nodito = (KEY_LIST *) malloc(sizeof(KEY_LIST));
         if(!new_nodito) exit(1);
         new_nodito->head=NULL;
-        new_nodito->m=0;
+        new_nodito->k=0;
         return new_nodito;
     }
 
 //FUNCIÓN CREAR NUEVO NODO BASE LISTA
-    LISTA *new_nodo(int clave)
-    {   LISTA *new_nodito = (LISTA *) malloc(sizeof(LISTA));
+    NODE *new_nodo(int clave)
+    {   NODE *new_nodito = (NODE *) malloc(sizeof(NODE));
         if(!new_nodito) exit(1);
         new_nodito->clave = clave;
         new_nodito->derecha = NULL;
@@ -50,8 +54,8 @@
         return new_nodito;
     }
 
-    int *insertar_AB(PAGE **root, int clave)
-    {   LISTA *new = new_nodo(clave);
+    void *insertar_bt(KEY_LIST **root, int clave)
+    {   NODE *new = new_nodo(clave);
 
         //si la lista no existe
         if((*root)->head == NULL)
@@ -61,7 +65,7 @@
             return 1;
         }
 
-        LISTA *actuel = (*root)->head;
+        NODE *actuel = (*root)->head;
         while(actuel->next != NULL)
             actuel = actuel->next;
         
@@ -75,8 +79,12 @@
         }
     }
 
+    void destroy_bt();
+
+    int buscar_bt();
+
 int main()
-{   PAGE *node_default = NULL;
+{   KEY_LIST *node_default = NULL;
 
     return 0;
 }

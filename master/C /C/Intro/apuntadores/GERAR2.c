@@ -3,12 +3,12 @@
 void inversa(char *);
 
 int main() {
-    char w[T];
+    char w[T], *apt;
     puts("Ingresa una palabra");
     gets(w);
     putchar('\n');
-    inversa(w);
-
+    apt = w; 
+    inversa(apt);
     return 0;
 }
 

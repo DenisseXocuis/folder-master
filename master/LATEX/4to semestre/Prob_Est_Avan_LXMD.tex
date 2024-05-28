@@ -27,43 +27,34 @@
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 
-\title {\textbf{Probabilidad y estadística avanzada}}
-\author{Lara Xocuis Martha Denisse \\ Estimación de la diferencia entre dos medias}
-\date{13 de marzo del 2024}
+\title {\textbf{Actividad}}
+\author{Lara Xocuis Martha Denisse}
+\date{\today}
 \geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
 \graphicspath{{images/}}
 \parindent=0pt
 
 \begin{document}
 \maketitle
-\thispagestyle{empty}
-\newpage
-\setcounter{page}{1}
-\pagestyle{headings}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{sloppypar} 
-
-\section{Definición}
-Una estimación puntual para la diferencia en dos medias poblacionales es simplemente la diferencia en las medias muestrales correspondientes.
+\section{\LARGE EJEMPLO}
+Imaginemos que un proveedor de servicios de Internet (ISP) afirma que sus planes premium tienen una velocidad media de conexión de al menos 100 Mbps (megabits por segundo). Un grupo de abonados realiza pruebas de velocidad a distintas horas del día durante una semana y registra los resultados.
+\subsection*{Hipótesis nula y alternativa}
+La hipótesis nula (H0) es que la velocidad media de conexión en las tarifas premium es igual o superior a 100 Mbps, y la hipótesis alternativa (H1) es que la velocidad media es inferior a 100 Mbps.
 \vspace{0.3cm}\\ 
-Una estimación puntual para la diferencia en dos medias poblacionales es simplemente la diferencia en las medias muéstrales correspondientes. En el contexto de estimar o probar hipótesis relativas a dos medias poblacionales, las muestras “grandes” significan que ambas muestras son grandes.
-
-\begin{itemize}
-    \item Se calcula un intervalo de confianza para la diferencia en dos medias poblacionales utilizando una fórmula de la misma manera que se hizo para una sola media poblacional.
-    \item El mismo procedimiento de cinco pasos utilizado para probar hipótesis relativas a una sola media poblacional se utiliza para probar hipótesis sobre la diferencia entre dos medias poblacionales. La única diferencia está en la fórmula para el estadístico de prueba estandarizado.
-\end{itemize}
-
-\subsection{Comparación de dos medias}
-Existen varias pruebas estadísticas que permiten comparar las medias de una variable continua entre dos o más grupos. Cada una de estas pruebas ha sido diseñada para poder ser aplicada cuando se cumplen una serie de supuestos necesarios, bajo diferentes condiciones de aplicación. Prácticamente todas las hipótesis que podamos plantear (como comparar las medias de una característica entre dos grupos) se pueden analizar bajo una base paramétrica o una base no paramétrica.
-
-\subsection{Ejemplo}
-Considere el problema en el que se busca estimar la diferencia entre dos parámetros binomiales $p_1$ y $p_2$. Por ejemplo, $p_1$ podría ser la proporción de fumadores con cáncer de pulmón y $p_2$ la proporción de no fumadores con cáncer de pulmón, y el problema consistiría en estimar la diferencia entre estas dos proporciones.
+Por lo tanto, podemos describir:
+\begin{center}
+  \textbf{Hipótesis nula:} \\
+$100 Mbps (\mu \geq 100)$
 \vspace{0.3cm}\\ 
-Primero seleccionamos muestras aleatorias independientes de tamaños $n_1$ y $n_2$ a partir de las dos poblaciones binomiales con medias $n_1p_1$ y $n_2p_2$, y después determinamos los números $x_1$ y $x_2$ de personas con cáncer de pulmón en cada muestra, y formamos las proporciones $p_1 = x_1 / n $ y $p_2 x_2 / n$. El estadístico $P_1 - P_2$ provee un estimador puntual de la diferencia entre las dos proporciones.
-\vspace{0.3cm}\\
-Por lo tanto, la diferencia de las proporciones muestrales, $p_1 - p_2$ se utilizará como la estimación puntual de $p_1 - p_2$
+\textbf{Hipótesis alternativa:} \\
+$100Mbps (\mu < 100)$
+\end{center}
+donde $\mu$ es la velocidad promedio del plan premium.
 
-buenas
+\subsection*{Conclusión}
+En este contexto, el análisis de escenarios permite evaluar objetivamente en qué medida los servicios de internet cumplen las expectativas y promesas de los ISP, lo que pueden influir en las necesidades y preferencias de los usuarios en materia de contectividad en línea.
+
 \end{sloppypar}
 \end{document}

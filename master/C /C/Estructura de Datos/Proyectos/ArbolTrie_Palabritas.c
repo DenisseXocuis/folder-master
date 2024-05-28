@@ -11,7 +11,7 @@ typedef struct lista
     {   struct nodito *hijo; //para apuntar al nodito pal arbolito
         struct lista *next; //para el siguiente dato de la lista
     }LISTA;
-    
+
 //ESTRUCTURA NODO BASE PARA ÁRBOL
     typedef struct nodito
     {   char letra;
@@ -36,20 +36,21 @@ typedef struct lista
         return nodito;
     }
 
-
-
-    int *buscar(ROOT_NODE **apt, char **letra)
+    ROOT_NODE *buscar(ROOT_NODE **apt, char **letra)
     {
         if((*apt)->letra == '*')
         {
-            if(!((*apt)->lista_apt)) return 0; //<- no hay lista, no la encontró
-            if((*apt)->lista_apt->hijo->letra == *letra) return 1; //la encontró
+            if(!((*apt)->lista_apt)) return NULL; //<- no hay lista, no la encontró
+            if((*apt)->lista_apt->hijo->letra == *letra) return (*apt)->lista_apt->hijo; //la encontró
 
             //busca en toda la lista de raices
             LISTA *tmp = (*apt)->lista_apt;
             while(tmp->next != NULL)
             {
-                if(tmp->hijo->letra == *letra) return 1; //la encontró
+                if(tmp->hijo->letra == *letra)
+                {
+                    return tmp->hijo;
+                }//la encontró
                 tmp = tmp->next;
             }
             //si no la encontró...
@@ -57,7 +58,7 @@ typedef struct lista
             tmp->next = crear_apt(&tmp2);
             (*letra)++;
 
-            return 0;
+            return NULL;
         }
     }
 
@@ -65,19 +66,20 @@ typedef struct lista
     int *insert_nodo(ROOT_NODE **root, LISTA **apt, char *letra)
     {   ROOT_NODE *node, *temp_root = NULL;
         BOOL = FALSE;
+        LISTA *aux = *apt;
 
         while(!BOOL)
         { 
             //si no existe raiz, crea un nodo
             if(!(*root)) *root = crear_nodo('*');
+            temp_root = (*root);
 
             //busca si la letra existe en los hijos de la raiz '*'
             if(!(buscar(&(*root),&letra)))
             //si no está la letra, inserta toda la palabra
             {
-                LISTA **aux;
                 if((*apt) == NULL)
-                {   temp_root = (*root);
+                {   
                     while(*letra != '\0')
                     {   //crea el nodo y lo inserta en la lista
                         node = crear_nodo(*letra);
@@ -91,16 +93,15 @@ typedef struct lista
                 }
                 else //si ya existe una lista
                 {
-                    *aux = *apt;
-                    while((*aux)->next != NULL)
-                        *aux = (*aux)->next; //aux se usará como raiz provisional
-                    temp_root = (*aux)->hijo; //asigna aux a temp root
+                    while(aux->next != NULL)
+                        aux = (aux)->next; //aux se usará como raiz provisional
+                    temp_root = (aux)->hijo; //asigna aux a temp root
                     
                     while(*letra != '\0') //inserta toda la palabra
                     {
                         node = crear_nodo(*letra);
-                        *aux = crear_apt(&node);
-                        temp_root->lista_apt = *aux;
+                        aux = crear_apt(&node);
+                        temp_root->lista_apt = aux;
                         letra++;
                         temp_root = temp_root->lista_apt->hijo;
                     }
@@ -110,6 +111,15 @@ typedef struct lista
                 temp_root->lista_apt = *apt; //<- la palabra ha terminao
                 (*apt) = (*root)->lista_apt; //actualiza lista de raices
                 BOOL = TRUE; //<- palabra ingresada con éxitoP
+            }
+            else
+            {  
+                while(aux->hijo->letra != '.' && aux->hijo->letra == letra)
+                {
+                    
+                    temp_root = temp_root->lista_apt->hijo;
+                }
+                
             }
         }
         return 1;
@@ -142,6 +152,7 @@ int main(){
         printf("[1] - Oui \n[0] - Non\n>");
         scanf("%d", &op);
     }while(op);
+
 
     return 0;
 }
