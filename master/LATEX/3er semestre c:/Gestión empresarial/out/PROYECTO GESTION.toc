@@ -1,0 +1,33 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}\textcolor [rgb]{0.4,0.4,0.9}{FAURECIA}}{2}{}%
+\contentsline {subsection}{\numberline {1.1}\textcolor [rgb]{0.9,0.3,0.3}{¿Qué es?}}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.1}¿Qué hace FAURECIA?}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.2}Faurecia México}{3}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Historia}{3}{}%
+\contentsline {subsection}{\numberline {1.2}\textcolor [rgb]{0.9,0.3,0.3}{Acerca de FORVIA}}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}¿Qué es?}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}HELLA}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.3}¿Qué significa la adquisición con HELLA?}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.4}Ambiciones de FORVIA}{6}{}%
+\contentsline {section}{\numberline {2}\textcolor [rgb]{0.4,0.4,0.9}{Competencias y habilidades del Administrador}}{7}{}%
+\contentsline {subsection}{\numberline {2.1}Conceptos clave}{7}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}El administrador como lider}{7}{}%
+\contentsline {subsection}{\numberline {2.2}El administrador}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}Nivel jerárquico y responsabilidades}{8}{}%
+\contentsline {subsection}{\numberline {2.3}Niveles administrativos generales}{9}{}%
+\contentsline {subsection}{\numberline {2.4}Organigrama}{9}{}%
+\contentsline {section}{\numberline {3}\textcolor [rgb]{0.4,0.4,0.9}{Perfil de un Administrador}}{10}{}%
+\contentsline {subsection}{\numberline {3.1}Aptitudes y habilidades requeridas}{10}{}%
+\contentsline {subsection}{\numberline {3.2}Perfil profesional deseado}{11}{}%
+\contentsline {section}{\numberline {4}\textcolor [rgb]{0.4,0.4,0.9}{Formato}}{12}{}%
+\contentsline {subsection}{\numberline {4.1}Aviso de privacidad}{16}{}%
+\contentsline {section}{\numberline {5}\textcolor [rgb]{0.4,0.4,0.9}{Instrumentos de evaluación a candidatos}}{19}{}%
+\contentsline {subsection}{\numberline {5.1}Entrevista colectiva}{19}{}%
+\contentsline {subsubsection}{\numberline {5.1.1}Etapas de entrevista}{19}{}%
+\contentsline {section}{\numberline {6}\textcolor [rgb]{0.4,0.4,0.9}{Prototipo de entrevista a candidato para \textit {Administrador de Recursos Humanos}}}{20}{}%
+\contentsline {subsection}{\numberline {6.1}Test psicométrico}{22}{}%
+\contentsline {subsection}{\numberline {6.2}Prueba técnica de habilidades}{24}{}%
+\contentsline {section}{\numberline {7}\textcolor [rgb]{0.4,0.4,0.9}{Conclusiones individuales}}{25}{}%
+\contentsline {section}{\numberline {8}\textcolor [rgb]{0.4,0.4,0.9}{Aprendizaje individual}}{26}{}%
+\contentsline {section}{\numberline {9}\textcolor [rgb]{0.4,0.4,0.9}{Bibliografía}}{27}{}%
+\contentsline {section}{\numberline {10}\textcolor [rgb]{0.4,0.4,0.9}{Anexos}}{28}{}%

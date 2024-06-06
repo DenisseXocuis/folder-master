@@ -27,7 +27,7 @@
 \usepackage{fancyhdr}
 \usepackage{tabularx}
 
-\title {\textbf{Actividad}}
+\title {\textbf{Campana de Gauss - Situación con hipótesis nula}}
 \author{Lara Xocuis Martha Denisse}
 \date{\today}
 \geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
@@ -38,7 +38,7 @@
 \maketitle
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{sloppypar} 
-\section{\LARGE EJEMPLO}
+\section{\LARGE Situación:}
 Imaginemos que un proveedor de servicios de Internet (ISP) afirma que sus planes premium tienen una velocidad media de conexión de al menos 100 Mbps (megabits por segundo). Un grupo de abonados realiza pruebas de velocidad a distintas horas del día durante una semana y registra los resultados.
 \subsection*{Hipótesis nula y alternativa}
 La hipótesis nula (H0) es que la velocidad media de conexión en las tarifas premium es igual o superior a 100 Mbps, y la hipótesis alternativa (H1) es que la velocidad media es inferior a 100 Mbps.
@@ -53,8 +53,25 @@ $100Mbps (\mu < 100)$
 \end{center}
 donde $\mu$ es la velocidad promedio del plan premium.
 
-\subsection*{Conclusión}
-En este contexto, el análisis de escenarios permite evaluar objetivamente en qué medida los servicios de internet cumplen las expectativas y promesas de los ISP, lo que pueden influir en las necesidades y preferencias de los usuarios en materia de contectividad en línea.
-
+\subsection*{Gráfica}
+Se hizo un código en python que proporciona una visualización de cómo se distribuyen las velocidades de conexión en relación con la hipótesis nula y el valor crítico establecido.
+\begin{figure}[H]
+  \centering 
+  \includegraphics[width=0.8\textwidth]{gráfica.png}
+\end{figure}
+\subsection*{Cálculo}
+\begin{itemize}
+  \item Se proporciona una lista de velocidades medidas durante un período de tiempo determinado.
+  \item Se calcula la media y la desviación estándar de las velocidades medidas.
+  \item Se establece la hipótesis nula (H0), que afirma que la velocidad media de conexión es igual o superior a 100 Mbps.
+  \item Se define un valor crítico, que representa el límite inferior de velocidad (100 Mbps en este caso).
+  \item Se genera una distribución gaussiana basada en la media y la desviación estándar calculadas.
+\end{itemize}
+\subsection*{Análisis}
+La curva muestra cómo se distribuyen las velocidades medidas en función de la probabilidad, el área sombreada bajo la curva y a la izquierda del valor crítico representa la probabilidad de que la velocidad sea menor o igual al valor crítico. La línea punteada de color rojo es nuestra hipótesis nula.
+\vspace{0.3cm}\\
+En este caso, la gráfica muestra que una parte significativa de la gráfica (el área sombreada) está por debajo del valor crítico, lo que sugiere que la velocidad media medida puede ser inferior a 100 Mbps.
+\vspace{0.3cm}\\
+Comparando los resultados de las pruebas de velocidad con ambas hipótesis, se muestra una velocidad media por debajo de los 100 Mbps, entonces podemos decir que se tiene evidencia para rechazar la hipótesis nula y que la velocidad media de conexión en los planes premium es inferior.
 \end{sloppypar}
 \end{document}

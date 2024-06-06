@@ -181,7 +181,8 @@ typedef int TipoTarea;
                     if(PID_ACTUAL->t == 0){
                         //y para eso necesitamos un apuntador al nodo que vamos a eliminar
                         NODE **temp = &PID_ACTUAL;
-                        (*head)->frente->TASK = &PID_PRIMERO;
+                        (*head)->frente->TASK = PID_PRIMERO;
+                        (*head)->final = (*head)->frente;
                         free(*temp); //se mata
                         **tareas_atendidas +=1;
                         (*head)->frente->contador_procesos--;

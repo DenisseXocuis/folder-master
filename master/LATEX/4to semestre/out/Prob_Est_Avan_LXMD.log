@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  27 MAY 2024 22:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  30 MAY 2024 17:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,22 +355,32 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<images//gráfica.png, id=1, 893.3375pt x 1011.78pt>
+File: images//gráfica.png Graphic file (type png)
+<use images//gráfica.png>
+Package pdftex.def Info: images//gráfica.png  used on input line 60.
+(pdftex.def)             Requested size: 400.38872pt x 453.47505pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}] (out/Prob_Est_Avan_LXMD.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+LaTeX Font Info:    Trying to load font information for TS1+bch on input line 64.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
+File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
+) [2 <./images//gráfica.png>] [3] (out/Prob_Est_Avan_LXMD.aux) ) 
 Here is how much of TeX's memory you used:
- 6965 strings out of 477136
- 112453 string characters out of 5813382
+ 7005 strings out of 477136
+ 113095 string characters out of 5813382
  1853388 words of memory out of 6000000
- 27148 multiletter control sequences out of 15000+600000
- 540465 words of font info for 75 fonts, out of 8000000 for 9000
+ 27181 multiletter control sequences out of 15000+600000
+ 540782 words of font info for 76 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 67i,6n,77p,411b,211s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,7n,77p,422b,345s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on out/Prob_Est_Avan_LXMD.pdf (1 page, 56828 bytes).
+Output written on out/Prob_Est_Avan_LXMD.pdf (3 pages, 117362 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 41 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
