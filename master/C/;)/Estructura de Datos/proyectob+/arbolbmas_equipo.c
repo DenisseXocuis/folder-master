@@ -6,61 +6,87 @@
  *      - MARTINEZ SCHLESKE ALAN
  *      - SOLANO DORANTES JORGE SAMUEL
 */
-
 #include <stdio.h>
 #include <stdlib.h>
 enum menuBool{FALSE,TRUE}BOOL; //<- para llevar un control del menu
 
-
-struct ArbolB{
-    struct Pagina* raiz;
-};
-
-struct Pagina
-{   
-    struct Cola* cola;
-    int magnitud;
-};
-
-struct Cola
-{
-    struct NodoCola *frente;
-    struct NodoCola *ultimo;
-};
-
-struct NodoCola
+//estructura base de nodo base para claves
+typedef struct NodoCola
 {
     int dato;
     struct NodoCola* sig;
-    struct Pagina* izquierda;
-    struct Pagina* derecha;
-};
+    struct Pagina* izquierda, *derecha;
+}NodoCola;
 
-struct NodoCola *dfs(struct Pagina *pagina, int dato);
+//apuntadores para la cola
+typedef struct Cola
+{
+    struct NodoCola *frente, *ultimo;
+}Cola;
+
+//estructura base de página para el árbol
+typedef struct Pagina
+{   
+    struct Cola* cola;
+    int magnitud;
+}Pagina;
+
+//estructura de raiz de arbolB+
+typedef struct ArbolB{
+    struct Pagina* raiz;
+}ArbolB;
+
+/* PROTOTIPO DE FUNCIONES */
+    Cola* crearCola();
+    Pagina* crearPagina();
+    ArbolB* crearArbolB();
+    void insertarColaOrdenada(Cola **, int );
+    void deleteExceptMiddle(Pagina* );
+    NodoCola* obtenerNodoMedio(Cola* );
+    void eliminarUltimoNodoCola(Cola* );
+    Pagina* buscarPaginaConHijoMagnitud5(Pagina* );
+    Pagina* dividirNodo(Pagina* , ArbolB* );
+    NodoCola* buscarValor(Pagina* , int );
+    Pagina* buscarValorPAGINA(Pagina* , int);
+    void insertarArbolB(Pagina *, int , ArbolB* );
+    void eliminar(int, Pagina *);
+    void fusion(Pagina *, Pagina *);
+    void rebalance(Pagina *, ArbolB *);
+    void imprimirArbolB(Pagina *, int );
+    NodoCola *dfs(Pagina *, int );
+    void liberarMemoriaArbol(Pagina* );
+    void menu(enum menuBool );
+    void pause();
 
 // Funciones basicas de creacion
-struct Cola* crearCola() {
-    struct Cola* nuevaCola = (struct Cola*)malloc(sizeof(struct Cola));
+Cola* crearCola()
+{
+    Cola* nuevaCola = (Cola*)malloc(sizeof(Cola));
     nuevaCola->frente = NULL;
     nuevaCola->ultimo = NULL;
     return nuevaCola;
 }
-struct Pagina* crearPagina() {
-    struct Pagina* nuevaPagina = (struct Pagina*)malloc(sizeof(struct Pagina));
+
+Pagina* crearPagina()
+{
+    Pagina* nuevaPagina = (Pagina*)malloc(sizeof(Pagina));
     nuevaPagina->cola = crearCola();
     nuevaPagina->magnitud = 0;
     return nuevaPagina;
 }
-struct ArbolB* crearArbolB() {
-    struct ArbolB* nuevoArbol = (struct ArbolB*)malloc(sizeof(struct ArbolB));
-    nuevoArbol->raiz = crearPagina();
 
+
+ArbolB* crearArbolB()
+{
+    ArbolB* nuevoArbol = (ArbolB*)malloc(sizeof(ArbolB));
+    nuevoArbol->raiz = crearPagina();
     return nuevoArbol;
 }
 
-// esta es una simple funcion que inserta valores dentro de una cola de forma ordenada
-void insertarColaOrdenada(struct Cola ** cola, int numero) {
-    struct NodoCola* nuevoNodo = (struct NodoCola*)malloc(sizeof(struct NodoCola));
+// función que inserta de forma ordenada
+void insertarColaOrdenada(Cola **cola, int numero)
+{
+    NodoCola* nuevoNodo = (NodoCola*)malloc(sizeof(NodoCola));
     nuevoNodo->dato = numero;
     nuevoNodo->sig = NULL;
     nuevoNodo->izquierda = NULL;
@@ -73,7 +99,7 @@ void insertarColaOrdenada(struct Cola ** cola, int numero) {
         return;
     }
 
-    struct NodoCola* temp = (*cola)->frente;
+    NodoCola* temp = (*cola)->frente;
     while (temp->sig != NULL && temp->sig->dato < numero) {
         temp = temp->sig;
     }
@@ -84,14 +110,14 @@ void insertarColaOrdenada(struct Cola ** cola, int numero) {
 }
 
 // esta se le ingresa una cola de tamaño 5 y elimina todos los nodos excepto el de enmedio
-void deleteExceptMiddle(struct Pagina* pagina) {
+void deleteExceptMiddle(Pagina* pagina) {
     if (pagina->cola->frente == NULL || pagina->cola->frente->sig == NULL) {
         return;
     }
 
-    struct NodoCola* slow = pagina->cola->frente;
-    struct NodoCola* fast = pagina->cola->frente;
-    struct NodoCola* prev = NULL;
+    NodoCola* slow = pagina->cola->frente;
+    NodoCola* fast = pagina->cola->frente;
+    NodoCola* prev = NULL;
 
     while (fast != NULL && fast->sig != NULL) {
         prev = slow;
@@ -99,17 +125,17 @@ void deleteExceptMiddle(struct Pagina* pagina) {
         fast = fast->sig->sig;
     }
 
-    struct NodoCola* middleNode = slow;
+    NodoCola* middleNode = slow;
 
-    struct NodoCola* temp = pagina->cola->frente;
+    NodoCola* temp = pagina->cola->frente;
     while (temp != middleNode) {
-        struct NodoCola* next = temp->sig;
+        NodoCola* next = temp->sig;
         free(temp);
         temp = next;
     }
     temp = middleNode->sig;
     while (temp != NULL) {
-        struct NodoCola* next = temp->sig;
+        NodoCola* next = temp->sig;
         free(temp);
         temp = next;
     }
@@ -122,13 +148,13 @@ void deleteExceptMiddle(struct Pagina* pagina) {
 }
 
 // esta es muy esencial, esta al contrario de deleteExceptMiddle me devuelve un puntero nodo cola hacia la direccion de nodo que esta justo enmedio de una cola
-struct NodoCola* obtenerNodoMedio(struct Cola* cola) {
+NodoCola* obtenerNodoMedio(Cola* cola) {
     if (cola == NULL || cola->frente == NULL) {
         return NULL;
     }
 
-    struct NodoCola* slow = cola->frente;
-    struct NodoCola* fast = cola->frente;
+    NodoCola* slow = cola->frente;
+    NodoCola* fast = cola->frente;
 
     while (fast != NULL && fast->sig != NULL) {
         slow = slow->sig;
@@ -138,15 +164,13 @@ struct NodoCola* obtenerNodoMedio(struct Cola* cola) {
     return slow;
 }
 
-
 // esta es una simple eliminacion de un nodo dentro de una cola, elimina el ultimo valor de la cola que reciba la funcion
-void eliminarUltimoNodoCola(struct Cola* cola) {
+void eliminarUltimoNodoCola(Cola* cola) {
     if (cola->frente == NULL) {
         return;
     }
-
-    struct NodoCola* actual = cola->frente;
-    struct NodoCola* anterior = NULL;
+    NodoCola* actual = cola->frente;
+    NodoCola* anterior = NULL;
 
     while (actual->sig != NULL) {
         anterior = actual;
@@ -164,14 +188,44 @@ void eliminarUltimoNodoCola(struct Cola* cola) {
     free(actual);
 }
 
+//es estaaaaaaaaaaaaaaaa
+// AQUI ESTAAAAAA  
+Pagina* buscarValorPAGINA(struct Pagina* raiz, int valor){
+    if (raiz == NULL) {
+        return NULL;
+    }
+
+    struct NodoCola* nodo = raiz->cola->frente;
+    while (nodo != NULL) {
+        if (nodo->dato == valor) {
+            if(nodo->derecha == NULL){
+                return raiz;
+            }
+        }
+        nodo = nodo->sig;
+    }
+
+    nodo = raiz->cola->frente;
+    while (nodo != NULL) {
+        if (valor < nodo->dato) {
+            return buscarValor(nodo->izquierda, valor);
+        } else if (nodo->sig == NULL || valor < nodo->sig->dato) {
+            return buscarValor(nodo->derecha, valor);
+        }
+        nodo = nodo->sig;
+    }
+
+    return NULL; 
+}
+
 // OJO A ESTA. esta recibe la pagina que es la raiz del arbol, y devuelve aquella pagina que tienen un hijo con 5 valores, la uso para realizar la division de paginas
 // es muy util ya que me sirve en subir valores cuando paginas hoja se tienen que dividir y ademas en caso de que se llene el padre tambien para dividirse el mismo
-struct Pagina* buscarPaginaConHijoMagnitud5(struct Pagina* pagina) {
+Pagina* buscarPaginaConHijoMagnitud5(Pagina* pagina) {
     if (pagina == NULL) {
         return NULL;
     }
 
-    struct NodoCola* nodo = pagina->cola->frente;
+    NodoCola* nodo = pagina->cola->frente;
     while (nodo != NULL) {
         
         if (nodo->izquierda != NULL && nodo->izquierda->magnitud == 5) {
@@ -185,7 +239,7 @@ struct Pagina* buscarPaginaConHijoMagnitud5(struct Pagina* pagina) {
     }
 
     nodo = pagina->cola->frente;
-    struct Pagina* resultado = NULL;
+    Pagina* resultado = NULL;
     while (nodo != NULL) {
         resultado = buscarPaginaConHijoMagnitud5(nodo->izquierda);
         if (resultado != NULL) {
@@ -208,15 +262,15 @@ struct Pagina* buscarPaginaConHijoMagnitud5(struct Pagina* pagina) {
 //*********MUCHO TEXTO ***********/
 //  Esta funcion es la clave de la insercion en el arbol b+, recibe 2  parametros, LA PAGINA QUE SE DIVIDIRA Y LA PAGINA RAIZ DEL ARBOL B+
 // se tienen 2 apuntadores primordiales, EL MEDIO DE LA PAGINA Y EL PAPA DE LA PAGINA, 
-struct Pagina* dividirNodo(struct Pagina* pagina, struct ArbolB* raizBuena) {
-    struct NodoCola* medio = obtenerNodoMedio(pagina->cola);
-    struct NodoCola* actual = pagina->cola->frente;
-    struct Pagina* padre = buscarPaginaConHijoMagnitud5(raizBuena->raiz);
+    Pagina* dividirNodo(Pagina* pagina, ArbolB* raizBuena) {
+    NodoCola* medio = obtenerNodoMedio(pagina->cola);
+    NodoCola* actual = pagina->cola->frente;
+    Pagina* padre = buscarPaginaConHijoMagnitud5(raizBuena->raiz);
 
     //Si tiene padre entonces accede a esta condicion if
     if (padre != NULL) {
         //creo nueva pagina
-        struct Pagina* nuevaPaginaConPadre = crearPagina();
+        Pagina* nuevaPaginaConPadre = crearPagina();
         
         // le asigno los valores correspondientes por que esta nueva pagina sera la derecha del nodo que subira
         insertarColaOrdenada(&nuevaPaginaConPadre->cola, pagina->cola->frente->sig->sig->sig->dato);
@@ -240,9 +294,9 @@ struct Pagina* dividirNodo(struct Pagina* pagina, struct ArbolB* raizBuena) {
         padre->magnitud++;
         
         // verifica que todos los nodos de la cola de la pagina del padre se encuentren apuntando a las paginas correctas
-        struct NodoCola* nodoSubidoAnterior = padre->cola->frente;
-        struct NodoCola* nodoSubido = NULL;
-        struct NodoCola* nodoSubidoSiguiente = NULL;
+        NodoCola* nodoSubidoAnterior = padre->cola->frente;
+        NodoCola* nodoSubido = NULL;
+        NodoCola* nodoSubidoSiguiente = NULL;
         while (nodoSubidoAnterior != NULL && nodoSubidoAnterior->sig != NULL && nodoSubidoAnterior->sig->dato != medio->dato) {
             nodoSubidoAnterior = nodoSubidoAnterior->sig;
         }
@@ -290,8 +344,8 @@ struct Pagina* dividirNodo(struct Pagina* pagina, struct ArbolB* raizBuena) {
     // Aqui en caso reitero en que no se tenga padre, se realiza una division con dos paginas nuevas
     if(!buscarPaginaConHijoMagnitud5(pagina) && pagina->cola->frente->izquierda == NULL){
         // creo dos paginas
-        struct Pagina* nuevaPaginaIzquierda = crearPagina();
-        struct Pagina* nuevaPaginaDerecha = crearPagina();
+        Pagina* nuevaPaginaIzquierda = crearPagina();
+        Pagina* nuevaPaginaDerecha = crearPagina();
 
         //inserto los valores de la pagina  izquierda y asigno izq y derecha
         insertarColaOrdenada(&nuevaPaginaIzquierda->cola, pagina->cola->frente->dato);
@@ -325,8 +379,8 @@ struct Pagina* dividirNodo(struct Pagina* pagina, struct ArbolB* raizBuena) {
     }
         // EN CASO DE QUE NO TENGA PADRE ENTONCES ES NUEVA RAIZ
         
-        struct Pagina* nuevaPaginaIzquierda = crearPagina();
-        struct Pagina* nuevaPaginaDerecha = crearPagina();
+        Pagina* nuevaPaginaIzquierda = crearPagina();
+        Pagina* nuevaPaginaDerecha = crearPagina();
 
         insertarColaOrdenada(&nuevaPaginaIzquierda->cola, pagina->cola->frente->dato);
         insertarColaOrdenada(&nuevaPaginaIzquierda->cola, pagina->cola->frente->sig->dato);
@@ -355,13 +409,13 @@ struct Pagina* dividirNodo(struct Pagina* pagina, struct ArbolB* raizBuena) {
 
 
 // FUNCION DE BUSQUEDA, DEVULVE UN PUNTERO NODOCOLA QUE COINCIDA CON EL VALOR DESEADO
-struct NodoCola* buscarValor(struct Pagina* raiz, int valor) {
+NodoCola* buscarValor(Pagina* raiz, int valor) {
     if (raiz == NULL) {
         return NULL; 
     }
 
    
-    struct NodoCola* aux = raiz->cola->frente;
+    NodoCola* aux = raiz->cola->frente;
     while (aux != NULL) {
         if (aux->dato == valor) {
             return aux; 
@@ -385,7 +439,7 @@ struct NodoCola* buscarValor(struct Pagina* raiz, int valor) {
 
 
 // esta funcion inserta un valor al arbol, recibe una pagina, el valor y la raiz del arbol, esta mediante recursivad busca la pagina correcta donde insertar el valor y lo mete en su cola
-void insertarArbolB(struct Pagina *raiz, int valor, struct ArbolB* raizOriginal) {
+void insertarArbolB(Pagina *raiz, int valor, ArbolB* raizOriginal) {
    
     // comprobamos si esta vacio el arbol, si esta entonces es nueva raiz
     if (raiz->cola->frente == NULL) {
@@ -397,8 +451,8 @@ void insertarArbolB(struct Pagina *raiz, int valor, struct ArbolB* raizOriginal)
     // LOGICA PARA BUSCAR EL LUGAR DONDE SE VA A INSERTAR EL VALOR
     // mediante un while comparo en cada pagina el valor que se ingreso con el valor que tiene su cola, esto lo hago recursivamente , ya que se ejecuta hasta
     // que pagina actual sea NULL, significando que no hay mas paginas abajo , entonces se puede insertar en la pagina actual.
-    struct NodoCola *aux = raiz->cola->frente;
-    struct Pagina *paginaActual = NULL;
+    NodoCola *aux = raiz->cola->frente;
+    Pagina *paginaActual = NULL;
 
     // Encontrar la página actual donde se debe insertar el valor
     while (aux != NULL) {
@@ -430,51 +484,152 @@ void insertarArbolB(struct Pagina *raiz, int valor, struct ArbolB* raizOriginal)
     return;
 }
 
+/*
+void eliminar(int valor, Pagina *raizOriginal)
+{
+    if(raizOriginal == NULL || valor == 0)
+    {
+        return;
+    }
+
+    NodoCola *busc = raizOriginal->cola->ultimo;
+
+    NodoCola *actual = raizOriginal->cola->ultimo;
+
+    Pagina *pagina = raizOriginal;
+
+    while(busc != NULL)
+    {
+        vvvv
+        if (busc->sig != NULL)
+        {
+            busc = busc->sig;
+        }
+
+        if(busc->dato == valor)
+        {
+            break;
+        }
+
+        if(busc->dato > valor)
+        {
+            pagina = pagina->izquierda;
+            
+            if(pagina == NULL)
+            {
+                busc = NULL;
+                break;
+            }
+
+            actual = pagina->cola->ultimo;
+            busc = actual;
+        }
+
+        else
+        {
+            pagina = pagina->derecha;
+
+            if(pagina == NULL)
+            {
+                busc = NULL;
+                break;
+            }
+
+            actual = pagina->cola->frente;
+            busc = actual;
+        }
+
+    }
+}
+*/
 
 // https://www.programiz.com/dsa/deletion-from-a-b-plus-tree
 // la fuente que estoy usando ahorita
-void eliminar(int valor, struct ArbolB* raizOriginal)
+void eliminar(int valor, Pagina* raizOriginal)
 {
-    if(raizOriginal == NULL || valor == 0){
-        return;
-    }
-    struct NodoCola *busc = dfs(raizOriginal->raiz, valor),
-                    *izq_val = raizOriginal->raiz->cola->frente;
+    // lo que voy a hacer es que cuando encuentre la clave
+    // y lo elimiar, voy a utilizar herm_izq y herm_der
+    // para ver si puedo fusionar o rebalancear
+    NodoCola *busc = dfs(raizOriginal, valor),
+            *herm_izq, *herm_der,
+            *prev = NULL, *actuel = raizOriginal->cola->frente;
+    Cola *head_temp = raizOriginal->cola;
     
     if(!busc)
     {
-        printf("La clave %d no se encuentra en el arbol\n", busc);
+        printf("La clave %d no se encuentra en el arbol =(\n", valor);
+        pause();
         return;
     }
-    else //si encuentra la clave
-    {
-        //¿tiene hijos?
-        if(busc->sig != NULL)
-            eliminar(valor, busc->sig);
+    else
+    {   //yea perdonen, kamehameha ;)
+        //herm_izq = ;
+
+        //tiene hijos?
+        if(busc->derecha != NULL)
+        {
+            eliminar(valor, busc->derecha);
+        }
         else
-        { //no tiene, es una entrada de datos
+        { //no tiene, es una entrada de datos == hoja            
+            //cuando sea un nodo hoja...
+        
+            if(head_temp->frente == head_temp->ultimo)
+            {
+                free(head_temp);
+            }
+
+            if(head_temp->frente == busc)
+            {
+                head_temp->frente=busc->sig;
+                free(busc);
+            }
+
+            while(actuel != busc)
+            {
+                prev = actuel;
+                actuel = actuel->sig;
+            }
+            if(actuel->sig != NULL)
+            {
+                prev->sig=actuel->sig;
+                free(actuel);
+            }
+            else
+            {
+                eliminarUltimoNodoCola(raizOriginal->cola);
+            }
             
+
+
+            raizOriginal->magnitud--;
+            
+            if(raizOriginal->magnitud < 2)
+            {
+                //rebalance(busc->izquierda, raizOriginal);
+            }
         }
         /*  deniso's notes
             1. checar si tiene hijos, si no tiene, es una entrada de datos
             2. eliminar clave
             3. checar si después de eliminar, el árbol está balanceado
              */
+        if (busc->izquierda != NULL && busc->derecha != NULL)
+        {
+            // hacer la rotacion necesaria dependiendo del caso
+            // en otras palabras, un monton de casos en forma de ifs
+            // o bien en forma de switches jeje
+        }
+        else
+        {
+            // lo mismo, pero para otros casos xd
+        }
     }
 
     // se podria comprobar si el valor buscado es igual al
     // frente de la derecha, para que pueda determinar que
     // caso de balanceo puede usar
-    if (busc->dato == busc->derecha->cola->frente->dato)
-    {
-        // hacer la rotacion necesaria dependiendo del caso
-        // en otras palabras, un monton de casos en forma de ifs
-        // o bien en forma de switches jeje
-    }
-    else
-    {
-        // lo mismo, pero para otros casos xd
-    }
+    
 
     /*  deniso's notes
         si se elimina la clave y el recuento de claves minimas se sigue cumpliendo, se mueven las claves de forma normal y NO se debe balancear, es decir, no se hace ninguna fusión.
@@ -498,11 +653,10 @@ void eliminar(int valor, struct ArbolB* raizOriginal)
  */
     }
 
-void fusion(struct Pagina *pagina, struct Pagina *pag_hermana)
+void fusion(Pagina *pagina, Pagina *pag_hermana)
 {
 
-    struct NodoCola *nodo_a_fusionar = pagina->cola->frente;
-    struct NodoCola *nodo_hermano = pag_hermana->cola->frente;
+    NodoCola *nodo_a_fusionar = pagina->cola->frente;
 
     //Mientras haya nodos en la pagina a fusionar se inserta en la pagina hermana de manera ordenada
     //Y se avanza al siguiente nodo
@@ -512,58 +666,62 @@ void fusion(struct Pagina *pagina, struct Pagina *pag_hermana)
         nodo_a_fusionar = nodo_a_fusionar->sig;
     }
 
-    //Se libera la memoria de la cola y la pagina que se va a fusionar
+    //segun mi logica de desvelado el nodo a fusionar se pasa al sig de ahi el nodo padre
+    //detecta hacia donde lo fusiona y lo mueve para alla y lo libera
+
+    NodoCola *nodo_padre = pagina->cola->frente;
+
+    // es q ando checando primero lo de la eliminacion del arbol B
+    // paso el link
+    // https://www.geeksforgeeks.org/delete-operation-in-b-tree/
+    // no es del b+, pero se relaciona en si
+e(nodo_padre != NULL)
+    {
+        if(nodo_padre->izquierda == pagina)
+        {
+            nodo_padre->izquierda = pag_hermana;
+        }
+
+        if(nodo_padre->derecha == pagina)
+        {
+            nodo_padre->derecha = pag_hermana;
+        }
+
+        nodo_padre = nodo_padre->sig;
+    }
+
+    // ando viendo bn una parte, ando un poco atorado xdd
+    //creo que la kge al liberar la pagina tambien nose xdd
     free(pagina->cola);
     free(pagina);
-
-    //Actualizo los punteros padre
-    struct Pagina *padre = pagina->cola->frente->izquierda;
-
-    //Mientras haya algun padre en la pagina a fusionar
-    while(padre != NULL)
-    {
-        //Si el padre apunta a la pagina a fusionar
-        if(padre->cola->frente == pagina)
-        {
-            //Lo paso a la pagina hermana
-            padre->cola->frente = pag_hermana;
-        }
-
-        else
-        {
-            //Si no busco el nodo padre que apunta la pagina a fusionar
-            struct NodoCola *nodoPadre = padre->cola->frente;
-            
-            while(nodoPadre->sig != pagina)
-            {
-                nodoPadre = nodoPadre->sig
-            }
-            //Actualizo el puntero para que apunte a la pagina hermana
-            nodoPadre->sig = pag_hermana;
-        }
-        //Avanzo  al siguiente padre
-        padre = padre->izquierda;
-    }
 }
 
-void rebalance(struct Pagina *pagina, struct ArbolB *raizOriginal)
+void rebalance(Pagina *pagina, ArbolB *raizOriginal)
 {
     if(pagina->magnitud < 2)
     {
         //punteros para fusionar a la izq o der
-        struct Pagina *hermano_izq = pagina->izquierda;
-        struct Pagina *hermano_der = pagina->derecha;
+        Pagina *hermano_izq = pagina->cola->frente->izquierda;
+        Pagina *hermano_der = pagina->cola->frente->derecha;
 
-        
+        if(hermano_izq != NULL && hermano_izq->magnitud > 2)
+        {
+            fusion(pagina, hermano_izq);
+        }
+
+        else if(hermano_der != NULL && hermano_der->magnitud > 2)
+        {
+            fusion(pagina, hermano_der);
+        }
     }
 }
 
 // esta funcion imprime el arbol por completo, recorriendo nivel por nivel
-void imprimirArbolB(struct Pagina *pagina, int nivel) {
+void imprimirArbolB(Pagina *pagina, int nivel) {
     if (pagina == NULL) {
         return;
     }
-    struct NodoCola *nodo = pagina->cola->frente;
+    NodoCola *nodo = pagina->cola->frente;
     if (nodo != NULL) {
         printf("Nivel %d: ", nivel+1);
         while (nodo != NULL) {
@@ -585,19 +743,21 @@ void imprimirArbolB(struct Pagina *pagina, int nivel) {
     }
 }
 
-struct NodoCola *dfs(struct Pagina *pagina, int dato){
+
+//eso es un dfs y luego xd
+NodoCola *dfs(Pagina *pagina, int dato){
     
     if(pagina == NULL)
         return NULL;
 
-    struct NodoCola *actual = pagina->cola->frente;
+    NodoCola *actual = pagina->cola->frente;
     
     while(actual != NULL) 
     {
         if(actual->dato == dato)
             return actual;
         
-        struct NodoCola *enc_izq = dfs(actual->izquierda, dato);
+        NodoCola *enc_izq = dfs(actual->izquierda, dato);
 
         if(enc_izq != NULL)
             return enc_izq;
@@ -605,7 +765,7 @@ struct NodoCola *dfs(struct Pagina *pagina, int dato){
         actual = actual->sig;
     }
 
-    struct NodoCola *enc_der = dfs(pagina->cola->ultimo->derecha, dato);
+    NodoCola *enc_der = dfs(pagina->cola->ultimo->derecha, dato);
     
     if(enc_der != NULL)
     {
@@ -615,17 +775,85 @@ struct NodoCola *dfs(struct Pagina *pagina, int dato){
     return NULL;
 }
 
+// si, q tiene?
+
+// HICE ESTA FUNCIOON, ELIMINA TODO NORMAL PERO CUANDO UNA PAGINA PADRE SE QUEDA CON UN SOLO VALOR ESTE CRASHEA O DA UN BUCLE INFINITO 
+// ME FALTARIA IMPLEMENTAR LA RECURSIVIDAD PARA ESE CASO, COMBINE LAS CLAVES PARA FORMAR UNA SOLA PAGINA
+// NO SE SI ÑA FUNCION DE SAMUEL PUEDA SERVIR LA NETA YA ME MAREE JSJSJSJSJS  =(
+void eliminarValorArbolB(Pagina* raiz, int valor, ArbolB* raizOriginal) {
+    if (raiz == NULL) {
+        return;
+    }
+    Pagina* pagina = buscarValor(raizOriginal->raiz, valor);
+    if (pagina != NULL) {
+        
+        eliminarValorCola(pagina->cola, valor);
+        pagina->magnitud--;
+
+        if(pagina->magnitud < 2){
+            Pagina* padre = buscarPaginaConHijoMagnitud(raizOriginal->raiz,1);
+            NodoCola* Nodopadre = buscarNodoConHijoMagnitud(raizOriginal->raiz,1);
+            if(Nodopadre->izquierda->magnitud >= 3 || Nodopadre->sig->derecha->magnitud >= 3){
+
+                if(Nodopadre->izquierda->magnitud < Nodopadre->sig->derecha->magnitud){
+                    Nodopadre = Nodopadre->sig;
+                    Nodopadre->dato = Nodopadre->derecha->cola->frente->sig->dato;
+                    transferirNodo(Nodopadre->derecha->cola,Nodopadre->izquierda->cola);
+                }
+            
+                if(Nodopadre->izquierda->magnitud > Nodopadre->sig->derecha->magnitud){
+                    Nodopadre->dato = Nodopadre->izquierda->cola->ultimo->dato;
+                    insertarColaOrdenada(&pagina->cola,Nodopadre->izquierda->cola->ultimo->dato);
+                    pagina->magnitud++;
+                    eliminarUltimoNodoCola(Nodopadre->izquierda->cola);
+                }
+
+            } 
+            
+        
+            if(Nodopadre->izquierda->magnitud == 2 && Nodopadre->sig->derecha->magnitud == 2){
+                NodoCola* copiaArriba = buscarValorEnColaSimple(padre->cola,valor);
+                if(copiaArriba){
+                    eliminarValorCola(padre->cola,copiaArriba->dato);
+                    copiaArriba->sig->izquierda = copiaArriba->izquierda;
+                    padre->magnitud--;
+                    insertarColaOrdenada(&Nodopadre->izquierda->cola,pagina->cola->frente->dato);
+                    Nodopadre->izquierda->magnitud++;
+                }else{
+                   
+                    insertarColaOrdenada(&Nodopadre->izquierda->cola,pagina->cola->frente->dato);
+                    Nodopadre->izquierda->magnitud++;
+                    Nodopadre->sig->izquierda = Nodopadre->izquierda;
+                    eliminarValorCola(padre->cola,pagina->cola->frente->dato);
+                    padre->magnitud--;
+                }
+                
+                
+            }
+            
+           
+
+        }
+
+        return;
+    }else{
+        printf("EROR NO HAY NUMERO QUE ELIMINAER");
+    }
+
+ 
+}
+
 
 // funcion que libera el arbol 
-void liberarMemoriaArbol(struct Pagina* pagina) {
+void liberarMemoriaArbol(Pagina* pagina) {
     if (pagina == NULL) {
         return;
     }
 
-    struct NodoCola* nodo = pagina->cola->frente;
+    NodoCola* nodo = pagina->cola->frente;
     while (nodo != NULL) {
         liberarMemoriaArbol(nodo->izquierda);
-        struct NodoCola* temp = nodo;
+        NodoCola* temp = nodo;
         nodo = nodo->sig;
         free(temp);
     }
@@ -636,7 +864,7 @@ void liberarMemoriaArbol(struct Pagina* pagina) {
     //menu principal
 void menu(enum menuBool BOOL){
     puts("~*============={            }===============*~");
-    puts("\t\tARBOL B+");
+    puts("\t\t   ARBOL B+");
     puts("[1] - Insertar clave");
     if(BOOL)
     {
@@ -658,7 +886,7 @@ void pause()
 
 int main()
 {
-    struct ArbolB* arbolito = crearArbolB();
+    ArbolB* arbolito = crearArbolB();
     
     int op, bt_key, O, keydt;
     //para llevar control del menu
@@ -683,7 +911,6 @@ int main()
                         insertarArbolB(arbolito->raiz, bt_key,arbolito);
                         puts("Desea agregar otra clave?");
                         printf("[1] - Si\n[2] - No\n>");
-                        puts("~*<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<<>*~");
                         scanf("%d", &O);                
                     }while(O == 1);
                     BOOL = TRUE;
@@ -695,7 +922,7 @@ int main()
                     puts("~*============={            }===============*~");
                     printf("Ingrese la clave a buscar:\n>");
                     scanf("%d", &bt_key);
-                    struct NodoCola *clave_enc = dfs(arbolito->raiz, bt_key);
+                    NodoCola *clave_enc = dfs(arbolito->raiz, bt_key);
                     if(clave_enc) printf("Clave encontrada: %d\n", bt_key);
                     else puts("La clave no existe en el arbol");
                     puts("~*<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<<>*~");
@@ -706,7 +933,7 @@ int main()
                     puts("~*============={            }===============*~");
                     printf("Ingrese la clave a eliminar\n>");
                     scanf("%d", &keydt);
-                    eliminar(keydt, arbolito);
+                    eliminar(keydt, arbolito->raiz);
                     puts("La clave ha sido eliminada exitosamente");
                     puts("~*<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<<>*~");
                     pause();
@@ -714,6 +941,7 @@ int main()
                 eliminar(4, arbolito);
                 break;
                 case 4:
+                    system("cls || clear");
                     puts("~*============={            }===============*~");
                     imprimirArbolB(arbolito->raiz,0);
                     puts("~*<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<<>*~");
@@ -725,7 +953,7 @@ int main()
 
         
 
-    struct NodoCola* pruebaBusqueda = buscarValor(arbolito->raiz,41);
+    /* NodoCola* pruebaBusqueda = buscarValor(arbolito->raiz,41);
  
     if (!pruebaBusqueda)
     {
@@ -734,7 +962,7 @@ int main()
     printf("El valor buscado encontrado es  %d \n",pruebaBusqueda->dato);
     
     liberarMemoriaArbol(arbolito->raiz);
-    free(arbolito);
+    free(arbolito); */
     return 0;
 
 }
