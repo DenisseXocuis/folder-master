@@ -954,11 +954,11 @@ int main()
                 break;
                 case 2:
                     //busqueda
+                    system("cls || clear");
                     puts("~*============={            }===============*~");
                     printf("Ingrese la clave a buscar:\n>");
                     scanf("%d", &bt_key);
                     NodoCola *clave_enc = dfshoja(arbolito->raiz, bt_key);
-                    if(clave_enc) printf("Clave encontrada: %d\n", bt_key);
                     if(clave_enc) printf("Clave encontrada: %d\n", bt_key);
                     else puts("La clave no existe en el arbol");
                     puts("~*<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<<>*~");
@@ -989,8 +989,8 @@ int main()
         }while(op);
 
     
-    liberarMemoriaArbol(arbolito->raiz);
-    free(arbolito); 
+   /*  liberarMemoriaArbol(arbolito->raiz);
+    free(arbolito);  */
     return 0;
 
 }
