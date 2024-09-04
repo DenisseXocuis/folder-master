@@ -1,0 +1,176 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{comment}
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+%%para contador y eso
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+    %%%portadita
+    \begin{titlepage}
+        \fancyhead{R}{
+        \includegraphics[width=0.1\linewidth]{logoUV.png}
+        }
+        \hspace{2.5cm}
+        {\bfseries\LARGE Universidad Veracruzana \par}
+        \hspace{2cm}
+        {\scshape\Large Facultad de Ingeniería Eléctrica y Electrónica \par}
+        \begin{center}
+            \vspace{7cm}
+            {\itshape\huge Bases de Datos \par}
+            {\large Lara Xocuis Martha Denisse\par}
+            {\large S22002213 \par}
+            \vfill
+            {\Large \today \par}
+        \end{center}
+    \end{titlepage} 
+
+%%%%%%%%%%%%%%%%%%%%%%INFO%%%%%%%%%%%%%%%%%%%%%%
+\textbf{ACTIVIDADES:}
+\section*{Leer el capítulo 1 del libro: "FUNDAMENTOS DE BASES DE DATOS" de Abraham Silberschatz}
+\begin{itemize}
+    \item \textbf{¿Cuál es el propósito de los sistemas de bases de datos?} \\ Uno de los propósitos principales de los sistemas de bases de datos es ofrecer a los usuarios una visión abstracta de los datos. Es decir, buscan acabar con la redundancia e inconsistencia de los datos, dificultad, aislamiento, problemas de integridad y seguridad.
+    \item \textbf{¿Cuáles son las desventajas del sistema de procesamiento de archivos?} \\ Dependencia de datos del programa, duplicación de datos, compartir datos de forma limitada, tiempos de desarrollo largos y mantenimiento excesivo del programa.
+    \item \textbf{Analice con detalle los tres niveles de abstracción de datos}
+    \begin{enumerate}
+        \item Nivel \textbf{FÍSICO}: Describe \textbf{\textit{cómo}} se almacenan realmente los datos.
+        \item Nivel \textbf{LÓGICO}: Describe \textbf{\textit{qué}} datos se almacenan en la base de datos y que relaciones existen entre esos datos.
+        \item Nivel \textbf{VISTA}: Simplifica su \textbf{interacción} con el sistema.
+    \end{enumerate}
+    \item \textbf{Revisar la sección 1.11 Arquitectura de las bases de datos} \\ 
+    La arquitectura de los sistemas de bases de datos puede variar considerablemente según el entorno en el que se implementen. Existen diferentes tipos de arquitecturas:
+    \begin{itemize}
+        \item \textbf{Centralizadas}: Donde la base de datos se gestiona desde un único sistema central.
+        \item \textbf{Cliente-servidor}: En esta configuración, una máquina servidora maneja las solicitudes de múltiples clientes.
+        \item \textbf{Paralelas}: Aprovechan la computación paralela para procesar consultas y datos de manera eficiente.
+        \item \textbf{Distribuidas}: Se extienden a través de múltiples máquinas localizadas en distintas ubicaciones geográficas.
+    \end{itemize}
+
+    \item \textbf{Analice con detalle la figura 1.7 Arquitecturas de dos y tres capas. }\\ \textit{\underline{Arquitectura de dos capas:}} La aplicación se divide en un componente cliente, que se comunica directamente con el servidor de bases de datos a través de lenguajes de consulta como SQL, utilizando estándares como ODBC y JDBC. 
+    \vspace{0.3cm}\\ 
+    \textit{\underline{Arquitectura de tres capas:}} El cliente actúa solo como interfaz para el usuario. La comunicación entre el cliente y el servidor de bases de datos se realiza a través de un servidor de aplicaciones que gestiona la lógica de negocio y las interacciones con la base de datos. Esta arquitectura es adecuada para aplicaciones grandes y en la web.
+    \newpage
+    \item \textbf{Leer la sección 1.12.1 Usuarios de bases de datos e interfaces de usuario.}
+    \begin{itemize}
+        \item \textbf{Usuarios normales}: Usuarios no sofisticados que interactuan con el sistema invocando alguno de los programas de aplicación que se han escrito previamente.
+        \item \textbf{Programadores de aplicaciones}: profesionales informáticos que escriben programas de aplicación.
+        \item \textbf{Usuarios sofisticados}: interactuan con el sistema sin escribir programas, formulan sus consultas en un lenguaje de consultas de bases de datos.
+        \item \textbf{Usuarios especializados}: escriben aplicaciones de bases de datos especializadas que no encajan en el marco tradicional del procesamiento de datos.
+    \end{itemize}
+
+
+    \item \textbf{Estudiar la sección 1.13 Historia de los sistemas de bases de datos:} 
+    \begin{enumerate}
+        \item Principios del siglo XX: Las tarjetas perforadas, inventadas por Herman Hollerith, se usaron para el censo de EE.UU. y se introdujeron en las computadoras para registrar datos.
+        \item Década de 1950 y principios de 1960: Se desarrollaron cintas magnéticas para almacenar datos, permitiendo la automatización de tareas como la elaboración de nóminas.
+        \item Finales de los años 60 y 70: La introducción de discos duros permitió el acceso directo a los datos, liberando el procesamiento de la secuencialidad. 
+        \item Años 80: A pesar de la complejidad inicial, las bases de datos relacionales superaron a las de red y jerárquicas en rendimiento y facilidad de uso, gracias a proyectos como System R de IBM
+        \item Principios de los años 90: Se enfatizó en el uso de SQL para aplicaciones intensivas en consultas y análisis de datos.
+        \item Principios del siglo XXI: Se introdujo XML y su lenguaje de consulta, XQuery, en las bases de datos. 
+    \end{enumerate}
+    \item \textbf{Responder de la sección de Ejercicios prácticos}
+    \begin{itemize}
+        \item 1.1 En este capítulo se han descrito varias ventajas importantes de los sitemas gestores de bases de datos. ¿Cuáles son sus dos inconvenientes?
+        \item 1.2 Indíquese siete lenguajes de programación que sean procedimentales y dos que no lo sean. ¿Qué grupo es más fácil de aprender a usar? Explíquese la respuesta.
+        \item 1.5 Indíquese cuatro aplicaciones que se haya usado que sea muy posible que utilicen un sistema de bases de datos para almacenar datos persistentes.
+        \item 1.6 Indíquense cuatro diferencias significativas entre un sistema de procesamiento de archivos y un SGBD.
+        \item 1.7 Explíquese la diferencia entre independencia de datos física y lógica.
+    \end{itemize}
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%555
+\section*{Leer la Parte 1 del libro: "MODERN DATABASE MANAGEMENT" de Jeffrey A. Hoffer: "The Context of Database Management"}
+\begin{itemize}
+    \item \textbf{Lea con cuidado la sección "BASIC CONCEPTS AND DEFINITIONS" }
+    \begin{itemize}
+        \item \textbf{Note la diferencia entre dato e información}
+        \begin{center}
+                \begin{tabular}[H]{|c|c|} \hline 
+                \textbf{DATO} & \textbf{INFORMACIÓN} \\ \hline  
+                - Representación almacenada de & - Datos que han sido procesados\\
+                objetos y eventos & que permiten que el conocimiento \\
+                que tienen un significado & del usuario incremente \\
+                importante para el usuario & \\ \hline
+                \end{tabular}   
+        \end{center}
+
+        \item \textbf{Ponga especial énfasis en “Metadatos”} \\ Comúnmente es conocido como "\textit{datos de datos}", describe las \textbf{características} de los datos. 
+        \item \textbf{¿Cuáles son las desventajas del sistema de procesamiento de archivos?}
+        \begin{itemize}
+            \item \textbf{Duplicación} de datos
+            \item \textbf{Dependencia} de programas.
+            \item Compartir datos de forma \textbf{limitada}
+            \item \textbf{Tiempo extenso} de desarrollo
+            \item \textbf{Mantenimiento excesivo} del programa
+        \end{itemize}
+        \item \textbf{Analice la definición de este autor para un SGBD} \\ Un Sistema Gestor de Base de Datos es un software que es usado para crear, manipular y controlar el acceso a los usuarios a una base de datos. Provee un método sistemático para \textbf{crear, actualizar y almacenar datos} guardados en una BD.
+        \item \textbf{¿Cuáles son las ventajas/desventajas de la propuesta de bases de datos?}
+        \begin{center}
+            \begin{tabular}[H]{|c|c|} \hline
+            \textbf{VENTAJAS} & \textbf{DESVENTAJAS} \\ \hline
+            - Independencia hacia un programa & -Personal nuevo y especializado\\ \hline 
+            - Redundancia mínima & -Instalación y mantenimiento costoso\\ \hline
+            - Mejora la consistencia de los datos & -Necesidad por copias de respaldo explicitas \\ \hline
+            - Mejora la accesibilidad de datos & - Conflicto empresarial \\ \hline
+            - Mejora la calidad de datos & \\ \hline
+                
+            \end{tabular}
+        \end{center}
+
+        \item \textbf{¿Qué es una restricción?}\\ Una regla que no puede ser violada por el usuario de la base de datos
+        \item \textbf{¿Cuáles son los costos y riesgos de utilizar BD?}
+        \begin{itemize}
+            \item Personal nuevo y especializado
+            \item Instalación y mantenimiento costoso
+            \item Necesidad por copias de respaldo explícitas
+            \item Conflicto empresarial
+        \end{itemize}
+        \newpage
+        \item \textbf{¿Cuáles son los componentes del ambiente de BD?}
+        \begin{itemize}
+            \item CASE TOOLS: Software de ingeniería.
+            \item Repositorios: almacenamiento de \textbf{metadatos} centralizados
+            \item Base de datos: almacén de datos
+            \item Programas: software que usan los datos
+            \item Interfaz de usuario: pantalla textual y gráfica para los usuarios.
+            \item Administrador de datos: personal responsable para el manejo de una base de datos
+            \item Desarolladores de sistemas
+            \item Programadores: personal responsable para diseñar una base de datos y software
+            \item "END-USERS": personas quienes usan las aplicaciones
+        \end{itemize}
+        \item \textbf{Analice el ambiente de aplicación de las BD de dos y tres capas}  
+        \item \textbf{¿Qué es un ERP?} \\ Sistemas que han sido envueltos desde el material
+    \end{itemize}
+    \item Revise la sección correspondiente a la evolución de los sistemas de BD
+    \item Revisar el ciclo de vida de desarrollo de sistemas, que también aplica a las BD
+    \item Analizar con detalle el resumen del capitulo
+    \item Realizar los ejercicios de la página 44 hasta la pregunta 12
+\end{itemize}
+\section*{Leer el capítulo 1 del libro: "FUNDAMENTOS DE BASES DE DATOS" de Martha Elena Millán}
+\begin{itemize}
+    \item Analizar con detalle la arquitectura ANSI-SPARC de un SMBD
+\end{itemize}
+
+
+\end{sloppypar}
+\end{document}

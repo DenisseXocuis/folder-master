@@ -1,0 +1,84 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{comment}
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+%%para contador y eso
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+    %%%portadita
+    \begin{titlepage}
+        \fancyhead{R}{
+        \includegraphics[width=0.1\linewidth]{logoUV.png}
+        }
+        \hspace{2.5cm}
+        {\bfseries\LARGE Universidad Veracruzana \par}
+        \hspace{2cm}
+        {\scshape\Large Facultad de Ingeniería Eléctrica y Electrónica \par}
+        \begin{center}
+            \vspace{7cm}
+            {\itshape\huge Actividades de Métodos Numéricos \par}
+            {\large Lara Xocuis Martha Denisse\par}
+            {\large S22002213 \par}
+            \vfill
+            {\Large 27 de Agosto, 2024 \par}
+        \end{center}
+    \end{titlepage}
+    
+\section*{Tarea 1}
+\begin{center}
+    \begin{tabular}[H]{|c|c|}\hline 
+        $v(t)$ & $t$ \\ \hline
+        0 & 0 \\ \hline
+        16.43 & 2 \\ \hline
+        27.85 & 4 \\ \hline
+        35.77 & 6 \\ \hline
+        41.27 & 8 \\ \hline
+        45.09 & 10 \\ \hline
+        47.74 & 12  \\ \hline
+        49.58 & 14 \\ \hline
+        50.85 & 16 \\ \hline
+    \end{tabular} 
+\end{center}
+
+$\displaystyle v(t)  = \frac{gm}{c} (1 - e^{-(c/m)t})$
+
+\begin{center}
+    \begin{tabular}[H]{|c|c|}\hline 
+        $v_{i+1}$ & $t_{i+1}$ \\ \hline
+        0 & 0 \\ \hline
+        19.62 & 2 \\ \hline
+        32.07 & 4 \\ \hline
+        39.98 & 6 \\ \hline
+        45.00 & 8 \\ \hline
+        48.19 & 10 \\ \hline
+        50.17 & 12  \\ \hline
+        51.45 & 14 \\ \hline
+        52.27 & 16 \\ \hline
+    \end{tabular} 
+\end{center}
+
+
+\end{sloppypar}
+\end{document}
