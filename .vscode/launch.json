@@ -2,6 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Ejemplo_arreglo",
+            "request": "launch",
+            "mainClass": "Ejemplo_arreglo",
+            "projectName": "folder-master-1_9aa8ad49"
+        },
+        {
+            "type": "java",
+            "name": "EJemplo_arreglo",
+            "request": "launch",
+            "mainClass": "EJemplo_arreglo",
+            "projectName": "folder-master-1_9aa8ad49"
+        },
+        {
             "name": "C/C++: gcc build and debug active file",
             "type": "cppdbg",
             "request": "launch",
