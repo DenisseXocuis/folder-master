@@ -1,0 +1,126 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{comment}
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+%%para contador y eso
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+    %%%portadita
+    \begin{titlepage}
+        \fancyhead{R}{
+        \includegraphics[width=0.1\linewidth]{logoUV.png}
+        }
+        \hspace{2.5cm}
+        {\bfseries\LARGE Universidad Veracruzana \par}
+        \hspace{2cm}
+        {\scshape\Large Facultad de Ingeniería Eléctrica y Electrónica \par}
+        \begin{center}
+            \vspace{7cm}
+            {\itshape\huge INGENIERÍA ECONÓMICA \par}
+            {\large Lara Xocuis Martha Denisse\par}
+            {\large S22002213 \par}
+            \vfill
+            {\Large September 6, 2024 \par}
+        \end{center}
+    \end{titlepage} 
+
+%%%%%%%%%%%%%%%%%%%%%%main template%%%%%%%%%%%%%%%%%%%%%%
+\section*{EJERCICIOS DE INGENIERÍA ECONÓMICA ENTREGA 02}
+\subsection*{INSTRUCCIONES: Responde a las preguntas del siguiente CASO de estudio}
+\subsection{Innovación en Sistemas de Pago}
+
+%%%%%%%%%%%%%%%%%%info y así%%%%%%%%%%%%%%%%%%%
+\textbf{\textit{CONTEXTO:}}
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{maeve.png}
+\end{figure}
+La empresa \textbf{"Maeve Automation"} es una start-up en el campo de la ingeniería electrónica, informática y mecatrónica, han desarrollado un nuevo dispositivo IoT (Internet de las Cosas) con un potencial de mercado enorme. Este dispositivo, un asistente virtual doméstico inteligente, promete revolucionar la forma en que interactuamos con nuestros hogares. 
+\vspace{0.3cm}\\ 
+\textbf{\textit{OBJETIVO DEL CASO:}}
+\textit{Desarrollar un análisis comparativo usando herramientas de ingeniería económica para tomar una decisión informada sobre cuál opción de financiamiento elegir. Deberán aplicar conocimientos sobre el valor del dinero en el tiempo, tasas de interés compuesto, tasa efectiva y tasa nominal, y justificar su elección en términos de rentabilidad y viabilidad. }
+\vspace{0.3cm}\\ 
+\textbf{\textit{DECISIONES A TOMAR:}}
+\begin{itemize}
+    \item \textbf{Valor del dinero en el tiempo:} Determinar la opción más económica y sostenible a largo plazo, tomando en cuenta que el valor del dinero varía con el tiempo.
+    \vspace{0.3cm}\\ 
+    Para tomar la opción más económica debemos de calcular y analizar ambas opciones.
+    \vspace{0.3cm}\\ 
+    \textbf{Opción 1: Préstamo bancario con tasa de interés compuesto anual:} La tasa nominal es del 8\% anual, pero los pagos se hacen trimestralmente. Los ingenieros deben calcular la tasa efectiva anual (TEA) y determinar el costo real de este financiamiento.
+    $$Tasa efectiva: \left(1+\frac{i_n}{m}\right) ^{m} - 1$$
+    \textit{donde:}\\ 
+    $i_n$ = tasa nominal = 8\%\\ 
+    $m$ = núm. de periodos que igualan al plazo de interés específico = 12/3(trimestres) = 4
+    \vspace{0.3cm}\\
+    \textit{calculando:}
+    $$TEA = \left(1 +\frac{0.08}{4}\right) ^{4} - 1 = 0.082432 = 8.24\% anual$$
+    \newpage
+    \textbf{Opción 2: Inversión de un capitalista de riesgo.} A cambio de una inversión inicial de \$500,000, el capitalista recibirá un 10\% de los beneficios netos por los próximos 5 años. El equipo debe comparar el costo de esta opción con la del préstamo bancario, evaluando si ceder una parte de los beneficios a largo plazo es la mejor opción en términos económicos. 
+    \vspace{0.3cm}\\ 
+    Para obtener el valor futuro al término de los 5 años se debe usar la fórmula de valor futuro.
+    $$F = P (1 + i)^{n}$$
+    \textit{donde:}\\ 
+    $P = valor presente$ = \$500, 000
+    \vspace{0.3cm}\\ 
+    $i = tasa de interes$  = 0.1\%
+    $$F = 500,000 (1.1)^{5} = \$805,255$$
+    \vspace{0.3cm}\\ 
+    La inversión del capitalista de riesgo es más económica en comparación con el préstamo bancario. Esto nos dice que, dar una parte de nuestros beneficios a largo plazo puede ser la mejor opción.
+    
+    \item \textbf{Tasa de interés compuesto:} Calcular el costo real del préstamo bancario usando la fórmula de interés compuesto y considerando el periodo de capitalización trimestral. 
+    \vspace{0.3cm}\\ 
+    \textit{Interés compuesto:}
+    $$F = P (1 + i)^{n}$$
+    \vspace{0.3cm}\\ 
+    \textit{La tasa de interés nominal se capitaliza trimestralmente, por lo que hay 4 períodos de capitalización por año (trimestres).}\\
+    \textit{Tasa del interés trimestral}: 8\% / 4 = 2\%\\ 
+    \textit{Número total de periodos:4(trimestres por años)x5(años)} = 20
+    $$F = 500,000 (1 + 0.02)^{20} = \$742,973.698$$
+    \item \textbf{Tasa nominal vs tasa efectiva:} Comparar las tasas nominales y efectivas de las diferentes alternativas, y evaluar su impacto en las decisiones de inversión.
+    \vspace{0.3cm}\\ 
+    \textit{La tasa efectiva que se calculó con anterioridad fue de 8.24\%, mientras que la tasa nominal es del 8\%.}.
+    \vspace{0.3cm}\\ 
+    Es importante destacar que la Tasa Nominal representa el interés sin tener en cuenta la capitalización de intereses; La Tasa Efectiva refleja el costo real.
+    \vspace{0.3cm}\\
+    En este caso:
+    \begin{itemize}
+        \item La tasa efectiva del préstamo bancario es más alta (8.24\%) que la tasa nominal (8\%).
+    \end{itemize}
+    \textbf{Se puede concluir que el costo total del préstamo es mayor que el costo total que del capitalista de riesgo ya que la opción del capitalista de riesgo es más económica.}
+    \item \textbf{Evaluación de riesgos y retorno:} Considerar los riesgos asociados con ceder un porcentaje de los beneficios al inversor o comprometerse con un préstamo fijo.
+    \vspace{0.3cm}\\ 
+    Si la empresa tiene éxito, puede resultar en un costo significativo y esto puede limitar la autonomía de la empresa. Por eso es importante que la empresa priorize la flexibilidad inicial y así la inversión de riesgo puede ser adecuada.
+\end{itemize}
+\subsection*{Preguntas de análisis}
+\begin{itemize}
+    \item \textbf{¿Cuál es la mejor opción financiera para la empresa?} \\ Claro está que esto depende de las necesidades y expectatvias de la empresa, sin embargo, si se necesita flexibilidad financiera inicial, la inversión del capitalista de riesgo puede ser la mejor opción ya que puede hacer pagos sin ser obligatorios y más económicos.
+    \item \textbf{¿Cómo afecta la incertidumbre del mercado a la decisión?} \\ Puede afectar la capacidad de asegurar otra financiación en el futuro a favor de la empresa.
+    \item \textbf{¿Qué otros factores (no financieros) deberían considerar los líderes de la empresa?}\\ Control y gestión de la empresa, más importante, su reputación e imagen hacia la sociedad.
+    \item \textbf{¿Cómo pueden utilizar las herramientas de ingeniería económica para tomar una decisión informada? } \\ Un gran análisis de evaluación de riesgos y valor del dinero en el tiempo.
+\end{itemize}
+
+
+\end{sloppypar}
+\end{document}

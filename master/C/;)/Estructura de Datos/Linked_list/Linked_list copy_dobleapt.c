@@ -2,7 +2,7 @@
 //buscar en una lista, buscar en el elemento y regresar la dirección del puntero siguiente al elemento q encuentre
 typedef struct node{
     int valor;
-    struct node *next_node;
+    struct node *next_node, *prev;
 }NODO; //nodo es sinónimo de struct node
 
 int puts_elem(NODO **inicio, int dato){
@@ -23,6 +23,7 @@ NODO *search(NODO *apt, int dato_buscar, NODO *apt2){
 
 int main(int argc, char **argv){
     NODO *apt_inicio = NULL; //lista vacia, no tiene elementos
+
     puts_elem(&apt_inicio,1);
     puts_elem(&apt_inicio,2);
     puts_elem(&apt_inicio,3);
