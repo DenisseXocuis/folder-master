@@ -1,7 +1,7 @@
 /* Mallado 2D con GL/glut =) */
 
-/*  Proyecto Mallado2D con Grafo Dirigido usando GL/glut
- *  'Grafo dirigido de vertices'
+/*  Proyecto Mallado2D con Grafo Dirigido 'Ponderado' usando GL/glut
+ *  'Grafo de vertices'
  *  Lara Xocuis Martha Denisse. S22002213   
  *  Graficación por computadora
  *  15/09/24
@@ -17,7 +17,7 @@ enum _bool{FALSE,TRUE}BOOL;
 /* DEFINICIÓN DE ESTRUCTURAS BASE PARA LOS NODOS */
     typedef struct nodo_vertice
     {   
-        int V, visit;
+        int V;
         float x,y;
     }NODO_VERTICE;
 
@@ -338,7 +338,7 @@ enum _bool{FALSE,TRUE}BOOL;
 
     void control_teclado(unsigned char key, int x, int y)
     {
-        if(key == 13) //para el ENTER
+        if(key == 13) //para el enter :)
         {
             glutDestroyWindow(glutGetWindow());
             window = 0; // Marcar que la ventana gráfica ya no está activa
@@ -430,7 +430,6 @@ int main(int argc, char **argv)
                     crear_grafo(node, &grafo_head, ++T);
                 }
                 puts("Todos los vertices han sido agregados en el plano de forma exitosa!");
-                //BOOL = TRUE; //<- entrada exitosa de coordenadas
                 //verificar_t(&grafo_head, T);
                 if(T>=3) BOOL = TRUE;
                 else warning();
@@ -469,14 +468,14 @@ int main(int argc, char **argv)
 
                     glClearColor(1.0, 1.0, 1.0, 1.0);
 
-                    gluOrtho2D(0.0, 15.0, 0.0, 15.0); // Rango de coordenadas visible
+                    gluOrtho2D(0.0, 15.0, 0.0, 15.0); // rango coordenadas visible
 
                     glutDisplayFunc(draw);
                     window = 1;
                     glutKeyboardFunc(control_teclado);
                     while(window)
                     {
-                        glutMainLoopEvent(); // Procesar eventos de la ventana actual
+                        glutMainLoopEvent();
                     }
 
                     //glutMainLoop();

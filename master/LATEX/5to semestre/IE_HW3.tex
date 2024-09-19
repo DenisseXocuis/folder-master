@@ -1,0 +1,251 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amssymb}
+\usepackage{adjustbox}
+\usepackage{wrapfig} 
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{comment}
+
+\geometry{top=2cm, bottom=2cm, left=2cm, right= 2cm} %%margen
+\graphicspath{{images/}}
+\parindent=0pt
+
+\begin{document}
+%%para contador y eso
+\thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+\pagestyle{headings}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{sloppypar} 
+    %%%portadita
+    \begin{titlepage}
+        \fancyhead{R}{
+        \includegraphics[width=0.1\linewidth]{logoUV.png}
+        }
+        \hspace{2.5cm}
+        {\bfseries\LARGE Universidad Veracruzana \par}
+        \hspace{2cm}
+        {\scshape\Large Facultad de Ingeniería Eléctrica y Electrónica \par}
+        \begin{center}
+            \vspace{7cm}
+            {\itshape\huge INGENIERÍA ECONÓMICA \par}
+            {\large Lara Xocuis Martha Denisse\par}
+            {\large S22002213 \par}
+            \vfill
+            {\Large September 16, 2024 \par}
+        \end{center}
+    \end{titlepage} 
+
+%%%%%%%%%%%%%%%%%%%%%%main template%%%%%%%%%%%%%%%%%%%%%%
+\section*{EJERCICIOS DE INGENIERÍA ECONÓMICA ENTREGA 03}
+\subsection*{INSTRUCCIONES: Responde a las preguntas del siguiente CASO de estudio}
+\subsection{Análisis de Costos en el Desarrollo de un Dron Multifuncional}
+
+%%%%%%%%%%%%%%%%%%info y así%%%%%%%%%%%%%%%%%%%
+\textbf{\textit{CONTEXTO:}}
+\begin{figure}[H]
+    \centering 
+    \includegraphics[width=0.7\textwidth]{dronetech.png}
+\end{figure}
+DroneTech es una startup fundada por tres recién graduados: Elena (Ing. Electrónica), Marco (Ing. Mecatrónica) y Sofía (Ing. Informática). La empresa se especializa en el desarrollo de drones para aplicaciones industriales y de investigación. Después de un año de I+D, han creado un prototipo de dron
+multifuncional llamado "VersiDron", diseñado para adaptarse a diversas aplicaciones cambiando sus módulos.
+\vspace{0.3cm}\\ 
+\textbf{\textit{OBJETIVO DEL CASO:}}
+\textit{Aplicar diversos conceptos de costo en un escenario realista que combina aspectos de ingeniería electrónica, mecatrónica e informática en el contexto del desarrollo y producción de drones.}
+\vspace{0.3cm}\\ 
+\textbf{\textit{ACTIVIDADES A REALIZAR:}}
+\vspace{0.3cm}\\ 
+\textit{Clasificación de costos:}
+\begin{itemize}
+    \item Identificar y clasificar los diferentes tipos de costos (fijos, variables, directos, indirectos, hundidos, etc.)
+    \begin{itemize}
+        \item \textbf{Fijos:} Gastos generales y administrativos y costo de instalaciones de producción
+        \item \textbf{Variables:} Componentes de estructura base, costos de módulos intercambiables y mano de obra para ensamblaje.
+        \item \textbf{Directos:} Costo de modulos, mano de obra por ensamblaje
+        \item \textbf{Indirectos}: Marketing y ventas
+        \item \textbf{Hundidos}: Desarollo de software
+    \end{itemize}
+    \newpage
+    \item Explicar cómo cada tipo de costo afecta la toma de decisiones en la producción de VersiDron.\\ Los costos fijos e indirectos son fundamentales para comprender la estructura general de costos y la rentabilidad global, los costos variables y directos afectan directamente a las decisiones sobre volúmenes de producción, selección de unidades y fijación de precios. Para fijar precios competitivos y cubrir todos los costos relevantes, hay que tener en cuenta los costos de marketing y ventas.
+\end{itemize}
+\textit{Análisis de Costo-Volumen-Utilidad:}
+\begin{itemize}
+    \item Calcular el punto de equilibrio para cada configuración de VersiDron (con
+    diferentes módulos).
+    \begin{center}
+    Suma de costos fijos:
+    $\$100,000 + \$50,000 = \$150,000$ \\ 
+    Suma de costos variables por cada modulo: $\$2,000 + (modulo) + \$500$ \\ 
+    Y suponiendo que el precio de venta es de 5mil pesos:
+    \begin{itemize}
+        \item Camara: \$2,000 + \$800 + \$500 = \$3,300 \\ Punto de equilibrio:
+        
+        $\displaystyle \frac{\$150,000}{\$5,000 - \$3,300} = 88$ unidades
+        \item Sensor LiDAR:  \$2,000 + \$1,500 + \$500 = \$4,000 \\ Punto de equilibrio:
+        
+        $\displaystyle \frac{\$150,000}{\$5,000 - \$4,300} = 150$ unidades
+        \item Brazo robótico:  \$2,000 + \$1,200 + \$500 = \$3,700 \\ Punto de equilibrio:
+        
+        $\displaystyle \frac{\$150,000}{\$5,000 - \$3,700} = 115$ unidades
+        \item Sensor multiespectral:  \$2,000 + \$1,000 + \$500 = \$3,500 \\ Punto de equilibrio:
+        
+        $\displaystyle \frac{\$150,000}{\$5,000 - \$3,500} = 100$ unidades
+    \end{itemize}
+    \end{center} 
+    \item Determinar cómo cambia el punto de equilibrio si se consideran los tres pedidos juntos. 
+    \begin{center}
+    Pedidos totales: 50 + 10 + 100 = 160 unidades
+    \begin{itemize}
+        \item Camara: \$3,300 * 160 = \$528,000
+        \item Sensor LiDAR \$4,000 * 160 = \$640,000
+        \item Brazo robótico \$3,700 * 160 = \$592,000
+        \item Sensor multiespectral \$3,500 * 160 = \$560,000
+    \end{itemize}
+    \end{center}
+\end{itemize}
+\newpage
+\textit{Costeo Basado en Actividades (ABC):}
+\begin{itemize}
+    \item Desarrollar un sistema de costeo ABC para la producción de VersiDron. \\  Diseñar, adquirir materiales, montar, probar, empacar, marketing, y administración, factores que causan los costos, como horas de desarrollo, órdenes de compra, unidades ensambladas, etc.
+    \item Comparar los resultados del costeo ABC con un enfoque de costeo tradicional.
+    \begin{center}
+        \begin{tabular}[H]{|c|c|} \hline 
+            ABC & Tradicional \\ \hline
+            Visión precisa de los costos & Asigna costos generales\\ 
+                & y fijos de manera uniforme\\ \hline
+            Mejor comprensión & Menos exacto\\ \hline
+        \end{tabular}
+    \end{center}
+\end{itemize}
+\textit{Análisis de Costos Marginales:}
+\begin{itemize}
+    \item Calcular el costo marginal de producir unidades adicionales para cada
+    cliente.
+    \begin{center}
+
+        \begin{itemize}
+            \item Camara: \$3,300
+            \item Sensor LiDAR \$4,000
+            \item Brazo robótico \$3,700
+            \item Sensor multiespectral \$3,500
+        \end{itemize}
+        
+    \end{center}
+    \item Determinar si existen economías de escala y cómo afectarían la estrategia
+    de precios.
+    \begin{center}
+        Economías a escala es reducir el costo promedio por unidad para hacer más barata la creación de dicha unidad. 
+        \vspace{0.3cm}\\ 
+        Costo fijo: \$150,000 \\ 
+        Cálculo del costo por unidad:
+        \vspace{0.3cm}\\ 
+        \hrule 
+        \textbf{10 unidades }
+        \begin{itemize}
+            \centering
+            \item Camara: \$3,300 * 10 = \$33,000
+            \item Sensor LiDAR \$4,000 * 10 = \$40,000
+            \item Brazo robótico \$3,700 * 10 =\$37,000
+            \item Sensor multiespectral \$3,500 * 10 = \$35,000
+        \end{itemize}
+        Costos fijos por unidad: $\displaystyle\frac{\$150,000}{10} = 15,000$
+        \vspace{0.3cm}\\ 
+        Costo total por unidad:
+        \begin{itemize}
+            \centering
+            \item Camara: \$3,300 + \$15,000 = \$18,300
+            \item Sensor LiDAR \$4,000 + \$15,000 = \$19,000
+            \item Brazo robótico \$3,700 + \$15,000 = \$18,700
+            \item Sensor multiespectral \$3,500 + \$15,000 = \$18,500
+        \end{itemize} 
+        Restando el precio de venta por costo total por unidad, se presentan \textbf{grandes pérdidas}.
+        \hrule
+        \textbf{50 unidades }
+            \begin{itemize}
+                \centering
+                \item Camara: \$3,300 * 50 = \$165,000
+                \item Sensor LiDAR \$4,000 * 50 = \$200,000
+                \item Brazo robótico \$3,700 * 50 =\$185,000
+                \item Sensor multiespectral \$3,500 * 50 = \$175,000
+            \end{itemize}
+            Costos fijos por unidad: $\displaystyle\frac{\$150,000}{50} = \$3,000$
+            \vspace{0.3cm}\\ 
+            Costo total por unidad:
+            \begin{itemize}
+                \centering
+                \item Camara: \$3,300 + \$3,000 = \$6,300
+                \item Sensor LiDAR \$4,000 + \$3,000 = \$7,000
+                \item Brazo robótico \$3,700 + \$3,000 = \$6,700
+                \item Sensor multiespectral \$3,500 + \$3,000 = \$6,500
+            \end{itemize} 
+            Restando el precio de venta por costo total por unidad, se presentan \textbf{grandes pérdidas}.
+            \hrule
+            \textbf{100 unidades }
+            \begin{itemize}
+                \centering
+                \item Camara: \$3,300 * 100 = \$330,000
+                \item Sensor LiDAR \$4,000 * 100 = \$400,000
+                \item Brazo robótico \$3,700 * 100 =\$370,000
+                \item Sensor multiespectral \$3,500 * 100 = \$350,000
+            \end{itemize}
+            Costos fijos por unidad: $\displaystyle\frac{\$150,000}{100} = \$1,500$
+            \vspace{0.3cm}\\ 
+            Costo total por unidad:
+            \begin{itemize}
+                \centering
+                \item Camara: \$3,300 + \$1,500 = \$4,800
+                \item Sensor LiDAR \$4,000 + \$1,500 = \$5,500
+                \item Brazo robótico \$3,700 + \$1,500 = \$5,200
+                \item Sensor multiespectral \$3,500 + \$1,500 = \$5,000
+            \end{itemize} 
+            Restando el precio de venta por costo total por unidad, se presentan \textbf{más ganancias}. \\ Solo con pedidos grandes se empieza a obtener alguna rentabilidad con ciertos módulos
+    \end{center}
+
+\end{itemize}
+\newpage
+\textit{Análisis de Make-or-Buy:}
+\begin{itemize}
+    \item Evaluar si es más rentable fabricar los módulos internamente o
+    subcontratarlos.
+    \begin{itemize}
+        \item Camara: \$3,300
+        \item Sensor LiDAR \$4,000
+        \item Brazo robótico \$3,700
+        \item Sensor multiespectral \$3,500
+    \end{itemize}
+    \item Considerar factores cuantitativos y cualitativos en la decisión.
+\end{itemize}
+\textit{Presupuesto de capital:}
+\begin{itemize}
+    \item Calcular el costo de capital para DroneTech si deciden expandir su
+    capacidad de producción.
+    \item Evaluar diferentes opciones de financiamiento y su impacto en los costos
+    totales.
+\end{itemize}
+
+\subsection*{Preguntas de análisis}
+\begin{enumerate}
+    \item ¿Cómo afectaría la decisión de pricing la estructura de costos de
+    DroneTech?.
+    \item ¿Qué estrategias podría implementar DroneTech para reducir sus costos sin
+    comprometer la calidad?
+    \item ¿Cómo podrían los avances tecnológicos futuros afectar la estructura de costos de VersiDron?
+    \item ¿Qué consideraciones éticas deben tenerse en cuenta al analizar los costos
+    y determinar los precios?
+    \item ¿Cómo podría DroneTech utilizar el análisis de costos para obtener una
+    ventaja competitiva en el mercado de drones?
+\end{enumerate}
+
+
+\end{sloppypar}
+\end{document}
