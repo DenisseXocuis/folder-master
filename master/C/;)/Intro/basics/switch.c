@@ -7,7 +7,8 @@ int main(){
     printf("Introduzca la letra que corresponde a la calificación\n");
     printf("Introduzca el caracter EOF para finalizar la entrada de datos\n");
 
-    while((cal = getchar() != EOF)){
+    while((cal = getchar() != EOF))
+    {
 
         switch(cal){
             case 'A': case 'a':
@@ -16,6 +17,6 @@ int main(){
             case 'B': case 'b': 
                 break;      
 
+        }
     }
-
 }

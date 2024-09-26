@@ -12,9 +12,8 @@ for(int i = 1; i<=10; i++)
     cont += 1;
     sum  += calf;
 }
-
 prom = sum/cont;
-printf("El promedio de todos los alumnos es de: %f", prom);
+printf("El promedio de todos los alumnos es de: %g", prom);
 
 return 0;
 

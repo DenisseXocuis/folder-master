@@ -477,7 +477,7 @@ int main(int argc, char **argv)
                     {
                         glutMainLoopEvent();
                     }
-
+                    
                     //glutMainLoop();
                     
                 break;

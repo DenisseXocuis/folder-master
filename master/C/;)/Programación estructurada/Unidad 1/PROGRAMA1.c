@@ -18,7 +18,7 @@ void menu(){
 }
 
 int mayor(int n){ 
-    static int may = 0;
+    static may = 0;
     int n1;
     if(n > 0){ 
         n1 = n%10; 

@@ -34,6 +34,4 @@ int primos(int inicio,int fin){
     }
     else
         return sum;
-    
-    
 }   
